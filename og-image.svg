@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#131711"/>
+
+  <!-- Subtle gradient overlay -->
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGlow)"/>
+
+  <!-- Grid pattern for tech feel -->
+  <g stroke="#22d3ee" stroke-opacity="0.03" stroke-width="1">
+    <g>
+      <line x1="0" y1="0" x2="1200" y2="0"/>
+      <line x1="0" y1="60" x2="1200" y2="60"/>
+      <line x1="0" y1="120" x2="1200" y2="120"/>
+      <line x1="0" y1="180" x2="1200" y2="180"/>
+      <line x1="0" y1="240" x2="1200" y2="240"/>
+      <line x1="0" y1="300" x2="1200" y2="300"/>
+      <line x1="0" y1="360" x2="1200" y2="360"/>
+      <line x1="0" y1="420" x2="1200" y2="420"/>
+      <line x1="0" y1="480" x2="1200" y2="480"/>
+      <line x1="0" y1="540" x2="1200" y2="540"/>
+      <line x1="0" y1="600" x2="1200" y2="600"/>
+    </g>
+    <g>
+      <line x1="0" y1="0" x2="0" y2="630"/>
+      <line x1="80" y1="0" x2="80" y2="630"/>
+      <line x1="160" y1="0" x2="160" y2="630"/>
+      <line x1="240" y1="0" x2="240" y2="630"/>
+      <line x1="320" y1="0" x2="320" y2="630"/>
+      <line x1="400" y1="0" x2="400" y2="630"/>
+      <line x1="480" y1="0" x2="480" y2="630"/>
+      <line x1="560" y1="0" x2="560" y2="630"/>
+      <line x1="640" y1="0" x2="640" y2="630"/>
+      <line x1="720" y1="0" x2="720" y2="630"/>
+      <line x1="800" y1="0" x2="800" y2="630"/>
+      <line x1="880" y1="0" x2="880" y2="630"/>
+      <line x1="960" y1="0" x2="960" y2="630"/>
+      <line x1="1040" y1="0" x2="1040" y2="630"/>
+      <line x1="1120" y1="0" x2="1120" y2="630"/>
+      <line x1="1200" y1="0" x2="1200" y2="630"/>
+    </g>
+  </g>
+
+  <!-- Logo -->
+  <g transform="translate(100, 80)">
+    <!-- Outer hexagon -->
+    <path d="M60 7.5 L106.14 30 L106.14 90 L60 112.5 L13.86 90 L13.86 30 Z" fill="#131711" stroke="#22d3ee" stroke-width="4"/>
+    <!-- Circuit lines -->
+    <path d="M60 30 L60 52.5" stroke="#22d3ee" stroke-width="5" stroke-linecap="round"/>
+    <path d="M37.5 52.5 M82.5 52.5" stroke="#22d3ee" stroke-width="5" stroke-linecap="round"/>
+    <path d="M60 67.5 L60 90" stroke="#22d3ee" stroke-width="5" stroke-linecap="round"/>
+    <path d="M37.5 67.5 M82.5 67.5" stroke="#22d3ee" stroke-width="5" stroke-linecap="round"/>
+    <!-- Nodes -->
+    <circle cx="37.5" cy="52.5" r="6" fill="#22d3ee"/>
+    <circle cx="82.5" cy="52.5" r="6" fill="#22d3ee"/>
+    <circle cx="37.5" cy="67.5" r="6" fill="#f59e0b"/>
+    <circle cx="82.5" cy="67.5" r="6" fill="#f59e0b"/>
+    <circle cx="60" cy="30" r="6" fill="#10b981"/>
+    <circle cx="60" cy="90" r="6" fill="#10b981"/>
+    <!-- Center core -->
+    <circle cx="60" cy="60" r="10" fill="#131711" stroke="#22d3ee" stroke-width="4"/>
+    <circle cx="60" cy="60" r="4" fill="#22d3ee"/>
+  </g>
+
+  <!-- Company name -->
+  <text x="230" y="155" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="700" fill="#f1f5f9" letter-spacing="-0.5px">Novatech</text>
+  <text x="230" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="600" fill="#22d3ee" letter-spacing="-0.5px">Solutions</text>
+
+  <!-- Tagline -->
+  <text x="230" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="400" fill="#94a3b8">Building digital foundations that scale.</text>
+
+  <!-- Service badges -->
+  <g transform="translate(100, 320)">
+    <!-- Web Design Badge -->
+    <rect x="0" y="0" width="280" height="100" rx="12" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <circle cx="40" cy="50" r="24" fill="#155e75"/>
+    <path d="M28 50 L36 58 L52 42" stroke="#22d3ee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="80" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#f1f5f9">Web Design</text>
+    <text x="80" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400" fill="#94a3b8">Custom • SEO • Fast</text>
+
+    <!-- MSP Badge -->
+    <rect x="300" y="0" width="280" height="100" rx="12" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <circle cx="340" cy="50" r="24" fill="#155e75"/>
+    <rect x="325" y="35" width="30" height="30" rx="4" stroke="#22d3ee" stroke-width="3" fill="none"/>
+    <path d="M335 50 L340 55 L350 40" stroke="#22d3ee" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="380" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="600" fill="#f1f5f9">Managed IT (MSP)</text>
+    <text x="380" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400" fill="#94a3b8">24/7 • Secure • Cloud</text>
+
+    <!-- Stats -->
+    <g transform="translate(600, 0)">
+      <text x="0" y="25" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="#22d3ee">150+</text>
+      <text x="0" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400" fill="#94a3b8">Projects</text>
+
+      <text x="140" y="25" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="#f59e0b">98%</text>
+      <text x="140" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400" fill="#94a3b8">Satisfaction</text>
+
+      <text x="280" y="25" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="#10b981">24/7</text>
+      <text x="280" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400" fill="#94a3b8">Monitoring</text>
+    </g>
+  </g>
+
+  <!-- CTA -->
+  <rect x="100" y="480" width="320" height="60" rx="30" fill="url(#textGradient)"/>
+  <text x="260" y="518" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#131711" text-anchor="middle">Get Free Consultation</text>
+
+  <!-- Bottom info -->
+  <text x="600" y="580" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400" fill="#64748b" text-anchor="middle">novatechsolutions.com • hello@novatechsolutions.com • 1-800-555-0199</text>
+</svg>

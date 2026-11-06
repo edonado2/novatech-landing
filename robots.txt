@@ -1,0 +1,14 @@
+# Robots.txt — Novatech Solutions
+
+User-agent: *
+Allow: /
+
+# Private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /node_modules/
+Disallow: /.git/
+
+# Sitemap
+Sitemap: https://novatechsolutions.com/sitemap.xml
