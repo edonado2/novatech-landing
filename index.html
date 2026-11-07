@@ -40,6 +40,14 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+      }
+    }
+    </script>
 
     <!-- Icons -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -55,8 +63,8 @@
         "logo": "https://novatechsolutions.com/favicon.svg",
         "image": "https://novatechsolutions.com/og-image.jpg",
         "description": "Web design agency and managed IT service provider (MSP) based in New Mexico, offering custom website development, 24/7 IT support, cybersecurity and cloud management to businesses across the United States.",
-        "telephone": "+1-800-555-0199",
-        "email": "hello@novatechsolutions.com",
+        "telephone": "+1-865-898-7648",
+        "email": "sales@novatechsoft.info",
         "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
@@ -180,8 +188,8 @@
             <a href="#contact" class="mobile-link mobile-link--cta"><span class="mobile-link-index">05</span>Contact</a>
         </nav>
         <div class="mobile-menu-footer">
-            <a href="mailto:hello@novatechsolutions.com">hello@novatechsolutions.com</a>
-            <a href="tel:+18005550199">1-800-555-0199</a>
+            <a href="mailto:sales@novatechsoft.info">sales@novatechsoft.info</a>
+            <a href="tel:+18658987648">865-898-7648</a>
         </div>
     </div>
 
@@ -222,11 +230,11 @@
                 <ul class="hero-stats reveal" aria-label="Our commitments">
                     <li class="stat">
                         <span class="stat-num">24/7</span>
-                        <span class="stat-cap">Monitoring &amp; support</span>
+                        <span class="stat-cap">Monitoring & support</span>
                     </li>
                     <li class="stat">
                         <span class="stat-num">$0</span>
-                        <span class="stat-cap">Consultation &amp; audit</span>
+                        <span class="stat-cap">Consultation & audit</span>
                     </li>
                     <li class="stat">
                         <span class="stat-num">2h</span>
@@ -237,6 +245,9 @@
                         <span class="stat-cap">Lock-in contracts</span>
                     </li>
                 </ul>
+
+                <!-- Three.js Canvas -->
+                <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
             </div>
 
             <!-- Rotating badge -->
@@ -538,7 +549,7 @@
                     <h2 class="section-title" id="faq-title">Questions, <em>answered.</em></h2>
                     <p class="section-desc">
                         Straight answers before you even ask. Anything else —
-                        call us at <a href="tel:+18005550199">1-800-555-0199</a>.
+                        call us at <a href="tel:+18658987648">865-898-7648</a>.
                     </p>
                 </header>
 
@@ -635,11 +646,11 @@
                     <ul class="contact-methods reveal" aria-label="Direct contact options">
                         <li>
                             <span class="contact-method-label">Email</span>
-                            <a href="mailto:hello@novatechsolutions.com">hello@novatechsolutions.com</a>
+                            <a href="mailto:sales@novatechsoft.info">sales@novatechsoft.info</a>
                         </li>
                         <li>
                             <span class="contact-method-label">Phone — 24/7</span>
-                            <a href="tel:+18005550199">1-800-555-0199</a>
+                            <a href="tel:+18658987648">865-898-7648</a>
                         </li>
                         <li>
                             <span class="contact-method-label">Based in</span>
@@ -648,7 +659,7 @@
                     </ul>
                 </div>
 
-                <form class="contact-form reveal" id="contact-form" action="#contact" method="POST" novalidate aria-label="Contact form">
+                <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/mgaabaaq" method="POST" novalidate aria-label="Contact form">
                     <div class="form-row">
                         <div class="form-field">
                             <label for="f-name">Full name <span aria-hidden="true">*</span></label>
@@ -733,8 +744,8 @@
                 </nav>
                 <div class="footer-col" aria-label="Footer — contact">
                     <h3>Contact</h3>
-                    <a href="mailto:hello@novatechsolutions.com">hello@novatechsolutions.com</a>
-                    <a href="tel:+18005550199">1-800-555-0199</a>
+                    <a href="mailto:sales@novatechsoft.info">sales@novatechsoft.info</a>
+                    <a href="tel:+18658987648">865-898-7648</a>
                     <div class="footer-social">
                         <a href="https://linkedin.com/company/novatech-solutions" aria-label="LinkedIn" rel="noopener">LinkedIn</a>
                         <a href="https://twitter.com/novatechsol" aria-label="Twitter / X" rel="noopener">X</a>
@@ -757,3 +768,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+`

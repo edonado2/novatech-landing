@@ -211,21 +211,34 @@
       submitBtn.disabled = true;
       submitBtn.innerHTML = '<span>Sending…</span>';
 
-      // Simulated submission — replace with a real endpoint when wiring up the backend.
-      setTimeout(function () {
-        var name = (form.querySelector('#f-name') || {}).value || 'there';
-        form.innerHTML =
-          '<div class="form-success" role="status">' +
-            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">' +
-              '<circle cx="12" cy="12" r="10"/>' +
-              '<path d="M8 12.5l2.6 2.6L16 9.5" stroke-linecap="round" stroke-linejoin="round"/>' +
-            '</svg>' +
-            '<h3>Message received, ' + name.split(' ')[0] + '.</h3>' +
-            '<p>An engineer — not a sales rep — will reply within 2 business hours.</p>' +
-          '</div>';
-      }, 1100);
-
-      submitBtn.innerHTML = btnContent; // restored if the timeout is ever bypassed
+      // Submit to Formspree via AJAX
+      var formData = new FormData(form);
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(function (response) {
+        if (response.ok) {
+          var name = (form.querySelector('#f-name') || {}).value || 'there';
+          form.innerHTML =
+            '<div class="form-success" role="status">' +
+              '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">' +
+                '<circle cx="12" cy="12" r="10"/>' +
+                '<path d="M8 12.5l2.6 2.6L16 9.5" stroke-linecap="round" stroke-linejoin="round"/>' +
+              '</svg>' +
+              '<h3>Message received, ' + name.split(' ')[0] + '.</h3>' +
+              '<p>An engineer — not a sales rep — will reply within 2 business hours.</p>' +
+            '</div>';
+        } else {
+          throw new Error('Form submission failed');
+        }
+      })
+      .catch(function () {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = btnContent;
+        alert('Something went wrong. Please try again or email us directly at sales@novatechsoft.info');
+      });
     });
   }
 
@@ -233,7 +246,181 @@
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-  /* ---------- Console signature ---------- */
+  /* ---------- Three.js Hero Animation ---------- */
+async function initHeroAnimation() {
+  const canvas = document.getElementById('hero-canvas');
+  if (!canvas) return;
+
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reducedMotion) return;
+
+  try {
+    const { Scene, PerspectiveCamera, WebGLRenderer, IcosahedronGeometry, MeshBasicMaterial, Mesh, Float32BufferAttribute, Clock, Color, BufferGeometry, Points, ShaderMaterial, AdditiveBlending } = await import('three');
+
+    const scene = new Scene();
+    const camera = new PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
+    camera.position.set(0, 0, 28);
+
+    const renderer = new WebGLRenderer({ canvas, antialias: true, alpha: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setClearColor(0x000000, 0);
+
+    // Create wireframe icosahedron
+    const geometry = new IcosahedronGeometry(6, 0);
+    const positions = geometry.attributes.position;
+    const colors = new Float32Array(positions.count * 3);
+    const color = new Color('#0C8A5F'); // accent color
+    const colorAlt = new Color('#0FD9A3'); // accent-fill color
+
+    for (let i = 0; i < positions.count; i++) {
+      const y = positions.getY(i);
+      const t = (y + 6) / 12; // normalize -6 to 6 -> 0 to 1
+      const c = color.clone().lerp(colorAlt, t);
+      colors[i * 3] = c.r;
+      colors[i * 3 + 1] = c.g;
+      colors[i * 3 + 2] = c.b;
+    }
+    geometry.setAttribute('color', new Float32BufferAttribute(colors, 3));
+
+    const material = new MeshBasicMaterial({
+      vertexColors: true,
+      wireframe: true,
+      transparent: true,
+      opacity: 0.35,
+      toneMapped: false
+    });
+
+    const mesh = new Mesh(geometry, material);
+    scene.add(mesh);
+
+    // Add subtle particle field
+    const particleCount = 300;
+    const particleGeometry = new BufferGeometry();
+    const particlePositions = new Float32Array(particleCount * 3);
+    const particleSizes = new Float32Array(particleCount);
+    const particleAlphas = new Float32Array(particleCount);
+
+    for (let i = 0; i < particleCount; i++) {
+      const radius = 8 + Math.random() * 20;
+      const theta = Math.random() * Math.PI * 2;
+      const phi = Math.acos(2 * Math.random() - 1);
+      particlePositions[i * 3] = radius * Math.sin(phi) * Math.cos(theta);
+      particlePositions[i * 3 + 1] = radius * Math.sin(phi) * Math.sin(theta);
+      particlePositions[i * 3 + 2] = radius * Math.cos(phi);
+      particleSizes[i] = 0.5 + Math.random() * 1.5;
+      particleAlphas[i] = 0.1 + Math.random() * 0.4;
+    }
+
+    particleGeometry.setAttribute('position', new Float32BufferAttribute(particlePositions, 3));
+    particleGeometry.setAttribute('size', new Float32BufferAttribute(particleSizes, 1));
+    particleGeometry.setAttribute('alpha', new Float32BufferAttribute(particleAlphas, 1));
+
+    // Custom shader for particles
+    const particleShaderMaterial = new ShaderMaterial({
+      uniforms: {
+        uTime: { value: 0 },
+        uColor: { value: new Color('#0C8A5F') },
+        uColorAlt: { value: new Color('#0FD9A3') }
+      },
+      vertexShader: `
+        attribute float size;
+        attribute float alpha;
+        varying float vAlpha;
+        uniform float uTime;
+        void main() {
+          vAlpha = alpha;
+          vec3 pos = position;
+          // Subtle floating motion
+          pos.x += sin(uTime * 0.3 + position.y * 0.5) * 0.15;
+          pos.y += cos(uTime * 0.2 + position.x * 0.5) * 0.15;
+          pos.z += sin(uTime * 0.25 + position.z * 0.5) * 0.1;
+          vec4 mvPosition = modelViewMatrix * vec4(pos, 1.0);
+          gl_PointSize = size * (300.0 / -mvPosition.z);
+          gl_Position = projectionMatrix * mvPosition;
+        }
+      `,
+      fragmentShader: `
+        varying float vAlpha;
+        uniform vec3 uColor;
+        uniform vec3 uColorAlt;
+        uniform float uTime;
+        void main() {
+          float dist = length(gl_PointCoord - 0.5);
+          if (dist > 0.5) discard;
+          float alpha = smoothstep(0.5, 0.0, dist) * vAlpha;
+          vec3 color = mix(uColor, uColorAlt, sin(uTime * 0.5) * 0.5 + 0.5);
+          gl_FragColor = vec4(color, alpha);
+        }
+      `,
+      transparent: true,
+      blending: AdditiveBlending,
+      depthWrite: false
+    });
+
+    const particles = new Points(particleGeometry, particleShaderMaterial);
+    scene.add(particles);
+
+    const clock = new Clock();
+    let mouseX = 0;
+    let mouseY = 0;
+    let targetX = 0;
+    let targetY = 0;
+
+    function onMouseMove(event) {
+      mouseX = (event.clientX / window.innerWidth) * 2 - 1;
+      mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
+    }
+
+    window.addEventListener('mousemove', onMouseMove, { passive: true });
+
+    function animate() {
+      const elapsed = clock.getElapsedTime();
+      const delta = clock.getDelta();
+
+      targetX = mouseX * 0.3;
+      targetY = mouseY * 0.3;
+
+      mesh.rotation.x += (targetY - mesh.rotation.x) * 0.02;
+      mesh.rotation.y += (targetX - mesh.rotation.y) * 0.02;
+      mesh.rotation.z += delta * 0.08;
+
+      particles.rotation.y += delta * 0.02;
+      particles.rotation.x += delta * 0.01;
+
+      particleShaderMaterial.uniforms.uTime.value = elapsed;
+
+      renderer.render(scene, camera);
+      requestAnimationFrame(animate);
+    }
+
+    function onResize() {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+    window.addEventListener('resize', onResize);
+
+    animate();
+
+    // Cleanup on page unload
+    window.addEventListener('beforeunload', () => {
+      window.removeEventListener('mousemove', onMouseMove);
+      window.removeEventListener('resize', onResize);
+      renderer.dispose();
+      geometry.dispose();
+      material.dispose();
+      particleGeometry.dispose();
+      particleShaderMaterial.dispose();
+    });
+
+  } catch (error) {
+    console.warn('Three.js hero animation failed to initialize:', error);
+  }
+}
+
+/* ---------- Console signature ---------- */
+  initHeroAnimation();
   console.log('%cNovatech Solutions', 'font:600 20px "Space Grotesk",sans-serif;color:#0C8A5F;');
   console.log('%cWebsites that win customers. IT that never sleeps.', 'font:12px Inter,sans-serif;color:#5C6357;');
 })();
