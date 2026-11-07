@@ -11,7 +11,7 @@
   --paper-3:      #FBF9F4;
   --ink:          #131711;
   --ink-2:        #1B201A;
-  --muted:        #5C6357;
+  --muted:        #4A5148;   /* darkened for WCAG AA contrast (5.5:1 on --paper) */
   --muted-dark:   #98A091;
   --line:         rgba(19, 23, 17, .16);
   --line-dark:    rgba(244, 241, 234, .16);

@@ -11,4 +11,4 @@ Disallow: /node_modules/
 Disallow: /.git/
 
 # Sitemap
-Sitemap: https://novatechsolutions.com/sitemap.xml
+Sitemap: https://novatechsoft.info/sitemap.xml
