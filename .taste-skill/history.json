@@ -1,0 +1,42 @@
+{
+ "palettes": [
+  "cobalt-on-sand",
+  "white-link-blue",
+  "blush-sage-slate"
+ ],
+ "types": [
+  "hanken",
+  "instrument",
+  "figtree"
+ ],
+ "dealt": [
+  "hanken",
+  "newsreader",
+  "zilla",
+  "figtree",
+  "rethink",
+  "source-serif"
+ ],
+ "moments": [
+  {
+   "id": "picture-develops",
+   "at": "2026-11-08T01:41:55.624Z",
+   "seed": "ee0ce57b"
+  },
+  {
+   "id": "word-highlight",
+   "at": "2026-11-08T01:41:55.624Z",
+   "seed": "ee0ce57b"
+  },
+  {
+   "id": "pinned-chapters",
+   "at": "2026-11-08T01:43:40.679Z",
+   "seed": "b605cc58"
+  },
+  {
+   "id": "picture-develops",
+   "at": "2026-11-08T01:43:40.679Z",
+   "seed": "b605cc58"
+  }
+ ]
+}
