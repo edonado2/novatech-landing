@@ -1,0 +1,2564 @@
+{
+ "start": "2026-11-08T19:34:59.829Z",
+ "round": 3,
+ "idle": 0,
+ "errors": 0,
+ "status": "open",
+ "history": [
+  {
+   "at": "2026-11-08T19:37:29.185Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 70,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-08T19:44:19.434Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 81,
+   "round": 2,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-08T19:49:48.022Z",
+   "mode": "manual",
+   "status": "open",
+   "fails": 65,
+   "round": 3,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-08T19:50:26.497Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": "index.html",
+  "url": null,
+  "root": null,
+  "kind": "service",
+  "category": "Remote-first managed IT for small business",
+  "primary": "Book free IT audit",
+  "rounds": 3,
+  "start": "2026-11-08T19:34:59.829Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "roundKey": "bb07fa471a41f0b8:8773a522",
+ "roundFree": false,
+ "idleFree": false,
+ "blockKey": null,
+ "fp": "bb07fa471a41f0b8",
+ "page": "index.html",
+ "found": {
+  "fails": [
+   {
+    "check": "flush",
+    "where": "main#top > section.hero.hero--photo > img.hero__bg \"img: Modern data center with server rack\"",
+    "msg": "section.hero.hero--photo and section#plans run together: 0px between their content, on one ground",
+    "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "flush"
+    ],
+    "wheres": [
+     "main#top > section.hero.hero--photo > img.hero__bg \"img: Modern data center with server rack\""
+    ]
+   },
+   {
+    "check": "flush",
+    "where": "section#plans > img.section-visual.img-right \"img: Server room with rack infrastructur\"",
+    "msg": "section#plans and section#included run together: 0px between their content, on one ground",
+    "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "flush"
+    ],
+    "wheres": [
+     "section#plans > img.section-visual.img-right \"img: Server room with rack infrastructur\""
+    ]
+   },
+   {
+    "check": "overlap-text",
+    "where": "footer#contact > div.wrap > div.closing__cta.close--photo > div.close__media",
+    "msg": "lies over the text \"Novatech\" (div.span-4.stack-4 > a.nav__logo)",
+    "fix": "move the box off the text (or the text off the box)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "overlap-text"
+    ],
+    "wheres": [
+     "footer#contact > div.wrap > div.closing__cta.close--photo > div.close__media"
+    ]
+   },
+   {
+    "check": "heading-scale",
+    "where": "div.wrap.grid > div.span-6 > div.plans-extra > h3 \"What changes between plans\"",
+    "msg": "h3 headings in 2 sizes, 16px (\"Monitoring Service\") to 28px (x1.75)",
+    "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "heading-scale"
+    ],
+    "wheres": [
+     "div.wrap.grid > div.span-6 > div.plans-extra > h3 \"What changes between plans\""
+    ]
+   },
+   {
+    "check": "contrast",
+    "where": "section#plans > div.wrap.grid > div.span-6 > p.muted \"Pick the level that fits. Upgrade or dow\"",
+    "msg": "body text over a picture reads at 1.7:1 at its worst tenth (needs 4.5:1), on a busy ground (and 24 more like it: \"24/7 monitoring\", \"Remote help desk\", \"Business hours (Essentia\", \"All plans\", ...)",
+    "fix": "put the text on a calm part of the picture, or on a solid panel",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "contrast"
+    ],
+    "wheres": [
+     "section#plans > div.wrap.grid > div.span-6 > p.muted \"Pick the level that fits. Upgrade or dow\""
+    ]
+   },
+   {
+    "check": "contrast",
+    "where": "div.span-6 > div.plans-extra > dl > dd:nth-of-type(1) \"All plans\"",
+    "msg": "body text over a picture reads at 1.5:1 at its worst tenth (needs 4.5:1) (and 16 more like it: \"Patch management\", \"Backup verification\", \"All plans\", \"EDR/MDR security\", ...)",
+    "fix": "put the text on a calm part of the picture, or on a solid panel",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "contrast"
+    ],
+    "wheres": [
+     "div.span-6 > div.plans-extra > dl > dd:nth-of-type(1) \"All plans\""
+    ]
+   },
+   {
+    "check": "section-gaps",
+    "where": "main#top > section.hero.hero--photo / section#plans",
+    "msg": "0px between these sections, -100% against the median 60px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-gaps"
+    ],
+    "wheres": [
+     "main#top > section.hero.hero--photo / section#plans"
+    ]
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#plans / section#included",
+    "msg": "0px between these sections, -100% against the median 60px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-gaps"
+    ],
+    "wheres": [
+     "section#plans / section#included"
+    ]
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#included / section#onboarding",
+    "msg": "228px between these sections, +280% against the median 60px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-gaps"
+    ],
+    "wheres": [
+     "section#included / section#onboarding"
+    ]
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#faq / footer#contact",
+    "msg": "120px between these sections, +100% against the median 60px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-gaps"
+    ],
+    "wheres": [
+     "section#faq / footer#contact"
+    ]
+   },
+   {
+    "check": "photo-upscale",
+    "where": "main#top > section.hero.hero--photo > img.hero__bg \"img: Modern data center with server rack\"",
+    "msg": "datacenter.jpg: 960x720 shown at 1440x900, blown up 1.50x",
+    "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "photo-upscale"
+    ],
+    "wheres": [
+     "main#top > section.hero.hero--photo > img.hero__bg \"img: Modern data center with server rack\""
+    ]
+   },
+   {
+    "check": "photo-upscale",
+    "where": "section#plans > img.section-visual.img-right \"img: Server room with rack infrastructur\"",
+    "msg": "cloud-servers.jpg: 1280x851 shown at 1440x1800, blown up 2.12x",
+    "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "photo-upscale"
+    ],
+    "wheres": [
+     "section#plans > img.section-visual.img-right \"img: Server room with rack infrastructur\""
+    ]
+   },
+   {
+    "check": "photo-upscale",
+    "where": "section#included > img.section-visual \"img: Team collaborating on IT strategy\"",
+    "msg": "team-laptop.jpg: 1280x854 shown at 1440x1800, blown up 2.11x",
+    "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "photo-upscale"
+    ],
+    "wheres": [
+     "section#included > img.section-visual \"img: Team collaborating on IT strategy\""
+    ]
+   },
+   {
+    "check": "photo-upscale",
+    "where": "div.wrap.mo-ph > div.mo-ph__stage > figure.mo-ph__pic:nth-of-type(3) > img \"img: Network switch with fiber connectio\"",
+    "msg": "network-switch.jpg: 1280x720 shown at 1357x1018, blown up 1.41x",
+    "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "photo-upscale"
+    ],
+    "wheres": [
+     "div.wrap.mo-ph > div.mo-ph__stage > figure.mo-ph__pic:nth-of-type(3) > img \"img: Network switch with fiber connectio\""
+    ]
+   },
+   {
+    "check": "photo-upscale",
+    "where": "div.wrap.mo-ph > div.mo-ph__stage > figure.mo-ph__pic:nth-of-type(4) > img \"img: Team conducting quarterly business \"",
+    "msg": "houston.jpg: 960x640 shown at 1357x1018, blown up 1.59x",
+    "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "photo-upscale"
+    ],
+    "wheres": [
+     "div.wrap.mo-ph > div.mo-ph__stage > figure.mo-ph__pic:nth-of-type(4) > img \"img: Team conducting quarterly business \""
+    ]
+   },
+   {
+    "check": "photo-upscale",
+    "where": "section#faq > img.faq-visual-wrap \"img: Network infrastructure with fiber c\"",
+    "msg": "network-switch.jpg: 1280x720 shown at 1440x1800, blown up 2.50x",
+    "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "photo-upscale"
+    ],
+    "wheres": [
+     "section#faq > img.faq-visual-wrap \"img: Network infrastructure with fiber c\""
+    ]
+   },
+   {
+    "check": "section-height",
+    "where": "section#locations \"Remote-first, locally connected We opera\"",
+    "msg": "the section's content does not fit it: its content is 480px taller than the section (scrollHeight 1380, clientHeight 900) (SR-2)",
+    "fix": "fit the content above the section's bottom padding (--padb), or make it two screens (.g2) in two groups",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-height"
+    ],
+    "wheres": [
+     "section#locations \"Remote-first, locally connected We opera\""
+    ]
+   },
+   {
+    "check": "section-height",
+    "where": "section#faq \"Common questions. Straight answers, no s\"",
+    "msg": "the section's content does not fit it: its first screen group ends 909px below its top, past 828px (SR-2)",
+    "fix": "fit the content above the section's bottom padding (--padb), or make it two screens (.g2) in two groups",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-height"
+    ],
+    "wheres": [
+     "section#faq \"Common questions. Straight answers, no s\""
+    ]
+   },
+   {
+    "check": "section-air",
+    "where": "section#plans / section#included",
+    "msg": "669px of air between the content of these two sections: 128-480px (64-600px WARN) (SR-3)",
+    "fix": "keep 128-480px of air between the content of neighbouring sections (112-420px on a phone): the sections' padding (--padt, --padb)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-air"
+    ],
+    "wheres": [
+     "section#plans / section#included"
+    ]
+   },
+   {
+    "check": "section-air",
+    "where": "section#included \"Included services. Every plan comes with\"",
+    "msg": "screen group 2 of this two-screen section fills 0% of a screen: 40% or more (25% WARN) (SR-3)",
+    "fix": "fill the section to 55%: more content, a picture or a background layer, or merge it into the section above as its last block",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-air"
+    ],
+    "wheres": [
+     "section#included \"Included services. Every plan comes with\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "main#top > section.hero.hero--photo \"Remote-first managed IT for small busine\"",
+    "msg": "the content of section 1 runs 0px from the left and 0px from the right: the page's container starts at 80px; the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (SR-6)",
+    "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "main#top > section.hero.hero--photo \"Remote-first managed IT for small busine\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "section#plans > img.section-visual.img-right \"Server room with rack infrastructure\"",
+    "msg": "a child of section 2 beside its .wrap is no valid background layer: not aria-hidden=\"true\" (SR-6)",
+    "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "section#plans > img.section-visual.img-right \"Server room with rack infrastructure\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "section#included > img.section-visual \"Team collaborating on IT strategy\"",
+    "msg": "a child of section 3 beside its .wrap is no valid background layer: not aria-hidden=\"true\" (SR-6)",
+    "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "section#included > img.section-visual \"Team collaborating on IT strategy\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "section#locations \"Remote-first, locally connected We opera\"",
+    "msg": "the section needs exactly one in-flow child .wrap (it has 2 in-flow children, 1 .wrap) (and 1 more like it: \"Network infrastructure w\") (SR-6)",
+    "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "section#locations \"Remote-first, locally connected We opera\""
+    ]
+   },
+   {
+    "check": "row-lines",
+    "where": "footer#contact > div.wrap > div.closing__links > div.grid \"Novatech Remote-first managed IT for sma\"",
+    "msg": "a row of 3 items: its last item ends at 1143px, the container's right line at 1360px (2px either way) (SR-7)",
+    "fix": "start the row's first item on the container's left line and end its last on the right line, every item one height",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "row-lines"
+    ],
+    "wheres": [
+     "footer#contact > div.wrap > div.closing__links > div.grid \"Novatech Remote-first managed IT for sma\""
+    ]
+   },
+   {
+    "check": "row-lines",
+    "where": "div.wrap.grid > div.span-6 > div.group > ul.included-list \"Monitoring Service Infrastructure, netwo\"",
+    "msg": "a row of 2 items: its last item ends at 1205px, the container's right line at 1360px (2px either way) (SR-7)",
+    "fix": "start the row's first item on the container's left line and end its last on the right line, every item one height",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "row-lines"
+    ],
+    "wheres": [
+     "div.wrap.grid > div.span-6 > div.group > ul.included-list \"Monitoring Service Infrastructure, netwo\""
+    ]
+   },
+   {
+    "check": "overlap-text",
+    "where": "section#included \"Included services. Every plan comes with\"",
+    "msg": "lies over the text \"24/7 monitoring\" (dl > dt:nth-of-type(1))",
+    "fix": "move the box off the text (or the text off the box)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "overlap-text"
+    ],
+    "wheres": [
+     "section#included \"Included services. Every plan comes with\""
+    ]
+   },
+   {
+    "check": "overlap-text",
+    "where": "h2#close-h \"Book your free IT audit\"",
+    "msg": "lies over the text \"We partner with vetted local technicians\" (details:nth-of-type(3) > div.faq-answer)",
+    "fix": "move the box off the text (or the text off the box)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "overlap-text"
+    ],
+    "wheres": [
+     "h2#close-h \"Book your free IT audit\""
+    ]
+   },
+   {
+    "check": "overlap-text",
+    "where": "div.wrap > div.closing__cta.close--photo > div.section-head--split > a.btn.btn--primary \"Book free IT audit\"",
+    "msg": "lies over the text \"Book free IT audit\" (div:nth-of-type(2) > a.btn.btn--primary)",
+    "fix": "move the box off the text (or the text off the box)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "overlap-text"
+    ],
+    "wheres": [
+     "div.wrap > div.closing__cta.close--photo > div.section-head--split > a.btn.btn--primary \"Book free IT audit\""
+    ]
+   },
+   {
+    "check": "cut-text",
+    "where": "div.group:nth-of-type(2) > div.faq-list > details:nth-of-type(1) > div.faq-answer \"Yes. We handle docs, credentials, audit,\"",
+    "msg": "2 of 3 lines hidden by the overflow of section#faq > div.wrap.grid",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "cut-text"
+    ],
+    "wheres": [
+     "div.group:nth-of-type(2) > div.faq-list > details:nth-of-type(1) > div.faq-answer \"Yes. We handle docs, credentials, audit,\""
+    ]
+   },
+   {
+    "check": "heading-scale",
+    "where": "h2#plans-h \"Three plans. One flat rate per user.\"",
+    "msg": "an h2 at 30px, as large as the h1 (26px) or larger (and 2 more like it: \"Included services.\", \"Common questions.\")",
+    "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "heading-scale"
+    ],
+    "wheres": [
+     "h2#plans-h \"Three plans. One flat rate per user.\""
+    ]
+   },
+   {
+    "check": "contrast",
+    "where": "div.span-6 > div.plans-extra > dl > dd:nth-of-type(5) \"Professional & Enterprise\"",
+    "msg": "body text over a picture reads at 1.5:1 at its worst tenth (needs 4.5:1), on a busy ground (and 8 more like it: \"Cloud management\", \"Professional & Enterpris\", \"vCIO strategy\", \"Professional & Enterpris\", ...)",
+    "fix": "put the text on a calm part of the picture, or on a solid panel",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "contrast"
+    ],
+    "wheres": [
+     "div.span-6 > div.plans-extra > dl > dd:nth-of-type(5) \"Professional & Enterprise\""
+    ]
+   },
+   {
+    "check": "contrast",
+    "where": "div.span-6 > div.plans-extra > dl > dt:nth-of-type(10) \"Compliance support\"",
+    "msg": "body text over a picture reads at 2.8:1 at its worst tenth (needs 4.5:1)",
+    "fix": "put the text on a calm part of the picture, or on a solid panel",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "contrast"
+    ],
+    "wheres": [
+     "div.span-6 > div.plans-extra > dl > dt:nth-of-type(10) \"Compliance support\""
+    ]
+   },
+   {
+    "check": "text-contrast",
+    "where": "div.span-6 > div.plans-extra > dl > dt:nth-of-type(1) \"24/7 monitoring\"",
+    "msg": "a caption, label or muted line in #7a4a4e on #7d0c14 reads 1.51:1 (needs 4.5:1); 9 like it, like \"All plans\", \"Remote help desk\", \"Business hours (Essent\"",
+    "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "text-contrast"
+    ],
+    "wheres": [
+     "div.span-6 > div.plans-extra > dl > dt:nth-of-type(1) \"24/7 monitoring\""
+    ]
+   },
+   {
+    "check": "text-contrast",
+    "where": "div.group:nth-of-type(2) > div.faq-list > details:nth-of-type(3) > summary \"What if we need on-site support?\"",
+    "msg": "a caption, label or muted line in #e2e2e2 on #e2e2e2 reads 1:1 (needs 4.5:1)",
+    "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "text-contrast"
+    ],
+    "wheres": [
+     "div.group:nth-of-type(2) > div.faq-list > details:nth-of-type(3) > summary \"What if we need on-site support?\""
+    ]
+   },
+   {
+    "check": "text-contrast",
+    "where": "div.group:nth-of-type(2) > div.faq-list > details:nth-of-type(3) > div.faq-answer \"We partner with vetted local technicians\"",
+    "msg": "body text in #e2e2e2 on #e2e2e2 reads 1:1 (needs 7:1)",
+    "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "text-contrast"
+    ],
+    "wheres": [
+     "div.group:nth-of-type(2) > div.faq-list > details:nth-of-type(3) > div.faq-answer \"We partner with vetted local technicians\""
+    ]
+   },
+   {
+    "check": "photo-upscale",
+    "where": "div.wrap > div.closing__cta.close--photo > div.close__media > img \"img: Modern remote workspace setup\"",
+    "msg": "dallas.jpg: 1280x404 shown at 342x625, blown up 1.55x",
+    "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "photo-upscale"
+    ],
+    "wheres": [
+     "div.wrap > div.closing__cta.close--photo > div.close__media > img \"img: Modern remote workspace setup\""
+    ]
+   },
+   {
+    "check": "bleed-one-side",
+    "where": "section.hero.hero--photo div.hero__text \"Remote-first managed IT for smal\"",
+    "msg": "runs from the left viewport edge to x 708; the right side stays at 0 from the edge",
+    "fix": "bleed the visual to both edges or keep it on the .wrap lines",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "bleed-one-side"
+    ],
+    "wheres": [
+     "section.hero.hero--photo div.hero__text \"Remote-first managed IT for smal\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#plans div.span-6 \"Three plans.One flat rate per us\"",
+    "msg": "starts at x 80; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#plans div.span-6 \"Three plans.One flat rate per us\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#plans h2 \"Three plans.One flat rate per us\"",
+    "msg": "starts at x 80; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#plans h2 \"Three plans.One flat rate per us\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#plans p.muted \"Pick the level that fits. Upgrad\"",
+    "msg": "starts at x 80; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#plans p.muted \"Pick the level that fits. Upgrad\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#plans ul.plans-grid \"Essentials plan 24/7 monitoring,\"",
+    "msg": "starts at x 80; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#plans ul.plans-grid \"Essentials plan 24/7 monitoring,\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#plans h3 \"What changes between plans\"",
+    "msg": "starts at x 80; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#plans h3 \"What changes between plans\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#plans dl \"24/7 monitoringAll plans Remote \"",
+    "msg": "starts at x 80; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#plans dl \"24/7 monitoringAll plans Remote \""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#included div.span-6 \"Included services. Every plan co\"",
+    "msg": "starts at x 80; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#included div.span-6 \"Included services. Every plan co\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#included h2 \"Included services.\"",
+    "msg": "starts at x 80; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#included h2 \"Included services.\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#included p.muted \"Every plan comes with the full s\"",
+    "msg": "starts at x 80; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#included p.muted \"Every plan comes with the full s\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#included ul.included-list \"Monitoring Service Infrastructur\"",
+    "msg": "starts at x 80; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#included ul.included-list \"Monitoring Service Infrastructur\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#locations div.span-6 \"Remote-first, locally connected \"",
+    "msg": "starts at x 80; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#locations div.span-6 \"Remote-first, locally connected \""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#locations p.t-label \"Remote-first, locally connected\"",
+    "msg": "starts at x 80; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#locations p.t-label \"Remote-first, locally connected\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#locations p.mo-wh__text \"We operate remotely nationwide. \"",
+    "msg": "starts at x 80; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#locations p.mo-wh__text \"We operate remotely nationwide. \""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#faq div.span-6 \"Common questions. Straight answe\"",
+    "msg": "starts at x 80; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#faq div.span-6 \"Common questions. Straight answe\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#faq h2 \"Common questions.\"",
+    "msg": "starts at x 80; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#faq h2 \"Common questions.\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#faq p.muted \"Straight answers, no sales talk.\"",
+    "msg": "starts at x 80; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#faq p.muted \"Straight answers, no sales talk.\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#contact div.span-4.stack-4 \"Novatech Remote-first managed IT\"",
+    "msg": "starts at x 80; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#contact div.span-4.stack-4 \"Novatech Remote-first managed IT\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#contact div.span-3.footer__col \"PlansEssentialsProfessionalEnter\"",
+    "msg": "starts at x 514.7; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#contact div.span-3.footer__col \"PlansEssentialsProfessionalEnter\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#contact div.span-3.footer__col \"ServicesMonitoring & help deskSe\"",
+    "msg": "starts at x 840.7; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#contact div.span-3.footer__col \"ServicesMonitoring & help deskSe\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "#contact div.span-2.footer__col \"CompanyLocationsQuestionsPrivacy\"",
+    "msg": "starts at x 80; the lines are 0 and the column starts",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "#contact div.span-2.footer__col \"CompanyLocationsQuestionsPrivacy\""
+    ]
+   },
+   {
+    "check": "edge-right",
+    "where": "nav actions",
+    "msg": "end at x 1360, the page's right line is 1440",
+    "fix": "end it on the .wrap right line",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-right"
+    ],
+    "wheres": [
+     "nav actions"
+    ]
+   },
+   {
+    "check": "bleed-one-side",
+    "where": "section.hero.hero--photo h1 \"Remote-first managed IT for smal\"",
+    "msg": "runs from the left viewport edge to x 189; the right side stays at 0 from the edge",
+    "fix": "bleed the visual to both edges or keep it on the .wrap lines",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "bleed-one-side"
+    ],
+    "wheres": [
+     "section.hero.hero--photo h1 \"Remote-first managed IT for smal\""
+    ]
+   },
+   {
+    "check": "bleed-one-side",
+    "where": "section.hero.hero--photo p.hero__lead \"Flat rate. 15-min critical respo\"",
+    "msg": "runs from the left viewport edge to x 189; the right side stays at 0 from the edge",
+    "fix": "bleed the visual to both edges or keep it on the .wrap lines",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "bleed-one-side"
+    ],
+    "wheres": [
+     "section.hero.hero--photo p.hero__lead \"Flat rate. 15-min critical respo\""
+    ]
+   },
+   {
+    "check": "bleed-one-side",
+    "where": "section.hero.hero--photo div.btn-row \"Book free IT auditSee plans\"",
+    "msg": "runs from the left viewport edge to x 189; the right side stays at 0 from the edge",
+    "fix": "bleed the visual to both edges or keep it on the .wrap lines",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "bleed-one-side"
+    ],
+    "wheres": [
+     "section.hero.hero--photo div.btn-row \"Book free IT auditSee plans\""
+    ]
+   },
+   {
+    "check": "edge-left",
+    "where": "nav logo",
+    "msg": "at x 24, the page's left line is 0, or its centre on the centre line 195",
+    "fix": "start it on the .wrap left line",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "edge-left"
+    ],
+    "wheres": [
+     "nav logo"
+    ]
+   },
+   {
+    "check": "hero-fold",
+    "where": "section.hero.hero--photo section.hero.hero--photo \"Remote-first managed IT for smal\"",
+    "msg": "ends at y 896, past the fold (844): 1.06 screens tall",
+    "fix": "the hero fills the first screen alone, its button inside it",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "hero-fold"
+    ],
+    "wheres": [
+     "section.hero.hero--photo section.hero.hero--photo \"Remote-first managed IT for smal\""
+    ]
+   },
+   {
+    "check": "hero-maxchars",
+    "where": "section.hero.hero--photo section.hero.hero--photo \"Remote-first managed IT for smal\"",
+    "msg": "with a 43-character h1 (heroes.json maxChars): ends at y 896, past the fold (844): 1.06 screens tall",
+    "fix": "shorten the h1 or give the hero room for the longest headline",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "hero-maxchars"
+    ],
+    "wheres": [
+     "section.hero.hero--photo section.hero.hero--photo \"Remote-first managed IT for smal\""
+    ]
+   }
+  ],
+  "warns": [
+   {
+    "check": "scroll-reveal",
+    "where": "section#locations > div.wrap.grid > div.span-6 > p.mo-wh__text \"We operate remotely nationwide. When som\"",
+    "msg": "starts \"color\" (0.2 s) the moment it is scrolled into view (an IntersectionObserver) on span.mo-w:nth-of-type(1) (inside a dealt moment's section, [data-moment]: an enter moment is expected on every kind; its still is judged under reduced motion)",
+    "fix": "show it at rest: no fade, rise or unmask when it is scrolled into view",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "scroll-reveal",
+    "where": "section#onboarding \"Onboarding process. Two weeks, zero down\"",
+    "msg": "starts \"opacity\" (0.4 s) the moment it is scrolled into view (an IntersectionObserver) on div.mo-ph__words (inside a dealt moment's section, [data-moment]: an enter moment is expected on every kind; its still is judged under reduced motion)",
+    "fix": "show it at rest: no fade, rise or unmask when it is scrolled into view",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "pinned",
+    "where": "section#onboarding > div.wrap.mo-ph \"Onboarding process. Two weeks, zero down\"",
+    "msg": "held on screen for 2.9 screens of scroll (position: sticky) while the page moves on (inside a dealt moment's section, [data-moment]: expected on every kind, two moments at most, house rule; its still is judged under reduced motion)",
+    "fix": "let the section scroll with the page",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "contrast",
+    "where": "h2#plans-h \"Three plans. One flat rate per user.\"",
+    "msg": "large text over a picture reads at 1.2:1 at its worst tenth (needs 3:1), on a busy ground (and 3 more like it: \"One flat rate per user.\", \"Included services.\", \"Common questions.\")",
+    "fix": "put the text on a calm part of the picture, or on a solid panel",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "contrast",
+    "where": "div.wrap.grid > div.span-6 > div.plans-extra > h3 \"What changes between plans\"",
+    "msg": "large text over a picture reads at 1.0:1 at its worst tenth (needs 3:1)",
+    "fix": "put the text on a calm part of the picture, or on a solid panel",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "links",
+    "where": "header.nav.nav--split > div.wrap.nav__bar > div.nav__actions > a.btn.btn--primary \"Book free IT audit\"",
+    "msg": "\"Book free IT audit\" goes to #contact, in the footer",
+    "fix": "point every link at a real section, page or file",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "links",
+    "where": "div.hero-text > div.hero__text > div.btn-row > a.btn.btn--primary \"Book free IT audit\"",
+    "msg": "\"Book free IT audit\" goes to #contact, in the footer",
+    "fix": "point every link at a real section, page or file",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "links",
+    "where": "div.span-6 > ul.plans-grid > li.card:nth-of-type(1) > a.link \"Select Essentials\"",
+    "msg": "\"Select Essentials\" goes to #contact, in the footer",
+    "fix": "point every link at a real section, page or file",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "links",
+    "where": "div.span-6 > ul.plans-grid > li.card.card--plan > a.link \"Select Professional\"",
+    "msg": "\"Select Professional\" goes to #contact, in the footer",
+    "fix": "point every link at a real section, page or file",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "links",
+    "where": "div.span-6 > ul.plans-grid > li.card:nth-of-type(3) > a.link \"Select Enterprise\"",
+    "msg": "\"Select Enterprise\" goes to #contact, in the footer",
+    "fix": "point every link at a real section, page or file",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "links",
+    "where": "div.span-6 > div.group > div:nth-of-type(2) > a.btn.btn--primary \"Book free IT audit\"",
+    "msg": "\"Book free IT audit\" goes to #contact, in the footer",
+    "fix": "point every link at a real section, page or file",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "links",
+    "where": "section#onboarding > div.wrap.mo-ph > div:nth-of-type(2) > a.btn.btn--primary \"Book free IT audit\"",
+    "msg": "\"Book free IT audit\" goes to #contact, in the footer",
+    "fix": "point every link at a real section, page or file",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "links",
+    "where": "div.span-6 > div.group:nth-of-type(2) > div:nth-of-type(2) > a.btn.btn--primary \"Book free IT audit\"",
+    "msg": "\"Book free IT audit\" goes to #contact, in the footer",
+    "fix": "point every link at a real section, page or file",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "links",
+    "where": "div.wrap > div.closing__cta.close--photo > div.section-head--split > a.btn.btn--primary \"Book free IT audit\"",
+    "msg": "\"Book free IT audit\" goes to #contact, the block it already sits in",
+    "fix": "point every link at a real section, page or file",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "links",
+    "where": "div.span-2.footer__col > ul > li:nth-of-type(3) > a \"Privacy\"",
+    "msg": "\"Privacy\" goes to /privacy.html, which does not exist here",
+    "fix": "point every link at a real section, page or file",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-set",
+    "where": "div.wrap > div.closing__cta.close--photo > div.close__media > img \"dallas.jpg\"",
+    "msg": "2 photographs in more than one look: saturation from 0.15 to 0.55; the odd one out is dallas.jpg",
+    "fix": "grade the photographs to one look (light, colour, warmth), or replace the odd one out",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "header.nav.nav--split > div.wrap.nav__bar > a.nav__logo \"Novatech\"",
+    "msg": "\"Novatech\" opens a section headed \"Remote-first managed IT for small business.\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div.nav__menu > div.wrap.grid > div.menu-col.span-4:nth-of-type(2) > a:nth-of-type(1) \"Monitoring & help deskReal engineers, ev\"",
+    "msg": "\"Monitoring & help deskReal engineers, ev\" opens a section headed \"Included services.\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div.nav__menu > div.wrap.grid > div.menu-col.span-4:nth-of-type(2) > a:nth-of-type(2) \"Patch management & securityEDR/MDR, DNS \"",
+    "msg": "\"Patch management & securityEDR/MDR, DNS \" opens a section headed \"Included services.\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div.nav__menu > div.wrap.grid > div.menu-col.span-4:nth-of-type(2) > a:nth-of-type(3) \"Cloud & vCIO strategyAWS, Azure, GCP, qu\"",
+    "msg": "\"Cloud & vCIO strategyAWS, Azure, GCP, qu\" opens a section headed \"Included services.\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div.nav__menu > div.wrap.grid > div.menu-col.span-4:nth-of-type(1) > a:nth-of-type(1) \"EssentialsFrom $129/user/mo\"",
+    "msg": "3 entries of one menu go to the same place (#plans): \"EssentialsFrom $129/user/mo\", \"ProfessionalFrom $199/user/mo\", \"EnterpriseFrom $299/user/mo\"",
+    "fix": "give each menu entry its own target (its section, its tab, its page), or show fewer entries",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div.nav__menu > div.wrap.grid > div.menu-col.span-4:nth-of-type(2) > a:nth-of-type(1) \"Monitoring & help deskReal eng\"",
+    "msg": "3 entries of one menu go to the same place (#included): \"Monitoring & help deskReal eng\", \"Patch management & securityEDR\", \"Cloud & vCIO strategyAWS, Azur\"",
+    "fix": "give each menu entry its own target (its section, its tab, its page), or show fewer entries",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "stranded-action",
+    "where": "div.span-6 > div.group:nth-of-type(2) > div:nth-of-type(2) > a.btn.btn--primary \"Book free IT audit\"",
+    "msg": "stands 1059px down from the nearest text of its block (\"Straight answers, no sales tal\")",
+    "fix": "put the button under or beside the text it belongs to",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-current",
+    "where": "header.nav.nav--split",
+    "msg": "the nav stays on screen with 4 links to the page's sections, but never marks the one you are in (no link changes as the page scrolls)",
+    "fix": "mark the link of the section on screen (a colour, a weight or a line under it) as the visitor scrolls",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-repeat",
+    "where": "div.wrap.mo-ph > div.mo-ph__stage > figure.mo-ph__pic:nth-of-type(2) > img \"cloud-servers.jpg\"",
+    "msg": "the photograph cloud-servers.jpg is shown 2 times on the page: a picture the visitor has already seen",
+    "fix": "show each photograph once: a different picture of what this section names, or none",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-repeat",
+    "where": "section#faq > img.faq-visual-wrap \"network-switch.jpg\"",
+    "msg": "the photograph network-switch.jpg is shown 2 times on the page: a picture the visitor has already seen",
+    "fix": "show each photograph once: a different picture of what this section names, or none",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "button-contrast",
+    "where": "div.hero-text > div.hero__text > div.btn-row > a.btn.btn--secondary \"See plans\"",
+    "msg": "the button \"See plans\" (#dcd1d0) stands only 1.15:1 off the ground around it: it reads as part of the ground, or as switched off",
+    "fix": "give the button a fill that stands at least 1.5:1 off what is around it, or an outline in the ink",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "action-count",
+    "where": "div.wrap > div.closing__cta.close--photo > div.section-head--split > a.btn.btn--primary",
+    "msg": "the main action \"Book free IT audit\" is on 6 buttons and links: the nav, the hero and the closing call carry it; elsewhere a section has its own action",
+    "fix": "the main action in the nav, the hero and the closing call; give the other sections their own action",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "visual-caption",
+    "where": "section#locations > div.wrap.grid > div.span-6 > p.t-label \"Remote-first, locally connected\"",
+    "msg": "a muted 13px line of 1 row sits 0px under the picture austin.jpg: it reads as a caption: \"Remote-first, locally connected\"; no caption or description under any image, render or visual (house rule)",
+    "fix": "take the line away: no caption or description under, over or on any image, render or visual; a licence credit goes in one footer line",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "action-repeat",
+    "where": "header.nav.nav--split > div.wrap.nav__bar > div.nav__actions > a.btn.btn--primary \"book free it audit\"",
+    "msg": "\"book free it audit\" shows 2 times on the first screen at 1440px (nav, hero): the nav's button and the hero's; nothing else on the screen may repeat it",
+    "fix": "show the action once a screen besides the nav's button: the hero's, the close's or the phone bar's, never all at once",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "container-edges",
+    "where": "section#locations > img.texas-visual \"Modern workspace with remote collaborati\"",
+    "msg": "\"Modern workspace with remote col\" runs 0-1280px, outside the container lines of section 5 at 80-1360px: full width is for background layers and grounds only (it is in a scroll scene: told as a WARN) (SR-6)",
+    "fix": "keep it inside the container lines (.wrap): full width is for background layers and grounds only",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cut-text",
+    "where": "h2#plans-h \"Three plans. One flat rate per user.\"",
+    "msg": "sits across the edge of a panel behind it (and 1 more like it: \"Common questions.\")",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "no-visual",
+    "where": "section#included \"Included services.\"",
+    "msg": "pictures, effects and mocks cover 22% of this section; a feature section needs a visual (about 25% or more)",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "busy-ground",
+    "where": "div.span-6 > div.plans-extra > dl > dt:nth-of-type(9) \"Priority escalation\"",
+    "msg": "text over a busy part of a picture (its luminance varies by 0.22 under the words)",
+    "fix": "move the text to a calm part of the picture, or put it on a panel",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#plans / section#included",
+    "msg": "uneven space at the edge of a band: 128px outside its edge, 224px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-set",
+    "where": "section#plans > img.section-visual.img-right \"cloud-servers.jpg\"",
+    "msg": "7 photographs in more than one look: saturation from 0.09 to 0.44; the odd one out is cloud-servers.jpg",
+    "fix": "grade the photographs to one look (light, colour, warmth), or replace the odd one out",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-weight",
+    "where": "section#locations > img.texas-visual \"austin.jpg\"",
+    "msg": "3 photographs are 3x or more wider than drawn on the phone, with no srcset: austin.jpg is 1280px (178 KB) for a 390px frame; on a phone it arrives late and its frame shows only its ground until then",
+    "fix": "give each photograph srcset and sizes (a 800px and a 1600px file), or a smaller file: the frame never shows empty",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "button-contrast",
+    "where": "div.span-6 > div.group:nth-of-type(2) > div:nth-of-type(2) > a.btn.btn--primary \"Book free IT audit\"",
+    "msg": "the button \"Book free IT audit\" (#e2e2e2) stands only 1.00:1 off the ground around it: it reads as part of the ground, or as switched off",
+    "fix": "give the button a fill that stands at least 1.5:1 off what is around it, or an outline in the ink",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "fold-action",
+    "where": "div.hero-text > div.hero__text > div.btn-row > a.btn.btn--secondary",
+    "msg": "the hero's second button \"See plans\" starts 4px below the first screen (844px tall): it is not seen on load",
+    "fix": "bring the hero's buttons onto the first screen: a shorter headline or line, the picture under the buttons",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   }
+  ],
+  "crashed": [],
+  "seconds": {
+   "consistency": 135,
+   "layout": 5
+  }
+ },
+ "open": [
+  {
+   "check": "flush",
+   "where": "main#top > section.hero.hero--photo > img.hero__bg \"img: Modern data center with server rack\"",
+   "msg": "section.hero.hero--photo and section#plans run together: 0px between their content, on one ground",
+   "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "flush"
+   ],
+   "wheres": [
+    "main#top > section.hero.hero--photo > img.hero__bg \"img: Modern data center with server rack\""
+   ]
+  },
+  {
+   "check": "flush",
+   "where": "section#plans > img.section-visual.img-right \"img: Server room with rack infrastructur\"",
+   "msg": "section#plans and section#included run together: 0px between their content, on one ground",
+   "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "flush"
+   ],
+   "wheres": [
+    "section#plans > img.section-visual.img-right \"img: Server room with rack infrastructur\""
+   ]
+  },
+  {
+   "check": "overlap-text",
+   "where": "footer#contact > div.wrap > div.closing__cta.close--photo > div.close__media",
+   "msg": "lies over the text \"Novatech\" (div.span-4.stack-4 > a.nav__logo)",
+   "fix": "move the box off the text (or the text off the box)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "overlap-text"
+   ],
+   "wheres": [
+    "footer#contact > div.wrap > div.closing__cta.close--photo > div.close__media"
+   ]
+  },
+  {
+   "check": "heading-scale",
+   "where": "div.wrap.grid > div.span-6 > div.plans-extra > h3 \"What changes between plans\"",
+   "msg": "h3 headings in 2 sizes, 16px (\"Monitoring Service\") to 28px (x1.75)",
+   "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "heading-scale"
+   ],
+   "wheres": [
+    "div.wrap.grid > div.span-6 > div.plans-extra > h3 \"What changes between plans\""
+   ]
+  },
+  {
+   "check": "contrast",
+   "where": "section#plans > div.wrap.grid > div.span-6 > p.muted \"Pick the level that fits. Upgrade or dow\"",
+   "msg": "body text over a picture reads at 1.7:1 at its worst tenth (needs 4.5:1), on a busy ground (and 24 more like it: \"24/7 monitoring\", \"Remote help desk\", \"Business hours (Essentia\", \"All plans\", ...)",
+   "fix": "put the text on a calm part of the picture, or on a solid panel",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "contrast"
+   ],
+   "wheres": [
+    "section#plans > div.wrap.grid > div.span-6 > p.muted \"Pick the level that fits. Upgrade or dow\""
+   ]
+  },
+  {
+   "check": "contrast",
+   "where": "div.span-6 > div.plans-extra > dl > dd:nth-of-type(1) \"All plans\"",
+   "msg": "body text over a picture reads at 1.5:1 at its worst tenth (needs 4.5:1) (and 16 more like it: \"Patch management\", \"Backup verification\", \"All plans\", \"EDR/MDR security\", ...)",
+   "fix": "put the text on a calm part of the picture, or on a solid panel",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "contrast"
+   ],
+   "wheres": [
+    "div.span-6 > div.plans-extra > dl > dd:nth-of-type(1) \"All plans\""
+   ]
+  },
+  {
+   "check": "section-gaps",
+   "where": "main#top > section.hero.hero--photo / section#plans",
+   "msg": "0px between these sections, -100% against the median 60px",
+   "fix": "use one gap between sections (all within 25% of each other)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-gaps"
+   ],
+   "wheres": [
+    "main#top > section.hero.hero--photo / section#plans"
+   ]
+  },
+  {
+   "check": "section-gaps",
+   "where": "section#plans / section#included",
+   "msg": "0px between these sections, -100% against the median 60px",
+   "fix": "use one gap between sections (all within 25% of each other)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-gaps"
+   ],
+   "wheres": [
+    "section#plans / section#included"
+   ]
+  },
+  {
+   "check": "section-gaps",
+   "where": "section#included / section#onboarding",
+   "msg": "228px between these sections, +280% against the median 60px",
+   "fix": "use one gap between sections (all within 25% of each other)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-gaps"
+   ],
+   "wheres": [
+    "section#included / section#onboarding"
+   ]
+  },
+  {
+   "check": "section-gaps",
+   "where": "section#faq / footer#contact",
+   "msg": "120px between these sections, +100% against the median 60px",
+   "fix": "use one gap between sections (all within 25% of each other)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-gaps"
+   ],
+   "wheres": [
+    "section#faq / footer#contact"
+   ]
+  },
+  {
+   "check": "photo-upscale",
+   "where": "main#top > section.hero.hero--photo > img.hero__bg \"img: Modern data center with server rack\"",
+   "msg": "datacenter.jpg: 960x720 shown at 1440x900, blown up 1.50x",
+   "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "photo-upscale"
+   ],
+   "wheres": [
+    "main#top > section.hero.hero--photo > img.hero__bg \"img: Modern data center with server rack\""
+   ]
+  },
+  {
+   "check": "photo-upscale",
+   "where": "section#plans > img.section-visual.img-right \"img: Server room with rack infrastructur\"",
+   "msg": "cloud-servers.jpg: 1280x851 shown at 1440x1800, blown up 2.12x",
+   "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "photo-upscale"
+   ],
+   "wheres": [
+    "section#plans > img.section-visual.img-right \"img: Server room with rack infrastructur\""
+   ]
+  },
+  {
+   "check": "photo-upscale",
+   "where": "section#included > img.section-visual \"img: Team collaborating on IT strategy\"",
+   "msg": "team-laptop.jpg: 1280x854 shown at 1440x1800, blown up 2.11x",
+   "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "photo-upscale"
+   ],
+   "wheres": [
+    "section#included > img.section-visual \"img: Team collaborating on IT strategy\""
+   ]
+  },
+  {
+   "check": "photo-upscale",
+   "where": "div.wrap.mo-ph > div.mo-ph__stage > figure.mo-ph__pic:nth-of-type(3) > img \"img: Network switch with fiber connectio\"",
+   "msg": "network-switch.jpg: 1280x720 shown at 1357x1018, blown up 1.41x",
+   "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "photo-upscale"
+   ],
+   "wheres": [
+    "div.wrap.mo-ph > div.mo-ph__stage > figure.mo-ph__pic:nth-of-type(3) > img \"img: Network switch with fiber connectio\""
+   ]
+  },
+  {
+   "check": "photo-upscale",
+   "where": "div.wrap.mo-ph > div.mo-ph__stage > figure.mo-ph__pic:nth-of-type(4) > img \"img: Team conducting quarterly business \"",
+   "msg": "houston.jpg: 960x640 shown at 1357x1018, blown up 1.59x",
+   "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "photo-upscale"
+   ],
+   "wheres": [
+    "div.wrap.mo-ph > div.mo-ph__stage > figure.mo-ph__pic:nth-of-type(4) > img \"img: Team conducting quarterly business \""
+   ]
+  },
+  {
+   "check": "photo-upscale",
+   "where": "section#faq > img.faq-visual-wrap \"img: Network infrastructure with fiber c\"",
+   "msg": "network-switch.jpg: 1280x720 shown at 1440x1800, blown up 2.50x",
+   "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "photo-upscale"
+   ],
+   "wheres": [
+    "section#faq > img.faq-visual-wrap \"img: Network infrastructure with fiber c\""
+   ]
+  },
+  {
+   "check": "section-height",
+   "where": "section#locations \"Remote-first, locally connected We opera\"",
+   "msg": "the section's content does not fit it: its content is 480px taller than the section (scrollHeight 1380, clientHeight 900) (SR-2)",
+   "fix": "fit the content above the section's bottom padding (--padb), or make it two screens (.g2) in two groups",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-height"
+   ],
+   "wheres": [
+    "section#locations \"Remote-first, locally connected We opera\""
+   ]
+  },
+  {
+   "check": "section-height",
+   "where": "section#faq \"Common questions. Straight answers, no s\"",
+   "msg": "the section's content does not fit it: its first screen group ends 909px below its top, past 828px (SR-2)",
+   "fix": "fit the content above the section's bottom padding (--padb), or make it two screens (.g2) in two groups",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-height"
+   ],
+   "wheres": [
+    "section#faq \"Common questions. Straight answers, no s\""
+   ]
+  },
+  {
+   "check": "section-air",
+   "where": "section#plans / section#included",
+   "msg": "669px of air between the content of these two sections: 128-480px (64-600px WARN) (SR-3)",
+   "fix": "keep 128-480px of air between the content of neighbouring sections (112-420px on a phone): the sections' padding (--padt, --padb)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-air"
+   ],
+   "wheres": [
+    "section#plans / section#included"
+   ]
+  },
+  {
+   "check": "section-air",
+   "where": "section#included \"Included services. Every plan comes with\"",
+   "msg": "screen group 2 of this two-screen section fills 0% of a screen: 40% or more (25% WARN) (SR-3)",
+   "fix": "fill the section to 55%: more content, a picture or a background layer, or merge it into the section above as its last block",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-air"
+   ],
+   "wheres": [
+    "section#included \"Included services. Every plan comes with\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "main#top > section.hero.hero--photo \"Remote-first managed IT for small busine\"",
+   "msg": "the content of section 1 runs 0px from the left and 0px from the right: the page's container starts at 80px; the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (SR-6)",
+   "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "main#top > section.hero.hero--photo \"Remote-first managed IT for small busine\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "section#plans > img.section-visual.img-right \"Server room with rack infrastructure\"",
+   "msg": "a child of section 2 beside its .wrap is no valid background layer: not aria-hidden=\"true\" (SR-6)",
+   "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "section#plans > img.section-visual.img-right \"Server room with rack infrastructure\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "section#included > img.section-visual \"Team collaborating on IT strategy\"",
+   "msg": "a child of section 3 beside its .wrap is no valid background layer: not aria-hidden=\"true\" (SR-6)",
+   "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "section#included > img.section-visual \"Team collaborating on IT strategy\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "section#locations \"Remote-first, locally connected We opera\"",
+   "msg": "the section needs exactly one in-flow child .wrap (it has 2 in-flow children, 1 .wrap) (and 1 more like it: \"Network infrastructure w\") (SR-6)",
+   "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "section#locations \"Remote-first, locally connected We opera\""
+   ]
+  },
+  {
+   "check": "row-lines",
+   "where": "footer#contact > div.wrap > div.closing__links > div.grid \"Novatech Remote-first managed IT for sma\"",
+   "msg": "a row of 3 items: its last item ends at 1143px, the container's right line at 1360px (2px either way) (SR-7)",
+   "fix": "start the row's first item on the container's left line and end its last on the right line, every item one height",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "row-lines"
+   ],
+   "wheres": [
+    "footer#contact > div.wrap > div.closing__links > div.grid \"Novatech Remote-first managed IT for sma\""
+   ]
+  },
+  {
+   "check": "row-lines",
+   "where": "div.wrap.grid > div.span-6 > div.group > ul.included-list \"Monitoring Service Infrastructure, netwo\"",
+   "msg": "a row of 2 items: its last item ends at 1205px, the container's right line at 1360px (2px either way) (SR-7)",
+   "fix": "start the row's first item on the container's left line and end its last on the right line, every item one height",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "row-lines"
+   ],
+   "wheres": [
+    "div.wrap.grid > div.span-6 > div.group > ul.included-list \"Monitoring Service Infrastructure, netwo\""
+   ]
+  },
+  {
+   "check": "overlap-text",
+   "where": "section#included \"Included services. Every plan comes with\"",
+   "msg": "lies over the text \"24/7 monitoring\" (dl > dt:nth-of-type(1))",
+   "fix": "move the box off the text (or the text off the box)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "overlap-text"
+   ],
+   "wheres": [
+    "section#included \"Included services. Every plan comes with\""
+   ]
+  },
+  {
+   "check": "overlap-text",
+   "where": "h2#close-h \"Book your free IT audit\"",
+   "msg": "lies over the text \"We partner with vetted local technicians\" (details:nth-of-type(3) > div.faq-answer)",
+   "fix": "move the box off the text (or the text off the box)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "overlap-text"
+   ],
+   "wheres": [
+    "h2#close-h \"Book your free IT audit\""
+   ]
+  },
+  {
+   "check": "overlap-text",
+   "where": "div.wrap > div.closing__cta.close--photo > div.section-head--split > a.btn.btn--primary \"Book free IT audit\"",
+   "msg": "lies over the text \"Book free IT audit\" (div:nth-of-type(2) > a.btn.btn--primary)",
+   "fix": "move the box off the text (or the text off the box)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "overlap-text"
+   ],
+   "wheres": [
+    "div.wrap > div.closing__cta.close--photo > div.section-head--split > a.btn.btn--primary \"Book free IT audit\""
+   ]
+  },
+  {
+   "check": "cut-text",
+   "where": "div.group:nth-of-type(2) > div.faq-list > details:nth-of-type(1) > div.faq-answer \"Yes. We handle docs, credentials, audit,\"",
+   "msg": "2 of 3 lines hidden by the overflow of section#faq > div.wrap.grid",
+   "fix": "give the text room: no overflow clipping a line, no line past its box",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "cut-text"
+   ],
+   "wheres": [
+    "div.group:nth-of-type(2) > div.faq-list > details:nth-of-type(1) > div.faq-answer \"Yes. We handle docs, credentials, audit,\""
+   ]
+  },
+  {
+   "check": "heading-scale",
+   "where": "h2#plans-h \"Three plans. One flat rate per user.\"",
+   "msg": "an h2 at 30px, as large as the h1 (26px) or larger (and 2 more like it: \"Included services.\", \"Common questions.\")",
+   "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "heading-scale"
+   ],
+   "wheres": [
+    "h2#plans-h \"Three plans. One flat rate per user.\""
+   ]
+  },
+  {
+   "check": "contrast",
+   "where": "div.span-6 > div.plans-extra > dl > dd:nth-of-type(5) \"Professional & Enterprise\"",
+   "msg": "body text over a picture reads at 1.5:1 at its worst tenth (needs 4.5:1), on a busy ground (and 8 more like it: \"Cloud management\", \"Professional & Enterpris\", \"vCIO strategy\", \"Professional & Enterpris\", ...)",
+   "fix": "put the text on a calm part of the picture, or on a solid panel",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "contrast"
+   ],
+   "wheres": [
+    "div.span-6 > div.plans-extra > dl > dd:nth-of-type(5) \"Professional & Enterprise\""
+   ]
+  },
+  {
+   "check": "contrast",
+   "where": "div.span-6 > div.plans-extra > dl > dt:nth-of-type(10) \"Compliance support\"",
+   "msg": "body text over a picture reads at 2.8:1 at its worst tenth (needs 4.5:1)",
+   "fix": "put the text on a calm part of the picture, or on a solid panel",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "contrast"
+   ],
+   "wheres": [
+    "div.span-6 > div.plans-extra > dl > dt:nth-of-type(10) \"Compliance support\""
+   ]
+  },
+  {
+   "check": "text-contrast",
+   "where": "div.span-6 > div.plans-extra > dl > dt:nth-of-type(1) \"24/7 monitoring\"",
+   "msg": "a caption, label or muted line in #7a4a4e on #7d0c14 reads 1.51:1 (needs 4.5:1); 9 like it, like \"All plans\", \"Remote help desk\", \"Business hours (Essent\"",
+   "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "text-contrast"
+   ],
+   "wheres": [
+    "div.span-6 > div.plans-extra > dl > dt:nth-of-type(1) \"24/7 monitoring\""
+   ]
+  },
+  {
+   "check": "text-contrast",
+   "where": "div.group:nth-of-type(2) > div.faq-list > details:nth-of-type(3) > summary \"What if we need on-site support?\"",
+   "msg": "a caption, label or muted line in #e2e2e2 on #e2e2e2 reads 1:1 (needs 4.5:1)",
+   "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "text-contrast"
+   ],
+   "wheres": [
+    "div.group:nth-of-type(2) > div.faq-list > details:nth-of-type(3) > summary \"What if we need on-site support?\""
+   ]
+  },
+  {
+   "check": "text-contrast",
+   "where": "div.group:nth-of-type(2) > div.faq-list > details:nth-of-type(3) > div.faq-answer \"We partner with vetted local technicians\"",
+   "msg": "body text in #e2e2e2 on #e2e2e2 reads 1:1 (needs 7:1)",
+   "fix": "body text in the ink at 7:1 or more; grey (4.5:1 or more) only for captions and labels",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "text-contrast"
+   ],
+   "wheres": [
+    "div.group:nth-of-type(2) > div.faq-list > details:nth-of-type(3) > div.faq-answer \"We partner with vetted local technicians\""
+   ]
+  },
+  {
+   "check": "photo-upscale",
+   "where": "div.wrap > div.closing__cta.close--photo > div.close__media > img \"img: Modern remote workspace setup\"",
+   "msg": "dallas.jpg: 1280x404 shown at 342x625, blown up 1.55x",
+   "fix": "use a source at least as wide as the picture is shown (twice that for sharp screens)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "photo-upscale"
+   ],
+   "wheres": [
+    "div.wrap > div.closing__cta.close--photo > div.close__media > img \"img: Modern remote workspace setup\""
+   ]
+  },
+  {
+   "check": "bleed-one-side",
+   "where": "section.hero.hero--photo div.hero__text \"Remote-first managed IT for smal\"",
+   "msg": "runs from the left viewport edge to x 708; the right side stays at 0 from the edge",
+   "fix": "bleed the visual to both edges or keep it on the .wrap lines",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "bleed-one-side"
+   ],
+   "wheres": [
+    "section.hero.hero--photo div.hero__text \"Remote-first managed IT for smal\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#plans div.span-6 \"Three plans.One flat rate per us\"",
+   "msg": "starts at x 80; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#plans div.span-6 \"Three plans.One flat rate per us\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#plans h2 \"Three plans.One flat rate per us\"",
+   "msg": "starts at x 80; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#plans h2 \"Three plans.One flat rate per us\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#plans p.muted \"Pick the level that fits. Upgrad\"",
+   "msg": "starts at x 80; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#plans p.muted \"Pick the level that fits. Upgrad\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#plans ul.plans-grid \"Essentials plan 24/7 monitoring,\"",
+   "msg": "starts at x 80; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#plans ul.plans-grid \"Essentials plan 24/7 monitoring,\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#plans h3 \"What changes between plans\"",
+   "msg": "starts at x 80; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#plans h3 \"What changes between plans\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#plans dl \"24/7 monitoringAll plans Remote \"",
+   "msg": "starts at x 80; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#plans dl \"24/7 monitoringAll plans Remote \""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#included div.span-6 \"Included services. Every plan co\"",
+   "msg": "starts at x 80; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#included div.span-6 \"Included services. Every plan co\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#included h2 \"Included services.\"",
+   "msg": "starts at x 80; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#included h2 \"Included services.\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#included p.muted \"Every plan comes with the full s\"",
+   "msg": "starts at x 80; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#included p.muted \"Every plan comes with the full s\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#included ul.included-list \"Monitoring Service Infrastructur\"",
+   "msg": "starts at x 80; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#included ul.included-list \"Monitoring Service Infrastructur\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#locations div.span-6 \"Remote-first, locally connected \"",
+   "msg": "starts at x 80; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#locations div.span-6 \"Remote-first, locally connected \""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#locations p.t-label \"Remote-first, locally connected\"",
+   "msg": "starts at x 80; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#locations p.t-label \"Remote-first, locally connected\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#locations p.mo-wh__text \"We operate remotely nationwide. \"",
+   "msg": "starts at x 80; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#locations p.mo-wh__text \"We operate remotely nationwide. \""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#faq div.span-6 \"Common questions. Straight answe\"",
+   "msg": "starts at x 80; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#faq div.span-6 \"Common questions. Straight answe\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#faq h2 \"Common questions.\"",
+   "msg": "starts at x 80; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#faq h2 \"Common questions.\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#faq p.muted \"Straight answers, no sales talk.\"",
+   "msg": "starts at x 80; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#faq p.muted \"Straight answers, no sales talk.\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#contact div.span-4.stack-4 \"Novatech Remote-first managed IT\"",
+   "msg": "starts at x 80; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#contact div.span-4.stack-4 \"Novatech Remote-first managed IT\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#contact div.span-3.footer__col \"PlansEssentialsProfessionalEnter\"",
+   "msg": "starts at x 514.7; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#contact div.span-3.footer__col \"PlansEssentialsProfessionalEnter\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#contact div.span-3.footer__col \"ServicesMonitoring & help deskSe\"",
+   "msg": "starts at x 840.7; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#contact div.span-3.footer__col \"ServicesMonitoring & help deskSe\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "#contact div.span-2.footer__col \"CompanyLocationsQuestionsPrivacy\"",
+   "msg": "starts at x 80; the lines are 0 and the column starts",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "#contact div.span-2.footer__col \"CompanyLocationsQuestionsPrivacy\""
+   ]
+  },
+  {
+   "check": "edge-right",
+   "where": "nav actions",
+   "msg": "end at x 1360, the page's right line is 1440",
+   "fix": "end it on the .wrap right line",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-right"
+   ],
+   "wheres": [
+    "nav actions"
+   ]
+  },
+  {
+   "check": "bleed-one-side",
+   "where": "section.hero.hero--photo h1 \"Remote-first managed IT for smal\"",
+   "msg": "runs from the left viewport edge to x 189; the right side stays at 0 from the edge",
+   "fix": "bleed the visual to both edges or keep it on the .wrap lines",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "bleed-one-side"
+   ],
+   "wheres": [
+    "section.hero.hero--photo h1 \"Remote-first managed IT for smal\""
+   ]
+  },
+  {
+   "check": "bleed-one-side",
+   "where": "section.hero.hero--photo p.hero__lead \"Flat rate. 15-min critical respo\"",
+   "msg": "runs from the left viewport edge to x 189; the right side stays at 0 from the edge",
+   "fix": "bleed the visual to both edges or keep it on the .wrap lines",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "bleed-one-side"
+   ],
+   "wheres": [
+    "section.hero.hero--photo p.hero__lead \"Flat rate. 15-min critical respo\""
+   ]
+  },
+  {
+   "check": "bleed-one-side",
+   "where": "section.hero.hero--photo div.btn-row \"Book free IT auditSee plans\"",
+   "msg": "runs from the left viewport edge to x 189; the right side stays at 0 from the edge",
+   "fix": "bleed the visual to both edges or keep it on the .wrap lines",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "bleed-one-side"
+   ],
+   "wheres": [
+    "section.hero.hero--photo div.btn-row \"Book free IT auditSee plans\""
+   ]
+  },
+  {
+   "check": "edge-left",
+   "where": "nav logo",
+   "msg": "at x 24, the page's left line is 0, or its centre on the centre line 195",
+   "fix": "start it on the .wrap left line",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "edge-left"
+   ],
+   "wheres": [
+    "nav logo"
+   ]
+  },
+  {
+   "check": "hero-fold",
+   "where": "section.hero.hero--photo section.hero.hero--photo \"Remote-first managed IT for smal\"",
+   "msg": "ends at y 896, past the fold (844): 1.06 screens tall",
+   "fix": "the hero fills the first screen alone, its button inside it",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "hero-fold"
+   ],
+   "wheres": [
+    "section.hero.hero--photo section.hero.hero--photo \"Remote-first managed IT for smal\""
+   ]
+  },
+  {
+   "check": "hero-maxchars",
+   "where": "section.hero.hero--photo section.hero.hero--photo \"Remote-first managed IT for smal\"",
+   "msg": "with a 43-character h1 (heroes.json maxChars): ends at y 896, past the fold (844): 1.06 screens tall",
+   "fix": "shorten the h1 or give the hero room for the longest headline",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "hero-maxchars"
+   ],
+   "wheres": [
+    "section.hero.hero--photo section.hero.hero--photo \"Remote-first managed IT for smal\""
+   ]
+  }
+ ],
+ "waived": [],
+ "warnCount": 39,
+ "at": "2026-11-08T19:49:48.023Z",
+ "openTold": true
+}

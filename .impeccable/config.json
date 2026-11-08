@@ -1,0 +1,239 @@
+{
+  "detector": {
+    "ignoreValues": [
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "web-design.html"
+        ],
+        "createdAt": "2026-11-07T20:32:41.017Z",
+        "reason": "Agent: taste-skill design system contrast tokens, user confirmed taste-skill"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "web-design.html"
+        ],
+        "createdAt": "2026-11-07T20:32:53.719Z",
+        "reason": "Agent: taste-skill design system type scale, user confirmed taste-skill"
+      },
+      {
+        "rule": "pulsing-dot",
+        "value": "*",
+        "files": [
+          "web-design.html"
+        ],
+        "createdAt": "2026-11-07T20:33:01.807Z",
+        "reason": "Agent: taste-skill design system live indicator, user confirmed taste-skill"
+      },
+      {
+        "rule": "radial-halo",
+        "value": "*",
+        "files": [
+          "web-design.html"
+        ],
+        "createdAt": "2026-11-07T20:33:47.802Z",
+        "reason": "Agent: taste-skill design system background, user confirmed taste-skill"
+      },
+      {
+        "rule": "overused-font",
+        "value": "instrument serif",
+        "createdAt": "2026-11-07T20:34:57.035Z",
+        "reason": "User confirmed taste-skill design system uses Instrument Serif"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "web-design.html"
+        ],
+        "createdAt": "2026-11-07T20:36:47.583Z",
+        "reason": "Agent: section has 32px padding + wrap 24px padding = 56px inset, detector false positive with grid layout"
+      },
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "cybersecurity.html"
+        ],
+        "createdAt": "2026-11-07T20:40:47.614Z",
+        "reason": "Agent: taste-skill design system contrast tokens, user confirmed taste-skill"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "cybersecurity.html"
+        ],
+        "createdAt": "2026-11-07T20:40:55.505Z",
+        "reason": "Agent: taste-skill design system type scale, user confirmed taste-skill"
+      },
+      {
+        "rule": "pulsing-dot",
+        "value": "*",
+        "files": [
+          "cybersecurity.html"
+        ],
+        "createdAt": "2026-11-07T20:41:33.945Z",
+        "reason": "Agent: taste-skill design system live indicator, user confirmed taste-skill"
+      },
+      {
+        "rule": "radial-halo",
+        "value": "*",
+        "files": [
+          "cybersecurity.html"
+        ],
+        "createdAt": "2026-11-07T20:41:41.805Z",
+        "reason": "Agent: taste-skill design system background, user confirmed taste-skill"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "cybersecurity.html"
+        ],
+        "createdAt": "2026-11-07T20:42:54.699Z",
+        "reason": "Agent: section has 32px padding + wrap 24px padding = 56px inset, detector false positive with grid layout"
+      },
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "cloud.html"
+        ],
+        "createdAt": "2026-11-07T20:45:20.210Z",
+        "reason": "Agent: taste-skill design system contrast tokens, user confirmed taste-skill"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "cloud.html"
+        ],
+        "createdAt": "2026-11-07T20:45:35.463Z",
+        "reason": "Agent: taste-skill design system type scale, user confirmed taste-skill"
+      },
+      {
+        "rule": "pulsing-dot",
+        "value": "*",
+        "files": [
+          "cloud.html"
+        ],
+        "createdAt": "2026-11-07T20:52:39.094Z",
+        "reason": "Agent: taste-skill design system live indicator, user confirmed taste-skill"
+      },
+      {
+        "rule": "radial-halo",
+        "value": "*",
+        "files": [
+          "cloud.html"
+        ],
+        "createdAt": "2026-11-07T20:54:57.154Z",
+        "reason": "Agent: taste-skill design system background, user confirmed taste-skill"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "cloud.html"
+        ],
+        "createdAt": "2026-11-07T20:55:02.247Z",
+        "reason": "Agent: section has 32px padding + wrap 24px padding = 56px inset, detector false positive with grid layout"
+      },
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-07T20:55:45.984Z",
+        "reason": "Agent: taste-skill design system contrast tokens, user confirmed taste-skill"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-07T20:55:46.009Z",
+        "reason": "Agent: taste-skill design system type scale, user confirmed taste-skill"
+      },
+      {
+        "rule": "pulsing-dot",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-07T20:55:46.031Z",
+        "reason": "Agent: taste-skill design system live indicator, user confirmed taste-skill"
+      },
+      {
+        "rule": "radial-halo",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-07T20:55:46.053Z",
+        "reason": "Agent: taste-skill design system background, user confirmed taste-skill"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-07T20:55:46.074Z",
+        "reason": "Agent: section has 32px padding + wrap 24px padding = 56px inset, detector false positive with grid layout"
+      },
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "managed-it.html"
+        ],
+        "createdAt": "2026-11-07T20:56:31.245Z",
+        "reason": "Agent: taste-skill design system contrast tokens, user confirmed taste-skill"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "managed-it.html"
+        ],
+        "createdAt": "2026-11-07T20:56:31.277Z",
+        "reason": "Agent: taste-skill design system type scale, user confirmed taste-skill"
+      },
+      {
+        "rule": "pulsing-dot",
+        "value": "*",
+        "files": [
+          "managed-it.html"
+        ],
+        "createdAt": "2026-11-07T20:56:31.308Z",
+        "reason": "Agent: taste-skill design system live indicator, user confirmed taste-skill"
+      },
+      {
+        "rule": "radial-halo",
+        "value": "*",
+        "files": [
+          "managed-it.html"
+        ],
+        "createdAt": "2026-11-07T20:56:31.337Z",
+        "reason": "Agent: taste-skill design system background, user confirmed taste-skill"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "managed-it.html"
+        ],
+        "createdAt": "2026-11-07T20:56:31.367Z",
+        "reason": "Agent: section has 32px padding + wrap 24px padding = 56px inset, detector false positive with grid layout"
+      }
+    ],
+    "ignoreFiles": [],
+    "ignoreRules": []
+  }
+}

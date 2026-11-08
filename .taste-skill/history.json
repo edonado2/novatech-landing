@@ -2,12 +2,14 @@
  "palettes": [
   "cobalt-on-sand",
   "white-link-blue",
-  "blush-sage-slate"
+  "blush-sage-slate",
+  "oxblood-grey"
  ],
  "types": [
   "hanken",
   "instrument",
-  "figtree"
+  "figtree",
+  "schibsted"
  ],
  "dealt": [
   "hanken",
@@ -15,7 +17,10 @@
   "zilla",
   "figtree",
   "rethink",
-  "source-serif"
+  "source-serif",
+  "schibsted",
+  "archivo",
+  "newsreader"
  ],
  "moments": [
   {
@@ -37,6 +42,16 @@
    "id": "picture-develops",
    "at": "2026-11-08T01:43:40.679Z",
    "seed": "b605cc58"
+  },
+  {
+   "id": "photo-chapters",
+   "at": "2026-11-08T15:46:20.137Z",
+   "seed": "5150319e"
+  },
+  {
+   "id": "word-highlight",
+   "at": "2026-11-08T15:46:20.137Z",
+   "seed": "5150319e"
   }
  ]
 }

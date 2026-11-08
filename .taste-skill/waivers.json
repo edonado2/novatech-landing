@@ -1,0 +1,27 @@
+[
+  {
+    "check": "photo-upscale",
+    "target": "hero__bg datacenter.jpg",
+    "reason": "Stand-in image from library (960px). Client must supply 1920px+ photograph for production."
+  },
+  {
+    "check": "photo-upscale",
+    "target": "mo-ph__pic datacenter.jpg",
+    "reason": "Stand-in image from library (960px). Client must supply 1920px+ photograph for production."
+  },
+  {
+    "check": "photo-upscale",
+    "target": "faq-visual network-switch.jpg",
+    "reason": "Stand-in image from library (1280px). Client must supply 1920px+ photograph for production."
+  },
+  {
+    "check": "photo-upscale",
+    "target": "close__media dallas.jpg",
+    "reason": "Stand-in image from library (1280px). Client must supply 1920px+ photograph for production."
+  },
+  {
+    "check": "photo-upscale",
+    "target": "onboarding-visual datacenter.jpg",
+    "reason": "Stand-in image from library (960px). Client must supply 1920px+ photograph for production."
+  }
+]

@@ -1,0 +1,2400 @@
+{
+ "url": "index.html",
+ "at": "2026-11-08T22:27:52.902Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 11,
+   "filled": [
+    0.84,
+    0.57,
+    0.35,
+    0.95,
+    0.44,
+    0.44,
+    0.44,
+    0.43,
+    0.46,
+    0.83,
+    0.32
+   ],
+   "motion": {
+    "elements": 21,
+    "css": 0,
+    "transitions": 21,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 9735,
+     "screens": 10.8,
+     "words": 683,
+     "img": 8,
+     "video": 0,
+     "canvas": 0,
+     "svg": 10,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 3,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "meeting-room.jpg",
+      "datacenter.jpg",
+      "meeting-room.jpg",
+      "network-switch.jpg",
+      "cloud-servers.jpg",
+      "team-laptop.jpg",
+      "austin.jpg",
+      "dallas.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Remote-First Managed IT",
+     "words": 3,
+     "chars": 23,
+     "lines": 2,
+     "size": 72,
+     "vw": 5,
+     "font": "Albert Sans",
+     "weight": 400,
+     "tracking": -0.035,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.43,
+     "top": 317,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Remote-First Managed IT",
+     "words": 3,
+     "lines": 2,
+     "size": 72,
+     "font": "Albert Sans"
+    },
+    "headings": [
+     {
+      "text": "Remote-First Managed IT",
+      "words": 3,
+      "chars": 23,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 317,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Three plans, flat rate",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 1020,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Essentials",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Albert Sans",
+      "weight": 560,
+      "tracking": -0.012,
+      "leading": 0.93,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.24,
+      "top": 1243,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Enterprise",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Albert Sans",
+      "weight": 560,
+      "tracking": -0.012,
+      "leading": 0.93,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.24,
+      "top": 1243,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Professional",
+      "words": 1,
+      "chars": 12,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Albert Sans",
+      "weight": 560,
+      "tracking": -0.012,
+      "leading": 0.93,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.24,
+      "top": 1295,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "What changes between plans",
+      "words": 4,
+      "chars": 26,
+      "lines": 2,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.24,
+      "top": 1996,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Included services",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 2820,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Monitoring Service",
+      "words": 2,
+      "chars": 18,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Albert Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.16,
+      "top": 3047,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Help Desk Service",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Albert Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.16,
+      "top": 3047,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Patch Management",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Albert Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.17,
+      "top": 3047,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Cybersecurity",
+      "words": 1,
+      "chars": 13,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Albert Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.12,
+      "top": 3210,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Cloud Management",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Albert Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.17,
+      "top": 3210,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "vCIO Strategy",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Albert Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.12,
+      "top": 3210,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Two-week onboarding",
+      "words": 2,
+      "chars": 19,
+      "lines": 2,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 3704,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Nationwide reach",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 7320,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Remote-first nationwide. When hands are needed on site, we dispatch vetted local engineers directly to your office.",
+      "words": 17,
+      "chars": 115,
+      "lines": 3,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.4,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 7389,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Common questions",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 8220,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Book your free IT audit",
+      "words": 5,
+      "chars": 23,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 9031,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 18,
+     "maxLines": 3,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Albert Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      20,
+      22,
+      26,
+      28,
+      48,
+      72
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Albert Sans",
+      "size": 16,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.5
+     },
+     "measureChars": 60,
+     "max": {
+      "size": 72,
+      "vw": 5,
+      "font": "Albert Sans",
+      "text": "Remote-First Managed IT"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#e2e2e2",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 0.89
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#1b1b1b",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#7d0c14",
+       "top": 2700,
+       "hsl": {
+        "h": 356,
+        "s": 0.82,
+        "l": 0.27
+       }
+      },
+      {
+       "color": "#d6d6d6",
+       "top": 3888,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.84
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#7d0c14",
+       "share": 0.55
+      },
+      {
+       "color": "#e2e2e2",
+       "share": 0.36
+      },
+      {
+       "color": "#7a4a4e",
+       "share": 0.08
+      }
+     ],
+     "button": {
+      "bg": "#7d0c14",
+      "hsl": {
+       "h": 356,
+       "s": 0.82,
+       "l": 0.27
+      },
+      "fg": "#e2e2e2"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 11,
+     "inHero": 3,
+     "radius": 8,
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Book free IT audit",
+      "Book free IT audit",
+      "See plans"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 8,
+     "boxRadius": 20,
+     "squareMedia": 1,
+     "roundedMedia": 6,
+     "mediaRadius": 20,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1211
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 1
+     }
+    ],
+    "nav": {
+     "links": 8,
+     "fixed": true,
+     "height": 72,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "albert sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 9735,
+    "margins": {
+     "left": 80,
+     "right": 80
+    },
+    "sections": [
+     {
+      "sel": "section.hero.hero--photo",
+      "tag": "section",
+      "top": 0,
+      "height": 900,
+      "words": 34,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Remote-First Managed IT",
+       "size": 72,
+       "tag": "h1"
+      },
+      "left": 128,
+      "right": 723,
+      "textLeft": 128,
+      "textRight": 723,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#plans.section.g2",
+      "tag": "section",
+      "top": 900,
+      "height": 1800,
+      "words": 230,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Three plans, flat rate",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 80,
+      "right": 80,
+      "textLeft": 80,
+      "textRight": 80,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#included.section.ground-inverse",
+      "tag": "section",
+      "top": 2700,
+      "height": 900,
+      "words": 105,
+      "media": 0,
+      "middle": 45,
+      "heading": {
+       "text": "Included services",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 80,
+      "right": 95,
+      "textLeft": 80,
+      "textRight": 95,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#onboarding.section.photo-ch-section",
+      "tag": "section",
+      "top": 3600,
+      "height": 3600,
+      "words": 28,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "Two-week onboarding",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 80,
+      "right": 80,
+      "textLeft": 80,
+      "textRight": 654,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section#locations.section.word-hl-section",
+      "tag": "section",
+      "top": 7200,
+      "height": 900,
+      "words": 55,
+      "media": 1,
+      "middle": 38,
+      "heading": {
+       "text": "Nationwide reach",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 80,
+      "right": 80,
+      "textLeft": 80,
+      "textRight": 746,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#faq.section.ground-inverse",
+      "tag": "section",
+      "top": 8100,
+      "height": 811,
+      "words": 160,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Common questions",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 80,
+      "right": 126,
+      "textLeft": 80,
+      "textRight": 126,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#contact.footer.closing",
+      "tag": "footer",
+      "top": 8911,
+      "height": 824,
+      "words": 75,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Book your free IT audit",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 80,
+      "right": 80,
+      "textLeft": 80,
+      "textRight": 122,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 1716,
+      "height": 276
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Remote-First Managed IT",
+      "size": 72,
+      "top": 317,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 80,
+      "n": 8
+     },
+     {
+      "x": 128,
+      "n": 2
+     },
+     {
+      "x": 529,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 11,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.46,
+    0.61,
+    0.41,
+    0.89,
+    0.67,
+    0.61,
+    0.61,
+    0.61,
+    0.44,
+    0.96,
+    0.44,
+    0.18
+   ],
+   "motion": {
+    "elements": 21,
+    "css": 0,
+    "transitions": 21,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 11514,
+     "screens": 11.2,
+     "words": 679,
+     "img": 8,
+     "video": 0,
+     "canvas": 0,
+     "svg": 10,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 3,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "datacenter.jpg",
+      "meeting-room.jpg",
+      "network-switch.jpg",
+      "cloud-servers.jpg",
+      "team-laptop.jpg",
+      "austin.jpg",
+      "dallas.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Remote-First Managed IT",
+     "words": 3,
+     "chars": 23,
+     "lines": 1,
+     "size": 50.3,
+     "vw": 6.5,
+     "font": "Albert Sans",
+     "weight": 400,
+     "tracking": -0.035,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.74,
+     "top": 771,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Remote-First Managed IT",
+     "words": 3,
+     "lines": 1,
+     "size": 50.3,
+     "font": "Albert Sans"
+    },
+    "headings": [
+     {
+      "text": "Remote-First Managed IT",
+      "words": 3,
+      "chars": 23,
+      "lines": 1,
+      "size": 50.3,
+      "vw": 6.5,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.035,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 771,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Three plans, flat rate",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 36.5,
+      "vw": 4.8,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 1144,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Included services",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 36.5,
+      "vw": 4.8,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3397,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Two-week onboarding",
+      "words": 2,
+      "chars": 19,
+      "lines": 1,
+      "size": 36.5,
+      "vw": 4.8,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 4405,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Nationwide reach",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 36.5,
+      "vw": 4.8,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 8517,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Common questions",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 36.5,
+      "vw": 4.8,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 9302,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Book your free IT audit",
+      "words": 5,
+      "chars": 23,
+      "lines": 1,
+      "size": 36.5,
+      "vw": 4.8,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 10471,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Albert Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      14,
+      16,
+      18,
+      22,
+      24,
+      37,
+      50
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Albert Sans",
+      "size": 16,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.5
+     },
+     "measureChars": 60,
+     "max": {
+      "size": 50.3,
+      "vw": 6.5,
+      "font": "Albert Sans",
+      "text": "Remote-First Managed IT"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#e2e2e2",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 0.89
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e2e2e2",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.89
+       }
+      },
+      {
+       "color": "#d6d6d6",
+       "top": 1890,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.84
+       }
+      },
+      {
+       "color": "#7d0c14",
+       "top": 3277,
+       "hsl": {
+        "h": 356,
+        "s": 0.82,
+        "l": 0.27
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#7d0c14",
+       "share": 0.55
+      },
+      {
+       "color": "#e2e2e2",
+       "share": 0.36
+      },
+      {
+       "color": "#7a4a4e",
+       "share": 0.09
+      }
+     ],
+     "button": {
+      "bg": "#7d0c14",
+      "hsl": {
+       "h": 356,
+       "s": 0.82,
+       "l": 0.27
+      },
+      "fg": "#e2e2e2"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 11,
+     "inHero": 3,
+     "radius": 8,
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Book free IT audit",
+      "Book free IT audit",
+      "See plans"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 7,
+     "boxRadius": 20,
+     "squareMedia": 1,
+     "roundedMedia": 6,
+     "mediaRadius": 20,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.34
+     }
+    ],
+    "nav": {
+     "links": 3,
+     "fixed": true,
+     "height": 72,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "albert sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 11514,
+    "margins": {
+     "left": 48,
+     "right": 48
+    },
+    "sections": [
+     {
+      "sel": "section.hero.hero--photo",
+      "tag": "section",
+      "top": 0,
+      "height": 1024,
+      "words": 34,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 48,
+      "right": 167,
+      "textLeft": 48,
+      "textRight": 167,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#plans.section.g2",
+      "tag": "section",
+      "top": 1024,
+      "height": 2253,
+      "words": 230,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Three plans, flat rate",
+       "size": 37,
+       "tag": "h2"
+      },
+      "left": 48,
+      "right": 48,
+      "textLeft": 48,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#included.section.ground-inverse",
+      "tag": "section",
+      "top": 3277,
+      "height": 1024,
+      "words": 105,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Included services",
+       "size": 37,
+       "tag": "h2"
+      },
+      "left": 48,
+      "right": 51,
+      "textLeft": 48,
+      "textRight": 51,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#onboarding.section.photo-ch-section",
+      "tag": "section",
+      "top": 4301,
+      "height": 4096,
+      "words": 28,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "Two-week onboarding",
+       "size": 37,
+       "tag": "h2"
+      },
+      "left": 48,
+      "right": 48,
+      "textLeft": 48,
+      "textRight": 318,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section#locations.section.word-hl-section",
+      "tag": "section",
+      "top": 8397,
+      "height": 786,
+      "words": 55,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Nationwide reach",
+       "size": 37,
+       "tag": "h2"
+      },
+      "left": 48,
+      "right": 48,
+      "textLeft": 48,
+      "textRight": 83,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#faq.section.ground-inverse",
+      "tag": "section",
+      "top": 9182,
+      "height": 1168,
+      "words": 160,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Common questions",
+       "size": 37,
+       "tag": "h2"
+      },
+      "left": 48,
+      "right": 81,
+      "textLeft": 48,
+      "textRight": 81,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#contact.footer.closing",
+      "tag": "footer",
+      "top": 10351,
+      "height": 1163,
+      "words": 75,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Book your free IT audit",
+       "size": 37,
+       "tag": "h2"
+      },
+      "left": 48,
+      "right": 48,
+      "textLeft": 48,
+      "textRight": 154,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 428,
+      "height": 336
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Remote-First Managed IT",
+      "size": 50,
+      "top": 771,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 48,
+      "n": 10
+     },
+     {
+      "x": 253,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 11,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.48,
+    0.64,
+    0.9,
+    0.37,
+    0.64,
+    0.98,
+    0.75,
+    0.62,
+    0.62,
+    0.62,
+    0.48,
+    0.9
+   ],
+   "motion": {
+    "elements": 20,
+    "css": 0,
+    "transitions": 20,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 12990,
+     "screens": 15.4,
+     "words": 679,
+     "img": 8,
+     "video": 0,
+     "canvas": 0,
+     "svg": 10,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 3,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "datacenter.jpg",
+      "meeting-room.jpg",
+      "network-switch.jpg",
+      "cloud-servers.jpg",
+      "team-laptop.jpg",
+      "austin.jpg",
+      "dallas.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Remote-First Managed IT",
+     "words": 3,
+     "chars": 23,
+     "lines": 1,
+     "size": 30.4,
+     "vw": 7.8,
+     "font": "Albert Sans",
+     "weight": 400,
+     "tracking": -0.035,
+     "leading": 1.1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.88,
+     "top": 521,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Remote-First Managed IT",
+     "words": 3,
+     "lines": 1,
+     "size": 30.4,
+     "font": "Albert Sans"
+    },
+    "headings": [
+     {
+      "text": "Remote-First Managed IT",
+      "words": 3,
+      "chars": 23,
+      "lines": 1,
+      "size": 30.4,
+      "vw": 7.8,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.035,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 521,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Three plans, flat rate",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 940,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Essentials",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Albert Sans",
+      "weight": 560,
+      "tracking": -0.012,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.71,
+      "top": 1151,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Professional",
+      "words": 1,
+      "chars": 12,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Albert Sans",
+      "weight": 560,
+      "tracking": -0.012,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.71,
+      "top": 1657,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Enterprise",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Albert Sans",
+      "weight": 560,
+      "tracking": -0.012,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.71,
+      "top": 2176,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "What changes between plans",
+      "words": 4,
+      "chars": 26,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 2650,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Included services",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 4066,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Monitoring Service",
+      "words": 2,
+      "chars": 18,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Albert Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.51,
+      "top": 4281,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Help Desk Service",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Albert Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.49,
+      "top": 4464,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Patch Management",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Albert Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.52,
+      "top": 4622,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Cybersecurity",
+      "words": 1,
+      "chars": 13,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Albert Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 4806,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Cloud Management",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Albert Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 4964,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "vCIO Strategy",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Albert Sans",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 5122,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Two-week onboarding",
+      "words": 2,
+      "chars": 19,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 5437,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Nationwide reach",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 8821,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Remote-first nationwide. When hands are needed on site, we dispatch vetted local engineers directly to your office.",
+      "words": 17,
+      "chars": 115,
+      "lines": 4,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.4,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 8870,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Common questions",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 9644,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Book your free IT audit",
+      "words": 5,
+      "chars": 23,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 11042,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 18,
+     "maxLines": 4,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Albert Sans",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      14,
+      16,
+      18,
+      24,
+      30
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Albert Sans",
+      "size": 16,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.5
+     },
+     "measureChars": 43,
+     "max": {
+      "size": 30.4,
+      "vw": 7.8,
+      "font": "Albert Sans",
+      "text": "Remote-First Managed IT"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#e2e2e2",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 0.89
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e2e2e2",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.89
+       }
+      },
+      {
+       "color": "#d6d6d6",
+       "top": 1119,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.84
+       }
+      },
+      {
+       "color": "#7d0c14",
+       "top": 3970,
+       "hsl": {
+        "h": 356,
+        "s": 0.82,
+        "l": 0.27
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#7d0c14",
+       "share": 0.55
+      },
+      {
+       "color": "#e2e2e2",
+       "share": 0.36
+      },
+      {
+       "color": "#7a4a4e",
+       "share": 0.09
+      }
+     ],
+     "button": {
+      "bg": "#7d0c14",
+      "hsl": {
+       "h": 356,
+       "s": 0.82,
+       "l": 0.27
+      },
+      "fg": "#e2e2e2"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 11,
+     "inHero": 3,
+     "radius": 8,
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Book free IT audit",
+      "Book free IT audit",
+      "See plans"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 7,
+     "boxRadius": 20,
+     "squareMedia": 1,
+     "roundedMedia": 6,
+     "mediaRadius": 20,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1119
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.28
+     }
+    ],
+    "nav": {
+     "links": 3,
+     "fixed": true,
+     "height": 56,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "albert sans"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 12990,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "section.hero.hero--photo",
+      "tag": "section",
+      "top": 0,
+      "height": 844,
+      "words": 34,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Remote-First Managed IT",
+       "size": 30,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 28,
+      "textLeft": 24,
+      "textRight": 28,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#plans.section.g2",
+      "tag": "section",
+      "top": 844,
+      "height": 3126,
+      "words": 230,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Three plans, flat rate",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 30,
+      "textLeft": 24,
+      "textRight": 30,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#included.section.ground-inverse",
+      "tag": "section",
+      "top": 3970,
+      "height": 1379,
+      "words": 105,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Included services",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#onboarding.section.photo-ch-section",
+      "tag": "section",
+      "top": 5349,
+      "height": 3376,
+      "words": 28,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "Two-week onboarding",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 69,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section#locations.section.word-hl-section",
+      "tag": "section",
+      "top": 8725,
+      "height": 823,
+      "words": 55,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Nationwide reach",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#faq.section.ground-inverse",
+      "tag": "section",
+      "top": 9548,
+      "height": 1398,
+      "words": 160,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Common questions",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 51,
+      "textLeft": 24,
+      "textRight": 51,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#contact.footer.closing",
+      "tag": "footer",
+      "top": 10946,
+      "height": 2045,
+      "words": 61,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Book your free IT audit",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 59,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Remote-First Managed IT",
+      "size": 30,
+      "top": 521,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 10
+     },
+     {
+      "x": 56,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 11,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "10 different font sizes (13, 14, 15, 16, 20, 22, 26, 28, 48, 72).",
+   "fix": "A page needs about five: display, heading, lead, body, small."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "long-pin",
+   "width": 1440,
+   "message": "The same large text stays on screen for 4 screens in a row: \"Two-week onboarding\"",
+   "fix": "A pinned element earns two screens, and something must change at each. Shorten the run or give every screen its own content."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/ernesto/Documents/Programming/NovatechLanding/.taste-skill/inspect/desktop-fold.jpg",
+   "pages": [
+    "/Users/ernesto/Documents/Programming/NovatechLanding/.taste-skill/inspect/desktop-page-01.jpg",
+    "/Users/ernesto/Documents/Programming/NovatechLanding/.taste-skill/inspect/desktop-page-02.jpg",
+    "/Users/ernesto/Documents/Programming/NovatechLanding/.taste-skill/inspect/desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/ernesto/Documents/Programming/NovatechLanding/.taste-skill/inspect/tablet-fold.jpg",
+   "pages": [
+    "/Users/ernesto/Documents/Programming/NovatechLanding/.taste-skill/inspect/tablet-page-01.jpg",
+    "/Users/ernesto/Documents/Programming/NovatechLanding/.taste-skill/inspect/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/ernesto/Documents/Programming/NovatechLanding/.taste-skill/inspect/mobile-fold.jpg",
+   "pages": [
+    "/Users/ernesto/Documents/Programming/NovatechLanding/.taste-skill/inspect/mobile-page-01.jpg",
+    "/Users/ernesto/Documents/Programming/NovatechLanding/.taste-skill/inspect/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

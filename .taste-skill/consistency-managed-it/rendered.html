@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en" data-type="service" data-radius="soft" data-buttons="solid" data-motion="true" class="mo-js mo-safe" data-moments-ready="2"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Managed IT Services — Novatech</title>
+  <meta name="description" content="Flat-rate managed IT for Texas small businesses. 24/7 monitoring, unlimited help desk, security, cloud, vCIO. From $129/user/mo. Month-to-month. Book a free IT audit.">
+  <meta name="page-type" content="service">
+  <meta name="site-kind" content="other">
+  <meta name="theme-color" content="#a6b3bc">
+  <meta property="og:title" content="Managed IT Services — Novatech">
+  <meta property="og:description" content="Flat-rate managed IT for Texas small businesses. 24/7 monitoring, unlimited help desk, security, cloud, vCIO. From $129/user/mo. Month-to-month. Book a free IT audit.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/photos/cloud-servers.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/system.css">
+  <link rel="stylesheet" href="/assets/layout/layout.css">
+  <link rel="stylesheet" href="/assets/ui/cards.css">
+  <link rel="stylesheet" href="/assets/motion/motion.css">
+  <link rel="stylesheet" href="/assets/backgrounds/backgrounds.css">
+  <link rel="stylesheet" href="/assets/icons/icon.css">
+  <script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+  <link rel="modulepreload" href="/assets/moments/moments.js">
+  <link rel="modulepreload" href="/assets/moments/lib.js">
+  <link rel="modulepreload" href="/assets/moments/pinned-chapters/moment.js">
+  <link rel="modulepreload" href="/assets/moments/picture-develops/moment.js">
+  <script type="module" src="/assets/moments/moments.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Managed IT Services",
+    "description": "Flat-rate managed IT services with 24/7 monitoring, unlimited help desk, security, cloud management, and vCIO strategy. One monthly price. Month-to-month.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Novatech",
+      "url": "https://novatech.example",
+      "telephone": "+1-512-555-0199",
+      "email": "hello@novatech.example"
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Austin", "containedInPlace": {"@type": "State", "name": "Texas"}},
+      {"@type": "City", "name": "Dallas", "containedInPlace": {"@type": "State", "name": "Texas"}},
+      {"@type": "City", "name": "Houston", "containedInPlace": {"@type": "State", "name": "Texas"}},
+      {"@type": "City", "name": "San Antonio", "containedInPlace": {"@type": "State", "name": "Texas"}}
+    ],
+    "serviceType": "Managed IT Services",
+    "offers": {
+      "@type": "Offer",
+      "name": "Managed IT Plan",
+      "description": "Flat monthly rate per user. Includes 24/7 monitoring, unlimited help desk, patching, security, cloud management, and vCIO strategy.",
+      "price": "129",
+      "priceCurrency": "USD",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "129",
+        "priceCurrency": "USD",
+        "billingIncrement": "1",
+        "billingDuration": "P1M"
+      },
+      "availability": "https://schema.org/InStock",
+      "eligibleRegion": {"@type": "Country", "name": "US"}
+    }
+  }
+  </script>
+  <style>
+    /* === RHYTHM ENFORCEMENT: Every section exactly 1 or 2 screens === */
+    section.section {
+      height: calc(var(--h, 1) * 100vh);
+      min-height: calc(var(--h, 1) * 100vh);
+      max-height: calc(var(--h, 1) * 100vh);
+      overflow: hidden;
+    }
+    footer.section {
+      height: calc(var(--h, 1) * 100vh);
+      min-height: calc(var(--h, 1) * 100vh);
+      max-height: calc(var(--h, 1) * 100vh);
+      overflow: hidden;
+    }
+
+    /* Hero exactly 100svh */
+    .hero {
+      height: 100vh;
+      min-height: 100vh;
+      max-height: 100vh;
+    }
+    @supports (height: 100svh) {
+      .hero { height: 100svh; min-height: 100svh; max-height: 100svh; }
+    }
+
+    /* Consistent section padding for 128-480px air gaps */
+    .section-head {
+      padding-top: var(--padt, 128px);
+      padding-bottom: var(--padb, 128px);
+    }
+
+    /* === NAV: Full-width bar, all links inside === */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--line);
+      background: var(--bg);
+      height: 64px;
+    }
+    .nav .wrap.grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      align-items: center;
+      height: 100%;
+      gap: 0;
+    }
+    .nav .brand { grid-column: 1 / 3; }
+    .nav nav { grid-column: 3 / 11; display: flex; justify-content: center; gap: var(--p-xl); }
+    .nav .btn--primary { grid-column: 11 / 13; justify-self: end; }
+    .nav .skip-link { position: absolute; top: -100%; left: 80px; }
+    .nav .skip-link:focus { top: var(--p-m); z-index: 100; }
+    .nav-link:hover { color: var(--accent); }
+
+    /* === HERO: Valid background layer (img directly in section) with dark overlay === */
+    .hero--photo { position: relative; overflow: hidden; background: #0d0d0d; } /* Very dark fallback */
+    .hero--photo > img.hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.4;
+    }
+    .hero--photo::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(135deg, rgba(13,13,13,0.85) 0%, rgba(26,26,26,0.7) 100%);
+      pointer-events: none;
+    }
+    .hero--photo .wrap.grid { position: relative; z-index: 2; height: 100%; align-items: center; }
+
+    /* Hero text: white with good contrast on dark background */
+    .hero h1 { color: #fff; }
+    .hero h1 .muted { color: rgba(255,255,255,0.8); }
+    .hero .hero__lead { color: #fff; }
+    .hero .btn--ghost { border-color: #fff; color: #fff; background: transparent; }
+    .hero .btn--ghost:hover { background: rgba(255,255,255,0.1); }
+    .hero .btn--primary { background: var(--action); color: var(--action-ink); box-shadow: 0 4px 16px rgba(44,54,32,0.4); }
+
+    /* === SPLIT ALIGNMENT: k=6 (after 5 columns + 5 gutters) === */
+    .wrap.grid > .span-5 { grid-column: 1 / 6; }
+    .wrap.grid > .span-6.start-7 { grid-column: 7 / 13; }
+
+    /* === TEXT COLORS: Use ink on light, inv-ink on dark === */
+    .ground-base .card p,
+    .ground-base .card .muted,
+    .ground-base .pinned-chapters .chapter p,
+    .ground-base .section-head + .muted { color: var(--ink); }
+    .ground-inverse { background: var(--inv-bg) !important; }
+    .ground-inverse .pinned-chapters .chapter p,
+    .ground-inverse .muted { color: var(--inv-muted); }
+    .ground-inverse h2, .ground-inverse h3 { color: var(--inv-ink); }
+    .ground-inverse .card p { color: var(--inv-ink); }
+    .ground-inverse .faq-answer { color: var(--inv-ink); }
+    .ground-inverse .faq-item summary { color: var(--inv-ink); }
+    .ground-inverse .section-head + .muted { color: var(--inv-muted); }
+
+    /* === HEADING SCALE === */
+    .hero h1 { font-size: clamp(36px, 5.5vw, 56px); line-height: 1.05; }
+    .section h2 { font-size: clamp(32px, 5vw, 48px); line-height: 1.05; }
+    #cta-section h2 { font-size: clamp(36px, 5vw, 48px); line-height: 1.05; }
+
+    /* === OFF-GRID FIX: included-services list at container edge (80px) === */
+    #included-services .span-5 > ul {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: var(--p-m) var(--p-m);
+      padding-left: 0;
+      list-style: none;
+      margin-left: 0;
+    }
+    #included-services .span-5 > ul > li {
+      display: contents;
+    }
+    #included-services .span-5 > ul > li > svg {
+      grid-column: 1;
+      margin-top: 2px;
+      width: 24px;
+      height: 24px;
+      color: var(--accent);
+    }
+    #included-services .span-5 > ul > li > div {
+      grid-column: 2;
+      min-width: 0;
+    }
+
+    /* === SECTION GAPS: consistent spacing between sections === */
+    main#top > section.section + section.section { margin-top: 0; }
+    main#top > section.section { padding-top: 128px; padding-bottom: 128px; }
+    main#top > section.hero { padding-top: 0; padding-bottom: 0; margin-bottom: 0; }
+    main#top > section.section:first-of-type { padding-top: 128px; }
+
+    /* === POPULAR BADGE: static, not overlapping === */
+    .card .popular-badge {
+      position: static;
+      display: inline-block;
+      margin-bottom: var(--p-s);
+    }
+
+    /* === PINNED CHAPTERS & FAQ: scroll within section === */
+    .pinned-chapters { max-height: 65vh; overflow-y: auto; padding-right: var(--p-m); }
+    .faq-list { max-height: 80vh; overflow-y: auto; padding-right: var(--p-m); }
+
+    /* === STICKY PHOTOS: fill section height minus head padding === */
+    .chapter-frame, .cloud-visual, .cta-visual, .plan-visual, .included-visual {
+      height: calc(100% - 256px);
+      min-height: 400px;
+      position: sticky;
+      top: 80px;
+    }
+    .chapter-frame img, .cloud-visual img, .cta-visual img, .plan-visual img, .included-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* === BUTTON FOCUS === */
+    .btn:focus-visible { outline: 2px solid var(--action); outline-offset: 2px; }
+    .link:hover svg { transform: translateX(4px); }
+
+    /* === MOBILE === */
+    @media (max-width: 768px) {
+      .nav-link { min-height: 44px; display: inline-flex; align-items: center; }
+      .btn { min-height: 44px; display: inline-flex; align-items: center; }
+      .faq-item summary { min-height: 44px; }
+      main#top > section.hero { padding-top: 64px; }
+      .nav nav { gap: var(--p-m); }
+      .wrap.grid > .span-5 { grid-column: 1 / -1; }
+      .wrap.grid > .span-6.start-7 {
+        grid-column: 1 / -1;
+        margin-left: 0;
+        margin-top: var(--p-xl);
+      }
+      .hero .btn-row { flex-direction: column; width: 100%; }
+      .hero .btn { width: 100%; justify-content: center; }
+      .chapter-frame, .cloud-visual, .cta-visual, .plan-visual, .included-visual {
+        position: static;
+        height: auto;
+        min-height: 300px;
+      }
+      .pinned-chapters, .faq-list { max-height: 50vh; }
+    }
+
+    /* === SECTION CONTENT: ensure fill === */
+    .section > .wrap.grid { height: 100%; display: grid; align-content: start; gap: var(--p-xl); }
+    .section.ground-base { background: var(--bg); }
+    .section.ground-inverse { background: var(--inv-bg); }
+
+    /* Cards fill height in plan-tiers */
+    #plan-tiers .card { height: 100%; display: flex; flex-direction: column; }
+    #plan-tiers .card p { flex: 1; }
+
+    /* FAQ items open by default for height stability */
+    .faq-item[open] { height: auto; }
+
+    /* Hide visuals on narrow screens that would cause collision */
+    @media (max-width: 480px) {
+      .plan-visual, .included-visual, .cta-visual, .cloud-visual, .chapter-frame { display: none; }
+    }
+
+    /* Fix plan-tiers card content overflow */
+    #plan-tiers ul.grid { height: auto; max-height: 75%; }
+    #plan-tiers .card { padding: var(--p-l); }
+    #plan-tiers .card h3 { font-size: var(--t-h3); margin-bottom: var(--p-s); }
+    #plan-tiers .card p { font-size: var(--t-sm); line-height: 1.4; }
+    #plan-tiers .card .link { font-size: var(--t-sm); }
+
+    /* Fix FAQ answer overflow */
+    .faq-list { max-height: 80vh; }
+    .faq-answer { font-size: var(--t-sm); line-height: 1.4; }
+    .faq-item summary { font-size: var(--t-body); }
+  </style>
+<link rel="stylesheet" href="http://127.0.0.1:5200/assets/moments/picture-develops/moment.css"><link rel="stylesheet" href="http://127.0.0.1:5200/assets/moments/pinned-chapters/moment.css"></head>
+<body>
+  <!-- HEADER - Full-width nav bar, all links inside -->
+  <header class="nav nav--split" role="banner">
+    <div class="wrap grid">
+      <a class="skip-link" href="#top">Skip to content</a>
+      <a href="/" class="brand nav-link" aria-label="Novatech home">
+        <span class="mark" data-mark="arc" aria-hidden="true"></span>Novatech
+      </a>
+      <nav aria-label="Main navigation" style="display: flex; justify-content: center; gap: var(--p-xl);">
+        <a href="/managed-it.html" class="nav-link" aria-current="page">Managed IT</a>
+        <a href="/web-design.html" class="nav-link">Web Design</a>
+      </nav>
+      <a href="#contact" class="btn btn--primary">Book free IT audit</a>
+    </div>
+  </header>
+
+  <main id="top" style="padding-top: 64px;">
+    <!-- SECTION 1: HERO - exactly 100svh, picture-develops moment -->
+    <section class="hero hero--photo section ground-base mo-pd mo-pd--film is-done" aria-labelledby="hero-title" style="--h: 1; position: relative; overflow: hidden;" data-enter="" data-moment="picture-develops" data-moment-mounted="1">
+      <!-- Valid background layer: img directly in section -->
+      <img class="hero-bg" src="/assets/photos/cloud-servers.jpg" alt="Cloud server infrastructure" style="width: 100%; height: 100%; object-fit: cover;">
+      <div class="wrap grid" style="position: relative; z-index: 2; height: 100%; align-items: center;">
+        <div class="span-5 hero-text">
+          <h1 id="hero-title">Novatech Managed IT for Texas small business.<br><span class="muted">Flat rate. 15-min response.</span></h1>
+          <p class="hero__lead" style="font-size: var(--t-lead); max-width: 48ch; margin-top: var(--p-m);">We run your IT: monitoring, patching, help desk, security, cloud, strategy — one flat monthly price. Month-to-month. No lock-in.</p>
+          <div class="btn-row" style="display: flex; gap: var(--p-m); margin-top: var(--p-xl); flex-wrap: wrap;">
+            <a class="btn btn--primary" href="#contact">Book free IT audit</a>
+            <a class="btn btn--ghost" href="#plan-tiers">See plans</a>
+          </div>
+        </div>
+        <div class="span-6 start-7">
+          <!-- Constrained panel to avoid overlap and ui-fit issues -->
+          <div class="panel--flush" style="padding: var(--p-l); height: 70%; max-height: 500px; display: flex; align-items: center; justify-content: flex-end;">
+            <div class="stage" data-ui="app-frame" data-ui-load="true" style="aspect-ratio: 16/9; border-radius: var(--r-lg); overflow: hidden; background: var(--surface); width: 100%; max-width: 520px;">
+              <div class="app-frame-placeholder" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: var(--t-sm);">Service dashboard preview</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: PLAN TIERS - exactly 1 screen, with visual (datacenter photo) -->
+    <section class="section ground-base" id="plan-tiers" style="--h: 1;" aria-labelledby="plan-tiers-title">
+      <div class="wrap grid" style="height: 100%; align-content: center; gap: var(--p-xl);">
+        <div class="span-5">
+          <div class="section-head">
+            <h2 id="plan-tiers-title">Plan tiers.</h2>
+          </div>
+          <p class="muted" style="font-size: var(--t-lead); margin-top: var(--p-m);">Three plans. One flat rate per user.</p>
+          <ul class="grid" style="grid-template-columns: repeat(3, 1fr); gap: var(--p-l); margin-top: var(--p-xl); max-height: 75%;">
+            <li class="card" style="padding: var(--p-l); height: 100%; display: flex; flex-direction: column;">
+              <img data-icon="microsoft" src="/assets/icons/microsoft.svg" alt="" width="48" height="48" style="margin-bottom: var(--p-m);">
+              <h3>Essentials</h3>
+              <p style="flex: 1; color: var(--ink); font-size: var(--t-sm); line-height: 1.4;">24/7 monitoring, patching, help desk (biz hours), antivirus, backup verification. From $129/user/mo.</p>
+              <a href="#contact" class="link" style="margin-top: var(--p-m); display: inline-flex; align-items: center; gap: var(--p-xs); font-size: var(--t-sm);">View details <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+            </li>
+            <li class="card" style="border-color: var(--accent); padding: var(--p-l); height: 100%; display: flex; flex-direction: column;">
+              <span class="popular-badge" style="background: var(--accent); color: var(--accent-ink); padding: var(--p-xs) var(--p-m); border-radius: 999px; font-size: var(--t-xs); font-weight: 700; align-self: flex-start;">Most Popular</span>
+              <img data-icon="microsoft" src="/assets/icons/microsoft.svg" alt="" width="48" height="48" style="margin-bottom: var(--p-m);">
+              <h3>Professional</h3>
+              <p style="flex: 1; color: var(--ink); font-size: var(--t-sm); line-height: 1.4;">Essentials + unlimited 24/7 help desk, EDR/MDR, cloud management, vCIO consulting. From $199/user/mo.</p>
+              <a href="#contact" class="link" style="margin-top: var(--p-m); display: inline-flex; align-items: center; gap: var(--p-xs); font-size: var(--t-sm);">View details <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+            </li>
+            <li class="card" style="padding: var(--p-l); height: 100%; display: flex; flex-direction: column;">
+              <img data-icon="microsoft" src="/assets/icons/microsoft.svg" alt="" width="48" height="48" style="margin-bottom: var(--p-m);">
+              <h3>Enterprise</h3>
+              <p style="flex: 1; color: var(--ink); font-size: var(--t-sm); line-height: 1.4;">Professional + dedicated account manager, on-site support (4 TX metros), custom compliance. From $299/user/mo.</p>
+              <a href="#contact" class="link" style="margin-top: var(--p-m); display: inline-flex; align-items: center; gap: var(--p-xs); font-size: var(--t-sm);">View details <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+            </li>
+          </ul>
+        </div>
+        <div class="span-6 start-7" style="height: 80%;">
+          <figure class="plan-visual" style="border-radius: var(--r-lg); overflow: hidden; height: 100%; width: 100%;">
+            <img src="/assets/photos/datacenter.jpg" alt="Data center infrastructure" data-source="library" data-subject="infrastructure" style="width: 100%; height: 100%; object-fit: cover;">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: INCLUDED SERVICES - exactly 1 screen (ground-inverse rhythm band) -->
+    <section class="section ground-inverse" id="included-services" style="--h: 1;" aria-labelledby="included-services-title">
+      <div class="wrap grid" style="height: 100%; align-items: start; gap: var(--p-xl);">
+        <div class="span-5" style="height: 100%; display: flex; flex-direction: column; justify-content: center;">
+          <div class="section-head">
+            <h2 id="included-services-title">Included services.</h2>
+          </div>
+          <p class="muted" style="font-size: var(--t-lead); margin-top: var(--p-m);">Every plan comes with the full stack.</p>
+          <ul>
+            <li>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <div>
+                <h3 style="font-size: var(--t-body); font-weight: 600;">Monitoring Service</h3>
+                <p style="font-size: var(--t-sm);">Infrastructure, network, endpoints, and cloud watched around the clock.</p>
+              </div>
+            </li>
+            <li>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" aria-hidden="true"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+              <div>
+                <h3 style="font-size: var(--t-body); font-weight: 600;">Help Desk Service</h3>
+                <p style="font-size: var(--t-sm);">Phone, email, chat, and portal support. Real engineers on every call.</p>
+              </div>
+            </li>
+            <li>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg>
+              <div>
+                <h3 style="font-size: var(--t-body); font-weight: 600;">Patch Management Service</h3>
+                <p style="font-size: var(--t-sm);">OS, firmware, and third-party patches tested and deployed on schedule.</p>
+              </div>
+            </li>
+            <li>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5"></path></svg>
+              <div>
+                <h3 style="font-size: var(--t-body); font-weight: 600;">Cybersecurity Service</h3>
+                <p style="font-size: var(--t-sm);">EDR/MDR, email security, DNS filtering, training, incident response.</p>
+              </div>
+            </li>
+            <li>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5"></path></svg>
+              <div>
+                <h3 style="font-size: var(--t-body); font-weight: 600;">Cloud Management Service</h3>
+                <p style="font-size: var(--t-sm);">AWS, Azure, GCP cost optimization, security hardening, backup governance.</p>
+              </div>
+            </li>
+            <li>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" aria-hidden="true"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path></svg>
+              <div>
+                <h3 style="font-size: var(--t-body); font-weight: 600;">vCIO Strategy Service</h3>
+                <p style="font-size: var(--t-sm);">Quarterly business reviews, technology roadmaps, budget planning.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="span-6 start-7" style="height: 80%;">
+          <figure class="included-visual" style="border-radius: var(--r-lg); overflow: hidden; height: 100%; width: 100%;">
+            <img src="/assets/photos/team-laptop.jpg" alt="Team collaborating on IT strategy" data-source="library" data-subject="team" style="width: 100%; height: 100%; object-fit: cover;">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: ONBOARDING PROCESS - exactly 2 screens with pinned-chapters -->
+    <section class="section ground-base" id="onboarding-process" style="--h: 2;" aria-labelledby="onboarding-process-title" data-moment="pinned-chapters" data-big-scene-opts="{&quot;hold&quot;: 1}" data-moment-mounted="1">
+      <div class="wrap grid" style="height: 100%; align-items: start; gap: var(--p-xl);">
+        <div class="span-5" style="height: 100%; display: flex; flex-direction: column;">
+          <div class="section-head">
+            <h2 id="onboarding-process-title">Onboarding process.</h2>
+          </div>
+          <div class="pinned-chapters" data-pinned-chapters="" style="flex: 1; margin-top: var(--p-xl); overflow-y: auto; padding-right: var(--p-m);">
+            <div class="chapter" data-chapter="1" style="padding-bottom: var(--p-xl); border-bottom: 1px solid var(--line); margin-bottom: var(--p-xl);">
+              <h3>Managed IT Onboarding: Phase 1 — Audit &amp; Plan</h3>
+              <p class="muted">Week 1: Full infrastructure audit, documentation review, credential inventory, migration plan.</p>
+            </div>
+            <div class="chapter" data-chapter="2" style="padding-bottom: var(--p-xl); border-bottom: 1px solid var(--line); margin-bottom: var(--p-xl);">
+              <h3>Managed IT Onboarding: Phase 2 — Deploy Agents</h3>
+              <p class="muted">Week 1–2: Install monitoring, security, management agents. Configure alerting and backup verification.</p>
+            </div>
+            <div class="chapter" data-chapter="3" style="padding-bottom: var(--p-xl); border-bottom: 1px solid var(--line); margin-bottom: var(--p-xl);">
+              <h3>Managed IT Onboarding: Phase 3 — Cutover</h3>
+              <p class="muted">Week 2: DNS, email, identity transition. Parallel run validation. Go-live with engineer on-site/remote.</p>
+            </div>
+            <div class="chapter" data-chapter="4">
+              <h3>Managed IT Onboarding: Phase 4 — Optimize</h3>
+              <p class="muted">Week 3+: 30-day review, fine-tuning, team training, first quarterly business review scheduled.</p>
+            </div>
+          </div>
+        </div>
+        <div class="span-6 start-7" style="height: 100%;">
+          <figure class="chapter-frame" style="border-radius: var(--r-lg); overflow: hidden; height: 100%; width: 100%; position: sticky; top: 80px;">
+            <img src="/assets/photos/meeting-room.jpg" alt="Team collaborating on deployment plan" data-source="library" data-subject="deployment" style="width: 100%; height: 100%; object-fit: cover;">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CTA - exactly 1 screen, with visual (Austin photo) -->
+    <section class="section ground-base" id="cta-section" style="--h: 1;" aria-labelledby="cta-section-title">
+      <div class="wrap grid" style="height: 100%; align-items: center; gap: var(--p-xl);">
+        <div class="span-5" style="text-align: left;">
+          <h2 id="cta-section-title" style="max-width: 48ch;">
+            Managed IT: Start Running Your Business
+          </h2>
+          <p class="muted" style="font-size: var(--t-lead); margin-top: var(--p-m); max-width: 48ch;">One flat rate. Real engineers. Month-to-month.</p>
+          <a href="#contact" class="btn btn--primary" style="margin-top: var(--p-xl);">Book free IT audit</a>
+        </div>
+        <div class="span-6 start-7" style="height: 80%;">
+          <figure class="cta-visual" style="border-radius: var(--r-lg); overflow: hidden; height: 100%; width: 100%;">
+            <img src="/assets/photos/austin.jpg" alt="Austin Texas skyline" data-source="library" data-subject="texas-footprint" style="width: 100%; height: 100%; object-fit: cover;">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: COMMON QUESTIONS - exactly 2 screens -->
+    <section class="section ground-inverse" id="common-questions" style="--h: 2;" aria-labelledby="common-questions-title">
+      <div class="wrap grid" style="height: 100%; align-items: start; gap: var(--p-xl);">
+        <div class="span-5" style="height: 100%; display: flex; flex-direction: column;">
+          <div class="section-head">
+            <h2 id="common-questions-title">Common questions.</h2>
+          </div>
+          <p class="muted" style="font-size: var(--t-lead); max-width: 48ch; margin-top: var(--p-m);">Straight answers, no sales talk.</p>
+          <div class="faq-list" style="flex: 1; display: grid; gap: var(--p-s); margin-top: var(--p-xl); overflow-y: auto; padding-right: var(--p-m);">
+            <details class="faq-item" open="" style="background: var(--inv-surface); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden;">
+              <summary style="padding: var(--p-m) var(--p-l); font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; min-height: 44px;">What does managed IT actually include?</summary>
+              <div class="faq-answer" style="padding: 0 var(--p-l) var(--p-m);">24/7 monitoring, patching, help desk, backup verification, security training, and strategic planning — all under one flat monthly rate.</div>
+            </details>
+            <details class="faq-item" open="" style="background: var(--inv-surface); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden;">
+              <summary style="padding: var(--p-m) var(--p-l); font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; min-height: 44px;">How much do managed IT services cost?</summary>
+              <div class="faq-answer" style="padding: 0 var(--p-l) var(--p-m);">$129–299/user/month. Essentials $129, Professional $199, Enterprise $299. Month-to-month, 30-day notice.</div>
+            </details>
+            <details class="faq-item" open="" style="background: var(--inv-surface); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden;">
+              <summary style="padding: var(--p-m) var(--p-l); font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; min-height: 44px;">Do you require long-term contracts?</summary>
+              <div class="faq-answer" style="padding: 0 var(--p-l) var(--p-m);">No. Month-to-month only. Cancel anytime with 30 days' notice.</div>
+            </details>
+            <details class="faq-item" open="" style="background: var(--inv-surface); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden;">
+              <summary style="padding: var(--p-m) var(--p-l); font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; min-height: 44px;">How fast do you respond when something breaks?</summary>
+              <div class="faq-answer" style="padding: 0 var(--p-l) var(--p-m);">Critical: 15 min. High: 1 hour. Standard: 4 hours. 24/7/365 on-call engineer.</div>
+            </details>
+            <details class="faq-item" open="" style="background: var(--inv-surface); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden;">
+              <summary style="padding: var(--p-m) var(--p-l); font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; min-height: 44px;">Can you take over from our current IT provider?</summary>
+              <div class="faq-answer" style="padding: 0 var(--p-l) var(--p-m);">Yes. We handle docs, credentials, audit, and migration. Most takeovers complete in two weeks with zero downtime.</div>
+            </details>
+            <details class="faq-item" open="" style="background: var(--inv-surface); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden;">
+              <summary style="padding: var(--p-m) var(--p-l); font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; min-height: 44px;">Do you support both Mac and Windows environments?</summary>
+              <div class="faq-answer" style="padding: 0 var(--p-l) var(--p-m);">Yes. Windows, macOS, Linux, iOS, Android — unified monitoring across all platforms.</div>
+            </details>
+          </div>
+          <div style="margin-top: auto; padding-top: var(--p-xl);">
+            <a href="#contact" class="btn btn--primary" style="width: 100%; justify-content: center;">Book free IT audit</a>
+          </div>
+        </div>
+        <div class="span-6 start-7" style="height: 100%;">
+          <figure class="cloud-visual" style="border-radius: var(--r-lg); overflow: hidden; height: 100%; width: 100%; position: sticky; top: 80px;">
+            <img src="/assets/photos/network-switch.jpg" alt="Network infrastructure" data-source="library" data-subject="infrastructure" style="width: 100%; height: 100%; object-fit: cover;">
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER - exactly 1 screen -->
+  <footer class="section ground-inverse footer footer--columns" style="--h: 1;" role="contentinfo" id="contact">
+    <div class="wrap grid" style="height: 100%; display: grid; grid-template-rows: auto 1fr auto; gap: var(--p-xl);">
+      <!-- Row 1: close-type -->
+      <div class="span-12" style="text-align: left; padding-bottom: var(--p-xl); border-bottom: 1px solid var(--line);">
+        <h2 style="max-width: 48ch;">Ready for IT that just works?</h2>
+        <a href="#contact" class="btn btn--primary" style="margin-top: var(--p-l);">Book free IT audit</a>
+      </div>
+      <!-- Row 2: directory - fills remaining space -->
+      <div class="span-12" style="display: grid; grid-template-columns: repeat(12, 1fr); gap: var(--p-xl); align-self: center;">
+        <div class="span-3" style="grid-column: 1 / 4;">
+          <p class="brand">Novatech</p>
+          <p class="muted" style="margin-top: var(--p-s); max-width: 280px;">Managed IT, web design, and cloud for Texas small businesses.</p>
+        </div>
+        <nav class="span-2" aria-label="Services" style="grid-column: 4 / 6;">
+          <h3 style="color: var(--inv-ink);">Services</h3>
+          <ul style="margin-top: var(--p-s); display: grid; gap: var(--p-xs);">
+            <li><a class="muted" href="/managed-it.html">Managed IT</a></li>
+            <li><a class="muted" href="/web-design.html">Web Design</a></li>
+          </ul>
+        </nav>
+        <nav class="span-2" aria-label="Company" style="grid-column: 6 / 8;">
+          <h3 style="color: var(--inv-ink);">Company</h3>
+          <ul style="margin-top: var(--p-s); display: grid; gap: var(--p-xs);">
+            <li><a class="muted" href="/about.html">About</a></li>
+            <li><a class="muted" href="#contact">Contact</a></li>
+            <li><a class="muted" href="/privacy.html">Privacy</a></li>
+          </ul>
+        </nav>
+        <div class="span-4" style="grid-column: 8 / 13; text-align: right;">
+          <p class="muted">© <span id="year">2026</span> Novatech. All rights reserved.</p>
+          <details class="credits" style="margin-top: var(--p-m);">
+            <summary class="muted">Photo credits</summary>
+            <ul class="muted" style="font-size: .875rem; margin-top: var(--p-s);">
+              <!-- populated by photos.mjs credits -->
+            </ul>
+          </details>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body></html>

@@ -1,0 +1,42 @@
+<!-- FOOTER TEMPLATE - All Pages (footer-columns + close-type, no Cloud link) -->
+<footer class="section ground-inverse footer footer--columns" style="--h: 1.5" role="contentinfo">
+  <div class="wrap grid">
+    <!-- Row 1: close-type -->
+    <div class="span-12" style="text-align: left; padding-bottom: var(--p-xl); border-bottom: 1px solid var(--line);">
+      <h2 style="max-width: 48ch;">Ready for IT that just works?</h2>
+      <a href="/contact.html" class="btn btn--primary" style="margin-top: var(--p-l);">Book free IT audit</a>
+    </div>
+    <!-- Row 2: directory -->
+    <div class="span-3">
+      <p class="brand">Novatech</p>
+      <p class="muted" style="margin-top: var(--p-s); max-width: 280px;">Managed IT, web design, and cloud for Texas small businesses.</p>
+    </div>
+    <nav class="span-2 start-4" aria-label="Services">
+      <h4>Services</h4>
+      <ul style="margin-top: var(--p-s); display: grid; gap: var(--p-xs);">
+        <li><a class="muted" href="/managed-it.html">Managed IT</a></li>
+        <li><a class="muted" href="/web-design.html">Web Design</a></li>
+      </ul>
+    </nav>
+    <nav class="span-2" aria-label="Company">
+      <h4>Company</h4>
+      <ul style="margin-top: var(--p-s); display: grid; gap: var(--p-xs);">
+        <li><a class="muted" href="/about.html">About</a></li>
+        <li><a class="muted" href="/contact.html">Contact</a></li>
+        <li><a class="muted" href="/privacy.html">Privacy</a></li>
+      </ul>
+    </nav>
+    <div class="span-3 start-8" style="text-align: right;">
+      <p class="muted">&copy; <span id="year"></span> Novatech. All rights reserved.</p>
+      <details class="credits" style="margin-top: var(--p-m);">
+        <summary class="muted">Photo credits</summary>
+        <ul class="muted" style="font-size: .875rem; margin-top: var(--p-s);">
+          <!-- populated by photos.mjs credits -->
+        </ul>
+      </details>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>

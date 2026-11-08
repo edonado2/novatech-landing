@@ -1,0 +1,250 @@
+- generic [active] [ref=e1]:
+  - generic "We are online" [ref=e2]:
+    - generic [aria-hidden] [ref=e3]: ●
+    - text: Live support available
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Novatech home" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - text: Novatech
+      - navigation "Main navigation" [ref=e7]:
+        - link "Managed IT" [ref=e8] [cursor=pointer]:
+          - /url: managed-it.html
+        - link "Web Design" [ref=e9] [cursor=pointer]:
+          - /url: web-design.html
+        - link "Cybersecurity" [ref=e10] [cursor=pointer]:
+          - /url: cybersecurity.html
+        - link "Cloud" [ref=e11] [cursor=pointer]:
+          - /url: cloud.html
+        - link "Get a quote" [ref=e12] [cursor=pointer]:
+          - /url: "#contact"
+  - main [ref=e13]:
+    - region [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - generic [ref=e17]:
+            - heading "Technology that stays out of the way." [level=1] [ref=e18]
+            - paragraph [ref=e19]: Flat-rate IT, custom websites, and security that works, backed by senior engineers who answer the phone. Serving Austin, Dallas, Houston, and San Antonio.
+          - generic [ref=e20]:
+            - link "Start a conversation" [ref=e21] [cursor=pointer]:
+              - /url: "#contact"
+            - link "Call +1 (512) 555-0199" [ref=e22] [cursor=pointer]:
+              - /url: tel:+15125550199
+          - generic [ref=e23]:
+            - generic [ref=e24]: 24/7 monitoring included
+            - generic [ref=e27]: Flat-rate pricing
+            - generic [ref=e30]: Senior engineers only
+        - generic [ref=e38]:
+          - heading "Your IT dashboard" [level=2] [ref=e42]
+          - paragraph [ref=e43]: "Real-time health, tickets, billing, and security posture: one pane of glass for everything."
+      - generic [ref=e45]:
+        - generic [ref=e46]: Trusted by teams in
+        - generic [ref=e47]: Austin
+        - generic [ref=e48]: Dallas
+        - generic [ref=e49]: Houston
+        - generic [ref=e50]: San Antonio
+        - generic [ref=e51]:
+          - generic [ref=e52]: SOC 2 ready
+          - generic [ref=e53]: HIPAA capable
+          - generic [ref=e54]: PCI DSS aware
+    - region [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - heading "What we do." [level=2] [ref=e59]
+          - paragraph [ref=e60]: Four disciplines, one partner. Each service stands alone; together they cover your entire digital footprint.
+        - list [ref=e62]:
+          - listitem [ref=e63]:
+            - heading "Managed IT" [level=3] [ref=e64]
+            - paragraph [ref=e65]: 24/7 monitoring, help desk, patch management, backup verification, and strategic planning, all for a flat per-user rate.
+            - link "Learn more →" [ref=e66] [cursor=pointer]:
+              - /url: managed-it.html
+          - listitem [ref=e67]:
+            - heading "Web Design" [level=3] [ref=e68]
+            - paragraph [ref=e69]: Custom marketing sites, e-commerce, and web applications. Fixed price, scoped up front, built to convert.
+            - link "Learn more →" [ref=e70] [cursor=pointer]:
+              - /url: web-design.html
+          - listitem [ref=e71]:
+            - heading "Cybersecurity" [level=3] [ref=e72]
+            - paragraph [ref=e73]: "Endpoint detection, email filtering, MFA enforcement, vulnerability scanning, and incident response: defense in depth."
+            - link "Learn more →" [ref=e74] [cursor=pointer]:
+              - /url: cybersecurity.html
+          - listitem [ref=e75]:
+            - heading "Cloud" [level=3] [ref=e76]
+            - paragraph [ref=e77]: Migration, optimization, and managed Kubernetes. Right-sized infrastructure that scales with you.
+            - link "Learn more →" [ref=e78] [cursor=pointer]:
+              - /url: cloud.html
+    - region [ref=e79]:
+      - generic [ref=e80]:
+        - generic [ref=e82]:
+          - heading "How we work." [level=2] [ref=e83]
+          - paragraph [ref=e84]: Clear process, no handoffs. A repeatable process that gets you to production.
+        - list [ref=e86]:
+          - listitem [ref=e87]:
+            - heading "1. Discover" [level=3] [ref=e88]
+            - paragraph [ref=e89]: We learn your business, stack, pain points, and goals. No assumptions, just questions and listening.
+          - listitem [ref=e90]:
+            - heading "2. Design" [level=3] [ref=e91]
+            - paragraph [ref=e92]: Architecture diagrams, wireframes, or security roadmaps. You approve the plan before we write code or deploy agents.
+          - listitem [ref=e93]:
+            - heading "3. Build" [level=3] [ref=e94]
+            - paragraph [ref=e95]: Senior engineers execute. Daily standups, weekly demos, zero surprises. You see progress in real time.
+          - listitem [ref=e96]:
+            - heading "4. Operate" [level=3] [ref=e97]
+            - paragraph [ref=e98]: Launch is day one. We monitor, patch, optimize, and answer the phone 24/7. Continuous improvement built in.
+    - region [ref=e99]:
+      - generic [ref=e100]:
+        - generic [ref=e102]:
+          - heading "Simple, predictable pricing." [level=2] [ref=e103]
+          - paragraph [ref=e104]: Zero hidden fees, no long-term lock-in. Pick the tier that fits, scale up or down anytime.
+        - list [ref=e106]:
+          - listitem [ref=e107]:
+            - heading "Essentials" [level=3] [ref=e108]
+            - paragraph [ref=e109]: Perfect for teams 5–25. Monitoring, help desk, patching, backups.
+            - generic [ref=e110]: $129/user/mo
+            - link "View details →" [ref=e111] [cursor=pointer]:
+              - /url: managed-it.html#pricing
+          - listitem [ref=e112]:
+            - heading "Professional" [level=3] [ref=e113]
+            - paragraph [ref=e114]: Teams 25–100. Adds vCIO, security awareness, compliance support, faster SLA.
+            - generic [ref=e115]: $199/user/mo
+            - link "Get started" [ref=e116] [cursor=pointer]:
+              - /url: managed-it.html#pricing
+    - region [ref=e117]:
+      - generic [ref=e118]:
+        - generic [ref=e119]:
+          - generic [ref=e120]:
+            - heading "Why teams choose Novatech." [level=2] [ref=e121]
+            - paragraph [ref=e122]: Big enough to keep you covered around the clock. Focused enough that you always talk to a senior engineer who knows your name.
+          - list [ref=e123]:
+            - listitem [ref=e124]:
+              - heading "Single point of accountability" [level=3] [ref=e125]
+              - paragraph [ref=e126]: Website down? Server issue? Same team, same phone number. One contract and one invoice for everything digital.
+            - listitem [ref=e127]:
+              - heading "Proactive monitoring" [level=3] [ref=e128]
+              - paragraph [ref=e129]: Our monitoring watches your systems around the clock and flags issues before they become emergencies.
+            - listitem [ref=e130]:
+              - heading "Senior engineers, direct access" [level=3] [ref=e131]
+              - paragraph [ref=e132]: You talk to the people doing the work directly. Clear answers in plain English.
+            - listitem [ref=e133]:
+              - heading "Transparent pricing" [level=3] [ref=e134]
+              - paragraph [ref=e135]: "Flat-rate IT plans and fixed-price web projects. Transparent pricing: no surprise invoices or lock-in contracts."
+            - listitem [ref=e136]:
+              - heading "24/7, real-human support" [level=3] [ref=e137]
+              - paragraph [ref=e138]: Around the clock, every day of the year. Critical issues reach an engineer immediately, never a ticket queue.
+            - listitem [ref=e139]:
+              - heading "Centrally located, nationwide reach" [level=3] [ref=e140]
+              - paragraph [ref=e141]: Central time zone, aligned with your business hours from Austin to Dallas, Houston to San Antonio. A dedicated contact who knows your business by name.
+          - link "Talk to our team" [ref=e143] [cursor=pointer]:
+            - /url: "#contact"
+        - paragraph [ref=e149]: Team collaboration or support dashboard visual
+    - region [ref=e150]:
+      - generic [ref=e151]:
+        - generic [ref=e153]:
+          - heading "Questions we hear most often." [level=2] [ref=e154]
+          - paragraph [ref=e155]:
+            - text: Straight answers. If yours is not here,
+            - link "ask us directly" [ref=e156] [cursor=pointer]:
+              - /url: "#contact"
+            - text: .
+        - generic [ref=e158]:
+          - group [ref=e159]:
+            - generic "What does managed IT actually include? +" [ref=e160] [cursor=pointer]
+          - group [ref=e161]:
+            - generic "How fast can you launch a new website? +" [ref=e162] [cursor=pointer]
+          - group [ref=e163]:
+            - generic "Do you work with companies outside Texas? +" [ref=e164] [cursor=pointer]
+          - group [ref=e165]:
+            - generic "What's your cybersecurity approach? +" [ref=e166] [cursor=pointer]
+          - group [ref=e167]:
+            - generic "Can you take over from another provider? +" [ref=e168] [cursor=pointer]
+          - group [ref=e169]:
+            - generic "How does pricing work for web projects? +" [ref=e170] [cursor=pointer]
+    - region [ref=e171]:
+      - generic [ref=e172]:
+        - generic [ref=e173]:
+          - heading "Ready for IT that just works?" [level=2] [ref=e174]
+          - paragraph [ref=e175]: Book a 20-minute discovery call. No sales pitch, just a senior engineer who listens and outlines a path forward.
+        - generic [ref=e176]:
+          - link "Get a free consultation" [ref=e177] [cursor=pointer]:
+            - /url: "#contact"
+          - link "Call +1 (512) 555-0199" [ref=e178] [cursor=pointer]:
+            - /url: tel:+15125550199
+            - text: Call
+            - generic [ref=e179]: +1 (512) 555-0199
+    - region [ref=e180]:
+      - generic [ref=e181]:
+        - generic [ref=e182]:
+          - generic [ref=e183]:
+            - heading "Start a conversation." [level=2] [ref=e184]
+            - paragraph [ref=e185]: Tell us what you're solving for. We'll reply within 4 business hours with a clear next step.
+          - list [ref=e186]:
+            - listitem [ref=e187]:
+              - heading "Central Time" [level=3] [ref=e188]
+              - paragraph [ref=e189]: Mon–Fri 8am–6pm CT24/7 emergency escalation
+            - listitem [ref=e190]:
+              - heading "Phone" [level=3] [ref=e191]
+              - paragraph [ref=e192]:
+                - link "+1 (512) 555-0199" [ref=e193] [cursor=pointer]:
+                  - /url: tel:+15125550199
+            - listitem [ref=e194]:
+              - heading "Email" [level=3] [ref=e195]
+              - paragraph [ref=e196]:
+                - link "hello@novatechsoft.info" [ref=e197] [cursor=pointer]:
+                  - /url: mailto:hello@novatechsoft.info
+        - generic [ref=e199]:
+          - generic [ref=e200]:
+            - generic [ref=e201]: Name *
+            - textbox "Name" [ref=e202]:
+              - /placeholder: Your name
+          - generic [ref=e203]:
+            - generic [ref=e204]: Email *
+            - textbox "Email" [ref=e205]:
+              - /placeholder: you@company.com
+          - generic [ref=e206]:
+            - generic [ref=e207]: What are you solving for? *
+            - textbox "What are you solving for?" [ref=e208]:
+              - /placeholder: Briefly describe your project or IT needs...
+          - generic [ref=e209]:
+            - checkbox "I agree to be contacted about my inquiry. Privacy policy." [ref=e210]
+            - generic [ref=e211]:
+              - text: I agree to be contacted about my inquiry.
+              - link "Privacy policy" [ref=e212] [cursor=pointer]:
+                - /url: /privacy.html
+              - text: .
+          - button "Send message" [ref=e214] [cursor=pointer]
+  - contentinfo [ref=e215]:
+    - generic [ref=e216]:
+      - generic [ref=e217]:
+        - paragraph [ref=e218]: Novatech
+        - paragraph [ref=e219]: Managed IT, web design, cybersecurity, and cloud for teams that want technology to stay out of the way.
+      - navigation "Services" [ref=e220]:
+        - heading "Services" [level=4] [ref=e221]
+        - list [ref=e222]:
+          - listitem [ref=e223]:
+            - link "Managed IT" [ref=e224] [cursor=pointer]:
+              - /url: managed-it.html
+          - listitem [ref=e225]:
+            - link "Web Design" [ref=e226] [cursor=pointer]:
+              - /url: web-design.html
+          - listitem [ref=e227]:
+            - link "Cybersecurity" [ref=e228] [cursor=pointer]:
+              - /url: cybersecurity.html
+          - listitem [ref=e229]:
+            - link "Cloud" [ref=e230] [cursor=pointer]:
+              - /url: cloud.html
+      - navigation "Company" [ref=e231]:
+        - heading "Company" [level=4] [ref=e232]
+        - list [ref=e233]:
+          - listitem [ref=e234]:
+            - link "Why Novatech" [ref=e235] [cursor=pointer]:
+              - /url: "#why"
+          - listitem [ref=e236]:
+            - link "FAQ" [ref=e237] [cursor=pointer]:
+              - /url: "#faq"
+          - listitem [ref=e238]:
+            - link "Contact" [ref=e239] [cursor=pointer]:
+              - /url: "#contact"
+          - listitem [ref=e240]:
+            - link "Privacy" [ref=e241] [cursor=pointer]:
+              - /url: /privacy.html
+      - paragraph [ref=e243]: © 2026 Novatech. All rights reserved.

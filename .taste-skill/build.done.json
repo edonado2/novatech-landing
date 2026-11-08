@@ -1,0 +1,11 @@
+{
+ "page": "index.html",
+ "url": null,
+ "root": null,
+ "kind": "service",
+ "category": "Remote-first managed IT for small business",
+ "primary": "Book free IT audit",
+ "rounds": 3,
+ "start": "2026-11-08T19:34:59.829Z",
+ "by": "gate.mjs --start"
+}

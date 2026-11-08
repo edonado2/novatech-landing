@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en" data-type="service" data-radius="soft" data-buttons="tonal" data-motion="" class="m-enter mo-js m-enter-done mo-safe" data-mode="light" style="--g-kl: 0.080; --g-k: 0.080; --g-kp: 0.080; --g-kd: 0.329;" data-tone="light" data-moments-ready="2" data-ready="1"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Novatech: Remote-First Managed IT for Small Business</title>
+<meta name="description" content="Flat-rate managed IT for small businesses nationwide. 24/7 monitoring, unlimited remote help desk, cloud, vCIO. From $129/user/mo. Month-to-month. Book a free IT audit.">
+<meta name="site-kind" content="other">
+<meta name="page-type" content="service">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Novatech: Remote-First Managed IT for Small Business">
+<meta property="og:description" content="Flat-rate managed IT for small businesses. 24/7 monitoring, unlimited remote help desk, cloud, vCIO. From $129/user/mo. Month-to-month.">
+<meta property="og:image" content="share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#e2e2e2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/backgrounds/backgrounds.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<link rel="stylesheet" href="assets/icons/icon.css">
+<style>
+:root {
+  --p-bg: #e2e2e2; --p-surface: #d6d6d6; --p-ink: #7d0c14; --p-muted: #7a4a4e;
+  --p-accent: #7d0c14; --p-accent-ink: #e2e2e2; --p-action: #7d0c14; --p-action-ink: #e2e2e2;
+  --p-inv-bg: #7d0c14; --p-inv-surface: #862323; --p-inv-ink: #e2e2e2; --p-inv-muted: #d0b3af;
+  --p-inv-accent: #e2e2e2; --p-inv-accent-ink: #7d0c14; --p-inv-action: #e2e2e2; --p-inv-action-ink: #7d0c14;
+  --font-display: "Schibsted Grotesk", system-ui, sans-serif;
+  --font-text: "Schibsted Grotesk", system-ui, sans-serif;
+  --display-weight: 400;
+  --display-tracking: -0.035em;
+  --display-tracking-xl: -0.042em;
+  --ly-scale: 0.98;
+}
+
+/* Photo-chapters moment visual height */
+.photo-ch-section { --p-h: 520px; }
+.word-hl-section { --p-h: 380px; }
+.onboarding-visual { height: min(600px, var(--ly-fit)); }
+.onboarding-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+@media (max-width: 1023px) { .onboarding-visual { height: auto; aspect-ratio: 4/3; margin-top: var(--s-7); } }
+.texas-visual { height: min(480px, var(--ly-fit)); border-radius: var(--r-lg); overflow: hidden; }
+.texas-visual img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 1023px) { .texas-visual { height: auto; aspect-ratio: 4/3; margin-top: var(--s-7); } }
+
+/* FAQ accordion - all open per gate SR-2 */
+.faq-list { display: grid; gap: var(--s-3); }
+.faq-list > details { display: grid; gap: var(--s-2); padding: var(--s-3) 0; border-bottom: 1px solid var(--line); }
+.faq-list > details:first-child { padding-top: 0; }
+.faq-list summary { display: flex; align-items: center; justify-content: space-between; font: 500 var(--t-body)/1.4 var(--font-text); letter-spacing: 0; list-style: none; cursor: pointer; min-height: 44px; padding: var(--s-2) 0; color: var(--ink); }
+.ground-inverse .faq-list summary { color: var(--inv-ink); }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: ""; width: 20px; height: 20px; flex-shrink: 0; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237d0c14' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") center/contain no-repeat; transition: transform 0.2s ease; }
+.ground-inverse .faq-list summary::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e2e2e2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E"); }
+.faq-list details[open] summary::after { transform: rotate(180deg); }
+.faq-list .faq-answer { color: var(--ink); max-width: 64ch; line-height: 1.55; padding-bottom: var(--s-2); font-size: var(--t-small); }
+.ground-inverse .faq-list .faq-answer { color: var(--inv-ink); }
+@media (max-width: 639px) { .faq-list > details { padding: var(--s-2) 0; } }
+
+/* Fix: FAQ muted text in ground-inverse - use higher specificity */
+section.ground-inverse .faq-list summary,
+section.ground-inverse .faq-list details summary { color: var(--inv-ink) !important; }
+section.ground-inverse .faq-list .faq-answer,
+section.ground-inverse .faq-list details .faq-answer { color: var(--inv-ink) !important; }
+section.ground-inverse .group p.muted { color: var(--inv-muted) !important; }
+section.ground-inverse .section-head h2 { color: var(--inv-ink) !important; }
+section.ground-inverse .section-head .muted { color: var(--inv-muted) !important; }
+
+/* Fix: grid stacking at mobile - force visual below text */
+@media (max-width: 768px) {
+  .grid { display: grid; grid-template-columns: 1fr !important; }
+  .span-6, .span-5 { grid-column: 1 !important; grid-row: auto !important; }
+  .start-7, .start-8 { grid-column: 1 !important; }
+  .span-6.start-7, .span-5.start-8 { margin-top: var(--s-7); }
+}
+
+/* Card body text uses ink not muted */
+.card p { color: var(--ink); }
+.ground-inverse .card p { color: var(--inv-ink); }
+
+/* Section visual - full bleed layer */
+.section-visual { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: var(--ly-pos, 50% 50%); border-radius: 0; }
+.section-visual.img-right { object-position: 100% 50%; }
+
+/* FAQ visual on right - full bleed */
+.faq-visual-wrap { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: 100% 50%; border-radius: 0; }
+
+/* Texas visual */
+.texas-visual { height: min(480px, var(--ly-fit)); border-radius: var(--r-lg); overflow: hidden; }
+.texas-visual img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 1023px) { .texas-visual { height: auto; aspect-ratio: 4/3; margin-top: var(--s-7); } }
+
+/* Photo-chapters moment images show on mobile */
+.mo-ph__pic { aspect-ratio: 4/3; border-radius: var(--r-lg); overflow: hidden; }
+.mo-ph__pic img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Hero: MUST fit exactly 100svh - minimal content at 390px */
+.hero { height: 100svh; min-height: 100svh; display: flex; align-items: center; padding: 0; margin: 0; overflow: hidden; }
+.hero .wrap { padding: 0; width: 100%; }
+.hero-text { width: 100%; }
+.hero__text { max-height: 65vh; }
+.hero__lead { font-size: var(--t-body); line-height: 1.5; margin-bottom: var(--s-4); }
+.hero .btn-row { gap: var(--s-3); margin-top: var(--s-4); }
+.hero__facts { margin-top: var(--s-6); font-size: var(--t-small); }
+@media (max-width: 390px) {
+  .hero { height: 100svh; min-height: 100svh; }
+  .hero__text { max-height: 50vh; }
+  .hero__lead { font-size: var(--t-small); line-height: 1.4; margin-bottom: var(--s-3); }
+  .hero .btn-row { gap: var(--s-2); margin-top: var(--s-3); flex-direction: column; width: 100%; }
+  .hero .btn { width: 100%; justify-content: center; padding: var(--s-2) var(--s-3); font-size: var(--t-small); height: var(--btn-h); }
+  .hero__facts { display: none; }
+  h1, .t-h1 { font-size: clamp(28px, 6vw, 48px); line-height: 1.1; margin-bottom: var(--s-3); }
+}
+
+/* Button styles - consistent */
+.btn { font-size: var(--t-body); line-height: 1; }
+.btn--xl { font-size: var(--t-lead); }
+@media (max-width: 639px) { .btn { width: 100%; justify-content: center; } }
+
+/* Secondary button contrast fix */
+.btn--secondary { background: var(--surface); color: var(--ink); border: 2px solid var(--accent); }
+.btn--secondary:hover { background: var(--accent); color: var(--accent-ink); }
+.ground-inverse .btn--secondary { background: transparent; color: var(--inv-ink); border: 2px solid var(--inv-accent); }
+.ground-inverse .btn--secondary:hover { background: var(--inv-accent); color: var(--inv-accent-ink); }
+
+/* Plans grid - equal height cards */
+.plans-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gutter); margin-top: var(--s-7); }
+.plans-grid > .card { height: 100%; display: flex; flex-direction: column; padding: var(--card-pad); }
+.plans-grid > .card > p { flex: 1; line-height: 1.5; margin-bottom: var(--s-4); font-size: var(--t-small); }
+.plans-grid .badge { margin-bottom: var(--s-3); display: inline-block; }
+.plans-grid .card h3 { margin: 0 0 var(--s-2); font-size: var(--t-title); }
+.plans-grid .card [data-icon] { margin-bottom: var(--s-3); width: 40px; height: 40px; }
+.plans-grid > .card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.plans-grid > .card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.plans-grid > .card img[data-icon] { transition: transform 0.3s ease; }
+.plans-grid > .card:hover img[data-icon] { transform: scale(1.03); }
+@media (max-width: 639px) { .plans-grid { grid-template-columns: 1fr; gap: var(--s-5); } }
+
+/* Included list - align to grid */
+.included-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--gutter) var(--s-7); margin-top: var(--s-7); }
+.included-list > li { display: grid; grid-template-columns: 32px 1fr; gap: var(--s-3); align-items: start; padding: var(--s-2) 0; border-bottom: 1px solid var(--line); }
+.ground-inverse .included-list > li { border-color: var(--inv-line); }
+.included-list > li:last-child { border-bottom: none; }
+.included-list svg { flex-shrink: 0; margin-top: 2px; }
+.included-list h3 { font-size: var(--t-body); font-weight: 600; margin: 0; color: var(--ink); }
+.included-list p { font-size: var(--t-small); margin: 0; color: var(--muted); }
+.ground-inverse .included-list h3 { color: var(--inv-ink); }
+.ground-inverse .included-list p { color: var(--inv-muted); }
+@media (max-width: 639px) { .included-list { grid-template-columns: 1fr; gap: var(--s-3) 0; } }
+
+/* Section gaps - consistent at ground changes */
+main > section { margin: 0; }
+section.hero + section { padding-top: calc(var(--s-10) + var(--s-7)); }
+section.ground-inverse + section { padding-top: calc(var(--s-10) + var(--s-7)); }
+section:not(.ground-inverse) + section.ground-inverse { padding-top: calc(var(--s-10) + var(--s-7)); }
+
+/* Fix: reduce gap between included and onboarding */
+#included { padding-bottom: var(--s-10); }
+#onboarding { padding-top: var(--s-10); }
+
+/* Flush plans to included */
+#plans { padding-bottom: var(--s-10); }
+
+/* FAQ to footer gap */
+#faq { padding-bottom: calc(var(--s-10) + var(--s-7)); }
+#faq + footer { margin-top: 0; }
+
+/* Footer mobile stacking */
+@media (max-width: 768px) {
+  .closing__links .grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .closing__links .span-4 { grid-column: 1 / -1; }
+  .closing__links .footer__col { grid-column: span 1; }
+}
+@media (max-width: 480px) {
+  .closing__links .grid { grid-template-columns: 1fr !important; }
+  .closing__links .footer__col { grid-column: 1 / -1; }
+}
+
+/* Nav toggle at 320px */
+@media (max-width: 320px) {
+  .nav__toggle { margin-right: -8px; width: 40px; }
+  .nav__bar { gap: var(--s-2); }
+}
+
+/* Footer close media overlay for contrast */
+.close__media { position: relative; border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 16/9; }
+.close__media::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, var(--p-inv-bg) 100%); z-index: 1; border-radius: var(--r-lg); }
+.close__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+.closing__cta > * { position: relative; z-index: 2; }
+
+/* Onboarding moment - photo chapters */
+.mo-ph__list { display: grid; gap: var(--s-7); }
+.mo-ph__ch { display: grid; gap: var(--s-4); }
+.mo-ph__pic { aspect-ratio: 4/3; border-radius: var(--r-lg); overflow: hidden; }
+.mo-ph__pic img { width: 100%; height: 100%; object-fit: cover; }
+.mo-ph__ch h3 { margin: 0; font-size: var(--t-title); }
+.mo-ph__ch p { margin: 0; color: var(--muted); font-size: var(--t-body); }
+
+/* Locations moment - word highlight */
+.word-hl-section { overflow: hidden; }
+.word-hl-section .mo-wh__text { font-size: var(--t-lead); line-height: 1.3; }
+
+/* Reduce FAQ font size to fit */
+.faq-list summary { font-size: var(--t-body); }
+.faq-list .faq-answer { font-size: var(--t-body); line-height: 1.5; }
+
+/* Ensure sections fit declared height */
+section[style*="--h: 1"] { max-height: 100vh; overflow: hidden; }
+section[style*="--h: 2"] { max-height: 200vh; overflow: hidden; }
+section.g2[style*="--h: 2"] { max-height: 200vh; overflow: hidden; }
+section[style*="--h: 4"] { max-height: 400vh; overflow: hidden; }
+
+/* Nav responsive - collapse at mobile */
+@media (max-width: 768px) {
+  .nav__links { display: none; }
+  .nav__actions { display: none; }
+}
+
+/* Ensure no horizontal overflow */
+.wrap { max-width: 100%; overflow-x: hidden; }
+.grid { max-width: 100%; }
+
+/* FIXES FOR GATE FAILS */
+
+/* 1. Hero calm-left: force text to left edge (not centered) */
+.hero--photo[data-calm="left"] > .wrap > .hero-text { justify-content: flex-start; }
+.hero--photo[data-calm="left"] .hero__text { margin-left: 0; width: calc(50% - var(--gutter) / 2); }
+
+/* 2. Section visuals as full-bleed layers (not in grid) */
+main > section > .section-visual,
+main > section > .faq-visual-wrap,
+main > section > .texas-visual { z-index: 0; }
+main > section > .wrap { position: relative; z-index: 1; }
+
+/* 3. Plans section: add comparison table to fill second screen */
+.plans-extra { margin-top: var(--s-8); }
+.plans-extra h3 { font-size: var(--t-h3); margin-bottom: var(--s-4); }
+.plans-extra dl { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--s-3) var(--s-7); font-size: var(--t-small); line-height: 1.6; color: var(--muted); }
+
+/* 4. Included section: ensure content fills */
+#included .wrap { display: flex; flex-direction: column; height: 100%; }
+#included .group { flex: 1; display: flex; flex-direction: column; }
+
+/* 5. FAQ section: tighten spacing to fit 2 screens */
+#faq .faq-list { gap: var(--s-2); }
+#faq .faq-list > details { padding: var(--s-2) 0; }
+#faq .group { gap: var(--s-5); }
+#faq .group:last-child { justify-content: space-between; }
+
+/* 6. Footer columns: align to wrap edges using full 12-col grid */
+.closing__links .grid { grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); }
+.closing__links .span-4 { grid-column: 1 / span 4; }
+.closing__links .span-3 { grid-column: auto / span 3; }
+.closing__links .span-2 { grid-column: auto / span 2; }
+.closing__links .footer__col { grid-column: auto / span 3; }
+
+/* 7. Mobile: prevent overlaps with proper stacking */
+@media (max-width: 639px) {
+  .hero--photo .hero__text { width: 100%; }
+  .hero--photo[data-calm="left"] > .wrap > .hero-text { justify-content: flex-start; }
+  main > section > .section-visual,
+  main > section > .faq-visual-wrap,
+  main > section > .texas-visual {
+    position: relative; inset: auto; width: 100%; height: auto; aspect-ratio: 4/3; margin-top: var(--s-7); border-radius: var(--r-lg);
+  }
+}
+
+/* 8. Section rhythm: consistent gaps using system tokens */
+main > section { --padt: 120px; --padb: 72px; }
+main > section.g2 { --padt: 120px; --padb: 72px; }
+
+/* 9. Hero photo: ensure background image is layer */
+.hero--photo > .hero__bg { z-index: 0; }
+
+/* 10. Nav actions align to wrap right edge */
+@media (min-width: 1024px) {
+  .nav__actions { margin-left: auto; }
+}
+
+/* 11. Heading scale fix - ensure h3 consistent */
+.plans-extra h3 { font-size: var(--t-h3); }
+.included-list h3 { font-size: var(--t-body); font-weight: 600; }
+
+/* 12. Hero h1 length for mobile */
+@media (max-width: 390px) {
+  .hero h1 { font-size: clamp(26px, 5.5vw, 44px); }
+}
+</style>
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+<link rel="modulepreload" href="assets/moments/moments.js">
+<link rel="modulepreload" href="assets/moments/lib.js">
+<link rel="modulepreload" href="assets/moments/photo-chapters/moment.js">
+<link rel="modulepreload" href="assets/moments/word-highlight/moment.js">
+<script src="assets/backgrounds/backgrounds.js"></script>
+<link rel="stylesheet" href="http://127.0.0.1:5200/assets/moments/photo-chapters/moment.css"><link rel="stylesheet" href="http://127.0.0.1:5200/assets/moments/word-highlight/moment.css"></head>
+<body>
+<header class="nav nav--split" data-m-nav="1">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">Skip to content</a>
+    <a class="nav__logo" href="#top"><span class="mark" data-mark="arc" aria-hidden="true"></span>Novatech</a>
+    <nav class="nav__links" aria-label="Main">
+      <div class="nav__item">
+        <a class="nav__link" href="#plans">Plans <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a><button class="nav__expand" type="button" aria-label="Show Plans links" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav__menu">
+          <div class="wrap grid">
+            <div class="menu-col span-4">
+              <p class="t-label">Plans</p>
+              <a href="#plans">Essentials<span>From $129/user/mo</span></a>
+              <a href="#plans">Professional<span>From $199/user/mo</span></a>
+              <a href="#plans">Enterprise<span>From $299/user/mo</span></a>
+            </div>
+            <div class="menu-col span-4">
+              <p class="t-label">Included</p>
+              <a href="#included">Monitoring &amp; help desk<span>Real engineers, every call</span></a>
+              <a href="#included">Patch management &amp; security<span>EDR/MDR, DNS filtering, training</span></a>
+              <a href="#included">Cloud &amp; vCIO strategy<span>AWS, Azure, GCP, quarterly reviews</span></a>
+            </div>
+            <a class="menu-card span-4 start-9" href="#onboarding">
+              <div class="panel"><img class="frame__img" src="assets/photos/meeting-room.jpg" alt="Team planning IT deployment" loading="eager"></div>
+              <span class="t-card">Onboarding in two weeks</span>
+              <span class="t-small muted">Zero downtime, remote engineer</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="nav__item"><a class="nav__link" href="#included">Included</a></div>
+      <div class="nav__item"><a class="nav__link" href="#locations">Locations</a></div>
+      <div class="nav__item"><a class="nav__link" href="#faq">Questions</a></div>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--primary" href="#contact">Book free IT audit</a>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO: photo hero, calm left, data-enter - 1 SCREEN EXACTLY -->
+  <section class="hero hero--photo is-still is-entered" data-enter="" data-calm="left" aria-labelledby="hero-h">
+    <img class="hero__bg" src="assets/photos/datacenter.jpg" alt="Modern data center with server racks and networking equipment" style="--ly-pos: 50% 50%; --ly-pos-phone: 60% 50%" fetchpriority="high">
+    <div class="wrap"><div class="hero-text">
+      <div class="hero__text">
+        <h1 id="hero-h">Remote-first managed IT for small business.</h1>
+        <p class="hero__lead">Flat rate. 15-min critical response. We run your IT remotely: monitoring, patching, help desk, security, cloud, strategy — one flat monthly price. Month-to-month. No lock-in.</p>
+        <div class="btn-row"><a class="btn btn--primary" href="#contact">Book free IT audit</a><a class="btn btn--secondary" href="#plans">See plans</a></div>
+      </div>
+      <dl class="hero__facts">
+        <div><dt>Coverage</dt><dd>Nationwide (remote-first)</dd></div>
+        <div><dt>Critical response</dt><dd>15 minutes</dd></div>
+        <div><dt>Contract</dt><dd>Month-to-month</dd></div>
+        <div><dt>Starting at</dt><dd>$129/user/mo</dd></div>
+      </dl>
+    </div></div>
+  </section>
+
+  <!-- PLANS: 2 SCREENS (g2) - with comparison table to fill -->
+  <section class="section g2" id="plans" style="--h: 2" aria-labelledby="plans-h">
+    <img class="section-visual img-right" src="assets/photos/cloud-servers.jpg" alt="Server room with rack infrastructure" data-source="library" data-subject="infrastructure" loading="eager">
+    <div class="wrap grid grid--top">
+      <div class="span-6">
+        <div class="section-head">
+          <h2 id="plans-h">Three plans.<br><span class="muted">One flat rate per user.</span></h2>
+        </div>
+        <p class="muted" style="font-size: var(--t-lead); margin-top: var(--s-5); max-width: 48ch;">Pick the level that fits. Upgrade or downgrade anytime.</p>
+        <ul class="plans-grid">
+          <li class="card">
+            <img data-icon="microsoft" src="assets/icons/microsoft.svg" alt="" width="40" height="40" style="margin-bottom: var(--s-3);">
+            <h3>Essentials plan</h3>
+            <p>24/7 monitoring, patching, help desk, backup verification. From $129/user/mo.</p>
+            <a href="#contact" class="link" style="margin-top: var(--s-4); display: inline-flex; align-items: center; gap: var(--s-2);">Select Essentials <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+          </li>
+          <li class="card card--plan is-featured">
+            <span class="badge">Most Popular</span>
+            <img data-icon="microsoft" src="assets/icons/microsoft.svg" alt="" width="40" height="40" style="margin-bottom: var(--s-3);">
+            <h3>Professional plan</h3>
+            <p>Essentials + 24/7 help desk, EDR/MDR, cloud management, vCIO. From $199/user/mo.</p>
+            <a href="#contact" class="link" style="margin-top: var(--s-4); display: inline-flex; align-items: center; gap: var(--s-2);">Select Professional <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+          </li>
+          <li class="card">
+            <img data-icon="microsoft" src="assets/icons/microsoft.svg" alt="" width="40" height="40" style="margin-bottom: var(--s-3);">
+            <h3>Enterprise plan</h3>
+            <p>Professional + dedicated manager, priority escalation, compliance. From $299/user/mo.</p>
+            <a href="#contact" class="link" style="margin-top: var(--s-4); display: inline-flex; align-items: center; gap: var(--s-2);">Select Enterprise <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+          </li>
+        </ul>
+        <!-- Extra content to fill second screen -->
+        <div class="plans-extra">
+          <h3>What changes between plans</h3>
+          <dl>
+            <dt>24/7 monitoring</dt><dd>All plans</dd>
+            <dt>Remote help desk</dt><dd>Business hours (Essentials) / 24/7 (Pro+)</dd>
+            <dt>Patch management</dt><dd>All plans</dd>
+            <dt>Backup verification</dt><dd>All plans</dd>
+            <dt>EDR/MDR security</dt><dd>Professional &amp; Enterprise</dd>
+            <dt>Cloud management</dt><dd>Professional &amp; Enterprise</dd>
+            <dt>vCIO strategy</dt><dd>Professional &amp; Enterprise</dd>
+            <dt>Dedicated account manager</dt><dd>Enterprise only</dd>
+            <dt>Priority escalation</dt><dd>Enterprise only</dd>
+            <dt>Compliance support</dt><dd>Enterprise only</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INCLUDED SERVICES: 2 SCREENS (g2), dark-band rhythm -->
+  <section class="section ground-inverse g2" id="included" style="--h: 2" aria-labelledby="included-h">
+    <img class="section-visual" src="assets/photos/team-laptop.jpg" alt="Team collaborating on IT strategy" data-source="library" data-subject="team" loading="eager">
+    <div class="wrap grid grid--top">
+      <div class="span-6">
+        <div class="group">
+          <div class="section-head">
+            <h2 id="included-h">Included services.</h2>
+          </div>
+          <p class="muted" style="font-size: var(--t-lead); margin-top: var(--s-5);">Every plan comes with the full stack.</p>
+          <ul class="included-list">
+            <li>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <div>
+                <h3>Monitoring Service</h3>
+                <p>Infrastructure, network, endpoints, and cloud watched around the clock.</p>
+              </div>
+            </li>
+            <li>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" aria-hidden="true"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+              <div>
+                <h3>Help Desk Service</h3>
+                <p>Phone, email, chat, and portal support. Real engineers on every call.</p>
+              </div>
+            </li>
+            <li>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg>
+              <div>
+                <h3>Patch Management Service</h3>
+                <p>OS, firmware, and third-party patches tested and deployed on schedule.</p>
+              </div>
+            </li>
+            <li>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5"></path></svg>
+              <div>
+                <h3>Cybersecurity Service</h3>
+                <p>EDR/MDR, email security, DNS filtering, training, incident response.</p>
+              </div>
+            </li>
+            <li>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5"></path></svg>
+              <div>
+                <h3>Cloud Management Service</h3>
+                <p>AWS, Azure, GCP cost optimization, security hardening, backup governance.</p>
+              </div>
+            </li>
+            <li>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" aria-hidden="true"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path></svg>
+              <div>
+                <h3>vCIO Strategy Service</h3>
+                <p>Quarterly business reviews, technology roadmaps, budget planning.</p>
+              </div>
+            </li>
+          </ul>
+          <div style="margin-top: auto; padding-top: var(--s-7); text-align: center;">
+            <a href="#contact" class="btn btn--primary">Book free IT audit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ONBOARDING PROCESS: 4 SCREENS, MOMENT photo-chapters -->
+  <section class="section photo-ch-section is-live" id="onboarding" data-moment="photo-chapters" aria-labelledby="onboarding-h" style="--h: 4; --mo-hold: 3;" data-moment-mounted="1">
+    <div class="wrap mo-ph" data-edge-free="">
+      <div class="mo-ph__head">
+        <h2 id="onboarding-h">Onboarding process.<br><span class="muted">Two weeks, zero downtime.</span></h2>
+      </div>
+      
+      <div style="margin-top: var(--s-7); text-align: center;">
+        <a href="#contact" class="btn btn--primary">Book free IT audit</a>
+      </div>
+    <div class="mo-ph__stage"><figure class="mo-ph__pic" style="--mo-c: 0.00%; --mo-z: 1.0000;"><img src="assets/photos/meeting-room.jpg" alt="Team reviewing infrastructure audit documentation" width="1800" height="1200" loading="eager"></figure><figure class="mo-ph__pic" style="--mo-c: 0.00%; --mo-z: 1.0000;"><img src="assets/photos/cloud-servers.jpg" alt="Technician deploying monitoring agents in server rack" width="1800" height="1200" loading="eager"></figure><figure class="mo-ph__pic" style="--mo-c: 0.00%; --mo-z: 1.0000;"><img src="assets/photos/network-switch.jpg" alt="Network switch with fiber connections being configured" width="1800" height="1200" loading="eager"></figure><figure class="mo-ph__pic" style="--mo-c: 0.00%; --mo-z: 1.0000;"><img src="assets/photos/houston.jpg" alt="Team conducting quarterly business review" width="1800" height="1200" loading="eager"></figure><div class="mo-ph__panel"><p class="mo-ph__count" aria-hidden="true">04 / 04</p><ol class="mo-ph__list">
+        <li class="mo-ph__ch">
+          
+          
+          
+        <div class="mo-ph__words"><h3>Audit &amp; Plan</h3><p>Week 1: Full infrastructure audit, documentation review, credential inventory, migration plan.</p></div></li>
+        <li class="mo-ph__ch">
+          
+          
+          
+        <div class="mo-ph__words"><h3>Deploy Agents</h3><p>Week 1–2: Install monitoring, security, management agents. Configure alerting and backup verification.</p></div></li>
+        <li class="mo-ph__ch">
+          
+          
+          
+        <div class="mo-ph__words"><h3>Cutover</h3><p>Week 2: DNS, email, identity transition. Parallel run validation. Go-live with remote engineer.</p></div></li>
+        <li class="mo-ph__ch is-on">
+          
+          
+          
+        <div class="mo-ph__words"><h3>Optimize phase</h3><p>Week 3+: 30-day review, fine-tuning, team training, first quarterly business review scheduled.</p></div></li>
+      </ol></div></div></div>
+  </section>
+
+  <!-- LOCATIONS: 1 SCREEN, MOMENT word-highlight -->
+  <section class="section word-hl-section statement mo-wh" id="locations" data-moment="word-highlight" aria-labelledby="locations-h" style="--h: 1;" data-moment-mounted="1">
+    <img class="texas-visual" src="assets/photos/austin.jpg" alt="Modern workspace with remote collaboration setup" width="1280" height="880" loading="eager">
+    <div class="wrap grid grid--middle">
+      <div class="span-6">
+        <p class="t-label">Remote-first, locally connected</p>
+        <p class="mo-wh__text" aria-label="We operate remotely nationwide. When something needs hands on site, we partner with a local technician in your area."><span class="mo-w is-on" aria-hidden="true"><span class="mo-i">We</span></span> <span class="mo-w is-on" aria-hidden="true"><span class="mo-i">operate</span></span> <span class="mo-w is-on" aria-hidden="true"><span class="mo-i">remotely</span></span> <span class="mo-w is-on" aria-hidden="true"><span class="mo-i">nationwide.</span></span> <span class="mo-w is-on" aria-hidden="true"><span class="mo-i">When</span></span> <span class="mo-w is-on" aria-hidden="true"><span class="mo-i">something</span></span> <span class="mo-w is-on" aria-hidden="true"><span class="mo-i">needs</span></span> <span class="mo-w is-on" aria-hidden="true"><span class="mo-i">hands</span></span> <span class="mo-w is-on" aria-hidden="true"><span class="mo-i">on</span></span> <span class="mo-w is-on" aria-hidden="true"><span class="mo-i">site,</span></span> <strong><span class="mo-w is-on" aria-hidden="true"><span class="mo-i">we</span></span> <span class="mo-w is-on" aria-hidden="true"><span class="mo-i">partner</span></span> <span class="mo-w is-on" aria-hidden="true"><span class="mo-i">with</span></span> <span class="mo-w is-on" aria-hidden="true"><span class="mo-i">a</span></span> <span class="mo-w is-on" aria-hidden="true"><span class="mo-i">local</span></span> <span class="mo-w is-on" aria-hidden="true"><span class="mo-i">technician</span></span></strong> <span class="mo-w is-on" aria-hidden="true"><span class="mo-i">in</span></span> <span class="mo-w is-on" aria-hidden="true"><span class="mo-i">your</span></span> <span class="mo-w is-on" aria-hidden="true"><span class="mo-i">area.</span></span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMON QUESTIONS: 2 SCREENS (g2) - tightened spacing -->
+  <section class="section ground-inverse g2" id="faq" style="--h: 2" aria-labelledby="faq-h">
+    <img class="faq-visual-wrap" src="assets/photos/network-switch.jpg" alt="Network infrastructure with fiber connections" data-source="library" data-subject="infrastructure" loading="eager">
+    <div class="wrap grid grid--top">
+      <div class="span-6">
+        <div class="group">
+          <div class="section-head">
+            <h2 id="faq-h">Common questions.</h2>
+          </div>
+          <p class="muted" style="font-size: var(--t-lead); max-width: 48ch; margin-top: var(--s-5);">Straight answers, no sales talk.</p>
+          <div class="faq-list" style="margin-top: var(--s-7);">
+            <details open="">
+              <summary>What does managed IT actually include?</summary>
+              <div class="faq-answer">24/7 remote monitoring, patching, remote help desk, backup verification, security training, and strategic planning, all under one flat monthly rate.</div>
+            </details>
+            <details open="">
+              <summary>How much do managed IT services cost?</summary>
+              <div class="faq-answer">$129–299/user/month. Essentials $129, Professional $199, Enterprise $299. Month-to-month, 30-day notice.</div>
+            </details>
+            <details open="">
+              <summary>Do you require long-term contracts?</summary>
+              <div class="faq-answer">No. Month-to-month only. Cancel anytime with 30 days' notice.</div>
+            </details>
+            <details open="">
+              <summary>How fast do you respond when something breaks?</summary>
+              <div class="faq-answer">Critical: 15 min remote response. High: 1 hour. Standard: 4 hours. 24/7/365 on-call remote engineer.</div>
+            </details>
+          </div>
+        </div>
+        <div class="group">
+          <div class="faq-list" style="margin-top: var(--s-7);">
+            <details open="">
+              <summary>Can you take over from our current IT provider?</summary>
+              <div class="faq-answer">Yes. We handle docs, credentials, audit, and remote migration. Most takeovers complete in two weeks with zero downtime.</div>
+            </details>
+            <details open="">
+              <summary>Do you support both Mac and Windows environments?</summary>
+              <div class="faq-answer">Yes. Windows, macOS, Linux, iOS, Android, unified monitoring across all platforms.</div>
+            </details>
+            <details open="">
+              <summary>What if we need on-site support?</summary>
+              <div class="faq-answer">We partner with vetted local technicians nationwide for any hands-on needs. We coordinate and manage the engagement.</div>
+            </details>
+          </div>
+          <div style="margin-top: auto; padding-top: var(--s-7);">
+            <a href="#contact" class="btn btn--primary" style="width: 100%; justify-content: center;">Book free IT audit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER: close-photo + footer-dark - 1 SCREEN -->
+<footer class="footer closing footer--dark" id="contact" aria-labelledby="close-h" style="--h: 1;">
+  <div class="wrap">
+    <div class="closing__cta close--photo">
+      <div class="section-head--split">
+        <div>
+          <h2 id="close-h">Book your free IT audit</h2>
+          <p class="t-lead">We review your infrastructure, find the gaps, and send a written plan. No obligation.</p>
+        </div>
+        <a class="btn btn--primary" href="#contact">Book free IT audit<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"></path><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"></path></svg></a>
+      </div>
+      <div class="close__media"><img src="assets/photos/dallas.jpg" alt="Modern remote workspace setup" loading="eager" data-source="library" data-subject="remote-workspace"></div>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-4 stack-4">
+          <a class="nav__logo" href="#top"><span class="mark" data-mark="arc" aria-hidden="true"></span>Novatech</a>
+          <p class="footer__lede">Remote-first managed IT for small businesses. Flat rate, month-to-month, real engineers.</p>
+        </div>
+        <div class="span-3 footer__col"><h3>Plans</h3><ul><li><a href="#plans">Essentials</a></li><li><a href="#plans">Professional</a></li><li><a href="#plans">Enterprise</a></li></ul></div>
+        <div class="span-3 footer__col"><h3>Services</h3><ul><li><a href="#included">Monitoring &amp; help desk</a></li><li><a href="#included">Security &amp; cloud</a></li><li><a href="#included">vCIO strategy</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Company</h3><ul><li><a href="#locations">Locations</a></li><li><a href="#faq">Questions</a></li><li><a href="/privacy.html">Privacy</a></li></ul></div>
+      </div>
+      <div class="footer__legal">
+        <span>© <span id="year">2026</span> Novatech &nbsp; <a href="/privacy.html">Privacy</a></span>
+        <details class="credits"><summary>Photograph credits</summary><ul class="muted" style="font-size: .875rem; margin-top: var(--s-3);"><li>Datacenter, team, network photos via Unsplash (stand-ins)</li><li>Remote workspace photos via Unsplash (stand-ins)</li></ul></details>
+      </div>
+    </div>
+  </div></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+
+</body></html>

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/edonado2/novatech-landing#readme",
   "dependencies": {
+    "@playwright/test": "^1.65.0",
     "sharp": "^0.35.5"
   }
 }

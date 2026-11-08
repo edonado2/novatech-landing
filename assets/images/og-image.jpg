@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#F5F5F0"/>
+  <rect x="100" y="100" width="1000" height="430" rx="24" fill="white" stroke="#E8D5B7" stroke-width="3"/>
+  <text x="600" y="280" font-family="system-ui, sans-serif" font-size="48" font-weight="600" fill="#0C0C0C" text-anchor="middle">Novatech</text>
+  <text x="600" y="340" font-family="system-ui, sans-serif" font-size="24" fill="#6B6B60" text-anchor="middle">Managed IT · Web Design · Cybersecurity · Cloud</text>
+  <text x="600" y="420" font-family="system-ui, sans-serif" font-size="18" fill="#0C3D2E" text-anchor="middle">Technology that stays out of the way</text>
+</svg>
