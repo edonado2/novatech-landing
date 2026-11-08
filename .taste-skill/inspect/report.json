@@ -1,6 +1,6 @@
 {
  "url": "index.html",
- "at": "2026-11-08T22:27:52.902Z",
+ "at": "2026-11-08T22:42:29.660Z",
  "allow": [],
  "viewports": [
   {
@@ -11,7 +11,7 @@
    "filled": [
     0.84,
     0.57,
-    0.35,
+    0.76,
     0.95,
     0.44,
     0.44,
@@ -37,7 +37,7 @@
     "page": {
      "height": 9735,
      "screens": 10.8,
-     "words": 683,
+     "words": 700,
      "img": 8,
      "video": 0,
      "canvas": 0,
@@ -45,11 +45,11 @@
      "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
-     "uiFragments": 3,
+     "uiFragments": 4,
      "uiAbuse": false,
      "realPictures": 8,
      "videoCount": 0,
-     "uiPictures": 0,
+     "uiPictures": 1,
      "pictureSamples": [
       "meeting-room.jpg",
       "datacenter.jpg",
@@ -204,20 +204,20 @@
       "text": "What changes between plans",
       "words": 4,
       "chars": 26,
-      "lines": 2,
+      "lines": 1,
       "size": 28,
       "vw": 1.9,
       "font": "Albert Sans",
-      "weight": 400,
+      "weight": 700,
       "tracking": -0.025,
       "leading": 1.2,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "left",
-      "widthRatio": 0.24,
-      "top": 1996,
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 2016,
       "tag": "h3",
       "kind": "heading"
      },
@@ -553,6 +553,15 @@
        }
       },
       {
+       "color": "#d6d6d6",
+       "top": 1984,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.84
+       }
+      },
+      {
        "color": "#7d0c14",
        "top": 2700,
        "hsl": {
@@ -560,29 +569,20 @@
         "s": 0.82,
         "l": 0.27
        }
-      },
-      {
-       "color": "#d6d6d6",
-       "top": 3888,
-       "hsl": {
-        "h": 0,
-        "s": 0,
-        "l": 0.84
-       }
       }
      ],
      "textColors": [
       {
        "color": "#7d0c14",
-       "share": 0.55
+       "share": 0.53
       },
       {
        "color": "#e2e2e2",
-       "share": 0.36
+       "share": 0.35
       },
       {
        "color": "#7a4a4e",
-       "share": 0.08
+       "share": 0.12
       }
      ],
      "button": {
@@ -624,7 +624,7 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 8,
+     "roundedBoxes": 9,
      "boxRadius": 20,
      "squareMedia": 1,
      "roundedMedia": 6,
@@ -695,7 +695,7 @@
       "tag": "section",
       "top": 900,
       "height": 1800,
-      "words": 230,
+      "words": 247,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -704,9 +704,9 @@
        "tag": "h2"
       },
       "left": 80,
-      "right": 80,
+      "right": 178,
       "textLeft": 80,
-      "textRight": 80,
+      "textRight": 178,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -832,7 +832,7 @@
     "gaps": [
      {
       "top": 1716,
-      "height": 276
+      "height": 296
      }
     ],
     "h1s": [
@@ -847,18 +847,18 @@
     "edges": [
      {
       "x": 80,
-      "n": 8
+      "n": 7
      },
      {
       "x": 128,
       "n": 2
      },
      {
-      "x": 529,
+      "x": 408,
       "n": 1
      }
     ],
-    "leftBlocks": 11,
+    "leftBlocks": 10,
     "bodySize": 16,
     "stage": false,
     "explains": true,
@@ -877,21 +877,21 @@
    "filled": [
     0.46,
     0.61,
-    0.41,
-    0.89,
-    0.67,
+    0.79,
+    0.82,
+    0.68,
     0.61,
     0.61,
     0.61,
-    0.44,
-    0.96,
-    0.44,
+    0.49,
+    0.9,
+    0.42,
     0.18
    ],
    "motion": {
-    "elements": 21,
+    "elements": 20,
     "css": 0,
-    "transitions": 21,
+    "transitions": 20,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -902,9 +902,9 @@
      "h": 1024
     },
     "page": {
-     "height": 11514,
-     "screens": 11.2,
-     "words": 679,
+     "height": 11685,
+     "screens": 11.4,
+     "words": 696,
      "img": 8,
      "video": 0,
      "canvas": 0,
@@ -912,11 +912,11 @@
      "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
-     "uiFragments": 3,
+     "uiFragments": 4,
      "uiAbuse": false,
      "realPictures": 7,
      "videoCount": 0,
-     "uiPictures": 0,
+     "uiPictures": 1,
      "pictureSamples": [
       "datacenter.jpg",
       "meeting-room.jpg",
@@ -1020,7 +1020,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 3397,
+      "top": 3568,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1041,7 +1041,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.6,
-      "top": 4405,
+      "top": 4576,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1062,7 +1062,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 8517,
+      "top": 8688,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1083,7 +1083,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 9302,
+      "top": 9474,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1104,7 +1104,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.6,
-      "top": 10471,
+      "top": 10642,
       "tag": "h2",
       "kind": "heading"
      }
@@ -1196,7 +1196,7 @@
       },
       {
        "color": "#7d0c14",
-       "top": 3277,
+       "top": 3448,
        "hsl": {
         "h": 356,
         "s": 0.82,
@@ -1207,15 +1207,15 @@
      "textColors": [
       {
        "color": "#7d0c14",
-       "share": 0.55
+       "share": 0.53
       },
       {
        "color": "#e2e2e2",
-       "share": 0.36
+       "share": 0.35
       },
       {
        "color": "#7a4a4e",
-       "share": 0.09
+       "share": 0.12
       }
      ],
      "button": {
@@ -1257,7 +1257,7 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 7,
+     "roundedBoxes": 8,
      "boxRadius": 20,
      "squareMedia": 1,
      "roundedMedia": 6,
@@ -1287,7 +1287,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 11514,
+    "pageH": 11685,
     "margins": {
      "left": 48,
      "right": 48
@@ -1316,8 +1316,8 @@
       "sel": "section#plans.section.g2",
       "tag": "section",
       "top": 1024,
-      "height": 2253,
-      "words": 230,
+      "height": 2424,
+      "words": 247,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1326,9 +1326,9 @@
        "tag": "h2"
       },
       "left": 48,
-      "right": 48,
+      "right": 81,
       "textLeft": 48,
-      "textRight": 48,
+      "textRight": 81,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1338,7 +1338,7 @@
      {
       "sel": "section#included.section.ground-inverse",
       "tag": "section",
-      "top": 3277,
+      "top": 3448,
       "height": 1024,
       "words": 105,
       "media": 0,
@@ -1361,7 +1361,7 @@
      {
       "sel": "section#onboarding.section.photo-ch-section",
       "tag": "section",
-      "top": 4301,
+      "top": 4472,
       "height": 4096,
       "words": 28,
       "media": 4,
@@ -1384,7 +1384,7 @@
      {
       "sel": "section#locations.section.word-hl-section",
       "tag": "section",
-      "top": 8397,
+      "top": 8568,
       "height": 786,
       "words": 55,
       "media": 1,
@@ -1407,7 +1407,7 @@
      {
       "sel": "section#faq.section.ground-inverse",
       "tag": "section",
-      "top": 9182,
+      "top": 9354,
       "height": 1168,
       "words": 160,
       "media": 0,
@@ -1430,7 +1430,7 @@
      {
       "sel": "footer#contact.footer.closing",
       "tag": "footer",
-      "top": 10351,
+      "top": 10522,
       "height": 1163,
       "words": 75,
       "media": 1,
@@ -1469,14 +1469,14 @@
     "edges": [
      {
       "x": 48,
-      "n": 10
+      "n": 9
      },
      {
-      "x": 253,
+      "x": 80,
       "n": 1
      }
     ],
-    "leftBlocks": 11,
+    "leftBlocks": 10,
     "bodySize": 16,
     "stage": false,
     "explains": true,
@@ -1496,15 +1496,15 @@
     0.48,
     0.64,
     0.9,
-    0.37,
-    0.64,
+    0.83,
     0.98,
-    0.75,
+    0.85,
     0.62,
     0.62,
     0.62,
-    0.48,
-    0.9
+    0.49,
+    0.8,
+    0.99
    ],
    "motion": {
     "elements": 20,
@@ -1520,9 +1520,9 @@
      "h": 844
     },
     "page": {
-     "height": 12990,
-     "screens": 15.4,
-     "words": 679,
+     "height": 12422,
+     "screens": 14.7,
+     "words": 654,
      "img": 8,
      "video": 0,
      "canvas": 0,
@@ -1530,11 +1530,11 @@
      "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
-     "uiFragments": 3,
+     "uiFragments": 4,
      "uiAbuse": false,
      "realPictures": 7,
      "videoCount": 0,
-     "uiPictures": 0,
+     "uiPictures": 1,
      "pictureSamples": [
       "datacenter.jpg",
       "meeting-room.jpg",
@@ -1692,7 +1692,7 @@
       "size": 24,
       "vw": 6.2,
       "font": "Albert Sans",
-      "weight": 400,
+      "weight": 700,
       "tracking": -0.025,
       "leading": 1.2,
       "upper": false,
@@ -1701,7 +1701,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.79,
-      "top": 2650,
+      "top": 2654,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1722,7 +1722,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 4066,
+      "top": 3497,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1743,7 +1743,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.51,
-      "top": 4281,
+      "top": 3712,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1764,7 +1764,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.49,
-      "top": 4464,
+      "top": 3896,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1785,7 +1785,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.52,
-      "top": 4622,
+      "top": 4054,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1806,7 +1806,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.38,
-      "top": 4806,
+      "top": 4237,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1827,7 +1827,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.53,
-      "top": 4964,
+      "top": 4396,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1848,7 +1848,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.38,
-      "top": 5122,
+      "top": 4554,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1869,7 +1869,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 5437,
+      "top": 4868,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1890,7 +1890,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 8821,
+      "top": 8252,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1911,7 +1911,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 8870,
+      "top": 8301,
       "tag": "p",
       "kind": "statement"
      },
@@ -1932,7 +1932,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 9644,
+      "top": 9076,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1953,7 +1953,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 11042,
+      "top": 10473,
       "tag": "h2",
       "kind": "heading"
      }
@@ -2009,7 +2009,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.01,
+     "centerShare": 0.02,
      "smallText": 0
     },
     "eyebrows": [],
@@ -2043,7 +2043,7 @@
       },
       {
        "color": "#7d0c14",
-       "top": 3970,
+       "top": 3401,
        "hsl": {
         "h": 356,
         "s": 0.82,
@@ -2054,11 +2054,11 @@
      "textColors": [
       {
        "color": "#7d0c14",
-       "share": 0.55
+       "share": 0.53
       },
       {
        "color": "#e2e2e2",
-       "share": 0.36
+       "share": 0.38
       },
       {
        "color": "#7a4a4e",
@@ -2077,7 +2077,7 @@
      "lowContrast": []
     },
     "buttons": {
-     "count": 11,
+     "count": 12,
      "inHero": 3,
      "radius": 8,
      "height": 44,
@@ -2104,7 +2104,7 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 7,
+     "roundedBoxes": 8,
      "boxRadius": 20,
      "squareMedia": 1,
      "roundedMedia": 6,
@@ -2141,7 +2141,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 12990,
+    "pageH": 12422,
     "margins": {
      "left": 24,
      "right": 24
@@ -2174,8 +2174,8 @@
       "sel": "section#plans.section.g2",
       "tag": "section",
       "top": 844,
-      "height": 3126,
-      "words": 230,
+      "height": 2557,
+      "words": 205,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -2196,7 +2196,7 @@
      {
       "sel": "section#included.section.ground-inverse",
       "tag": "section",
-      "top": 3970,
+      "top": 3401,
       "height": 1379,
       "words": 105,
       "media": 0,
@@ -2219,7 +2219,7 @@
      {
       "sel": "section#onboarding.section.photo-ch-section",
       "tag": "section",
-      "top": 5349,
+      "top": 4780,
       "height": 3376,
       "words": 28,
       "media": 4,
@@ -2242,7 +2242,7 @@
      {
       "sel": "section#locations.section.word-hl-section",
       "tag": "section",
-      "top": 8725,
+      "top": 8156,
       "height": 823,
       "words": 55,
       "media": 1,
@@ -2265,7 +2265,7 @@
      {
       "sel": "section#faq.section.ground-inverse",
       "tag": "section",
-      "top": 9548,
+      "top": 8980,
       "height": 1398,
       "words": 160,
       "media": 0,
@@ -2288,7 +2288,7 @@
      {
       "sel": "footer#contact.footer.closing",
       "tag": "footer",
-      "top": 10946,
+      "top": 10377,
       "height": 2045,
       "words": 61,
       "media": 1,
@@ -2322,14 +2322,14 @@
     "edges": [
      {
       "x": 24,
-      "n": 10
+      "n": 9
      },
      {
       "x": 56,
       "n": 1
      }
     ],
-    "leftBlocks": 11,
+    "leftBlocks": 10,
     "bodySize": 16,
     "stage": false,
     "explains": true,

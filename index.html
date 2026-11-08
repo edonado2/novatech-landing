@@ -347,28 +347,179 @@ header.nav { border-bottom: none !important; }
 .plans-compare {
   margin-top: var(--s-8);
 }
-.plans-compare dl {
-  display: grid;
-  gap: var(--s-2);
-  margin: 0;
+.compare-card {
+  background: var(--surface);
+  border-radius: var(--r-lg);
+  padding: var(--s-6);
+  box-sizing: border-box;
 }
-.plans-compare div {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: var(--s-4);
-  padding: var(--s-3) 0;
+.compare-head {
+  margin-bottom: var(--s-5);
 }
-.plans-compare dt {
-  font-weight: 500;
+.compare-head h3 {
+  font-size: var(--t-h3);
+  margin: 0 0 var(--s-2);
+  font-weight: 700;
   color: var(--ink);
-  font-size: var(--t-body);
 }
-.plans-compare dd {
+.compare-head p {
+  font-size: var(--t-body);
   margin: 0;
   color: var(--muted);
+}
+.compare-desktop {
+  display: block;
+  width: 100%;
+}
+.compare-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.compare-table th,
+.compare-table td {
+  padding: var(--s-3) var(--s-4);
+  text-align: left;
   font-size: var(--t-small);
-  text-align: right;
+}
+.compare-table th {
+  font-size: var(--t-body);
+  font-weight: 700;
+  color: var(--ink);
+  border-bottom: 2px solid color-mix(in oklab, var(--ink) 12%, transparent);
+  padding-bottom: var(--s-3);
+}
+.compare-table td {
+  border-bottom: 1px solid color-mix(in oklab, var(--ink) 8%, transparent);
+  color: var(--muted);
+}
+.compare-table tr:last-child td {
+  border-bottom: none;
+}
+.compare-table .col-feat {
+  width: 32%;
+  font-size: var(--t-body);
+  font-weight: 600;
+  color: var(--ink);
+}
+.compare-table .col-pro {
+  background: color-mix(in oklab, var(--accent) 6%, transparent);
+  font-weight: 600;
+  color: var(--ink);
+}
+.compare-table th.col-pro {
+  border-top-left-radius: var(--r-sm);
+  border-top-right-radius: var(--r-sm);
+  color: var(--accent);
+}
+.compare-table tr:last-child td.col-pro {
+  border-bottom-left-radius: var(--r-sm);
+  border-bottom-right-radius: var(--r-sm);
+}
+.plan-price-tag {
+  font-size: var(--t-label);
+  font-weight: 500;
+  color: var(--muted);
+  display: block;
+  margin-top: 2px;
+}
+.col-pro .plan-price-tag {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Mobile Segmented View */
+.compare-mobile {
+  display: none;
+}
+@media (max-width: 767px) {
+  .compare-desktop {
+    display: none;
+  }
+  .compare-mobile {
+    display: block;
+  }
+  .compare-card {
+    padding: var(--s-4);
+  }
+  .segmented-tabs {
+    display: flex;
+    background: color-mix(in oklab, var(--bg) 70%, transparent);
+    border-radius: var(--r-sm);
+    padding: 4px;
+    gap: 4px;
+    margin-bottom: var(--s-4);
+  }
+  .seg-btn {
+    flex: 1;
+    padding: var(--s-2) 4px;
+    font-size: var(--t-label);
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.15s ease;
+  }
+  .seg-btn.is-active {
+    background: var(--surface);
+    color: var(--ink);
+  }
+  .seg-panel {
+    display: none;
+  }
+  .seg-panel.is-active {
+    display: block;
+  }
+  .tier-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: var(--s-3);
+    padding-bottom: var(--s-2);
+    border-bottom: 1px solid color-mix(in oklab, var(--ink) 10%, transparent);
+  }
+  .tier-meta h4 {
+    margin: 0;
+    font-size: var(--t-lead);
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .tier-meta span {
+    font-size: var(--t-body);
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .tier-list {
+    display: grid;
+    gap: var(--s-2);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .tier-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--s-2);
+    font-size: var(--t-small);
+    padding-bottom: var(--s-2);
+    border-bottom: 1px solid color-mix(in oklab, var(--ink) 6%, transparent);
+  }
+  .tier-list li:last-child {
+    border-bottom: none;
+  }
+  .tier-list dt {
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .tier-list dd {
+    margin: 0;
+    color: var(--muted);
+    text-align: right;
+  }
 }
 @media (max-width: 1023px) {
   .plans-grid > .card {
@@ -382,14 +533,6 @@ header.nav { border-bottom: none !important; }
   .plans-grid > .card {
     grid-column: span 12;
     min-height: auto;
-  }
-  .plans-compare div {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2px;
-  }
-  .plans-compare dd {
-    text-align: left;
   }
 }
 
@@ -726,31 +869,108 @@ footer#contact {
         </ul>
       </div>
       <div class="group plans-compare">
-        <div class="section-head">
-          <h3 style="font-size: var(--t-h3); margin-bottom: var(--s-2);">What changes between plans</h3>
-          <p class="muted t-lead" style="max-width: 52ch;">Clear deliverables and SLAs across every tier.</p>
-        </div>
-        <div class="grid" style="margin-top: var(--s-4);">
-          <div class="span-6">
-            <dl>
-              <div><dt>24/7 infrastructure monitoring</dt><dd>All plans</dd></div>
-              <div><dt>Remote help desk support</dt><dd>Business hours (Essentials) / 24/7 (Pro+)</dd></div>
-              <div><dt>Patch management & OS updates</dt><dd>All plans</dd></div>
-              <div><dt>Backup verification & recovery</dt><dd>All plans</dd></div>
-              <div><dt>Critical response SLA</dt><dd>15 minutes on all plans</dd></div>
-            </dl>
+        <div class="compare-card" data-ui="true">
+          <div class="compare-head">
+            <h3>What changes between plans</h3>
+            <p>Clear deliverables, SLAs, and dedicated engineering included at each tier.</p>
           </div>
-          <div class="span-6">
-            <dl>
-              <div><dt>Advanced EDR / MDR cybersecurity</dt><dd>Professional & Enterprise</dd></div>
-              <div><dt>Cloud infrastructure management</dt><dd>Professional & Enterprise</dd></div>
-              <div><dt>Quarterly vCIO strategy reviews</dt><dd>Professional & Enterprise</dd></div>
-              <div><dt>Dedicated account manager</dt><dd>Enterprise only</dd></div>
-              <div><dt>Compliance support & auditing</dt><dd>Enterprise only</dd></div>
-            </dl>
+
+          <!-- Desktop Comparison Matrix -->
+          <div class="compare-desktop">
+            <table class="compare-table">
+              <thead>
+                <tr>
+                  <th class="col-feat">Capability</th>
+                  <th>Essentials<span class="plan-price-tag">$129/user/mo</span></th>
+                  <th class="col-pro">Professional<span class="plan-price-tag">$199/user/mo • Popular</span></th>
+                  <th>Enterprise<span class="plan-price-tag">$299/user/mo</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="col-feat">Critical Response SLA</td>
+                  <td>15 minutes</td>
+                  <td class="col-pro">15 minutes</td>
+                  <td>15 minutes (priority dispatch)</td>
+                </tr>
+                <tr>
+                  <td class="col-feat">Remote Help Desk</td>
+                  <td>Business hours (8am–6pm)</td>
+                  <td class="col-pro">24/7/365 Around-the-clock</td>
+                  <td>24/7 Priority queue & vCIO</td>
+                </tr>
+                <tr>
+                  <td class="col-feat">Cybersecurity Stack</td>
+                  <td>Core DNS & antivirus</td>
+                  <td class="col-pro">Advanced EDR & MDR</td>
+                  <td>EDR/MDR + SOC threat hunting</td>
+                </tr>
+                <tr>
+                  <td class="col-feat">Cloud Support</td>
+                  <td>Monitoring & alerts</td>
+                  <td class="col-pro">AWS, Azure & GCP governance</td>
+                  <td>Multi-cloud architecture & cost</td>
+                </tr>
+                <tr>
+                  <td class="col-feat">vCIO Strategic Reviews</td>
+                  <td>Annual review</td>
+                  <td class="col-pro">Quarterly roadmaps</td>
+                  <td>Monthly strategic advisory</td>
+                </tr>
+                <tr>
+                  <td class="col-feat">Account Management</td>
+                  <td>Engineering pool</td>
+                  <td class="col-pro">Senior assigned engineers</td>
+                  <td>Dedicated Account Director</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Mobile Segmented View -->
+          <div class="compare-mobile">
+            <div class="segmented-tabs" role="tablist">
+              <button type="button" class="seg-btn" data-target="seg-ess">Essentials</button>
+              <button type="button" class="seg-btn is-active" data-target="seg-pro">Professional</button>
+              <button type="button" class="seg-btn" data-target="seg-ent">Enterprise</button>
+            </div>
+            <div id="seg-ess" class="seg-panel">
+              <div class="tier-meta"><h4>Essentials</h4><span>$129/user/mo</span></div>
+              <dl class="tier-list">
+                <li><dt>Critical Response SLA</dt><dd>15 minutes</dd></li>
+                <li><dt>Remote Help Desk</dt><dd>Business hours (8am–6pm)</dd></li>
+                <li><dt>Cybersecurity Stack</dt><dd>Core DNS & antivirus</dd></li>
+                <li><dt>Cloud Support</dt><dd>Monitoring & alerts</dd></li>
+                <li><dt>vCIO Strategic Reviews</dt><dd>Annual review</dd></li>
+                <li><dt>Account Management</dt><dd>Engineering pool</dd></li>
+              </dl>
+            </div>
+            <div id="seg-pro" class="seg-panel is-active">
+              <div class="tier-meta"><h4>Professional</h4><span>$199/user/mo • Popular</span></div>
+              <dl class="tier-list">
+                <li><dt>Critical Response SLA</dt><dd>15 minutes</dd></li>
+                <li><dt>Remote Help Desk</dt><dd>24/7/365 Around-the-clock</dd></li>
+                <li><dt>Cybersecurity Stack</dt><dd>Advanced EDR & MDR</dd></li>
+                <li><dt>Cloud Support</dt><dd>AWS, Azure & GCP governance</dd></li>
+                <li><dt>vCIO Strategic Reviews</dt><dd>Quarterly roadmaps</dd></li>
+                <li><dt>Account Management</dt><dd>Senior assigned engineers</dd></li>
+              </dl>
+            </div>
+            <div id="seg-ent" class="seg-panel">
+              <div class="tier-meta"><h4>Enterprise</h4><span>$299/user/mo</span></div>
+              <dl class="tier-list">
+                <li><dt>Critical Response SLA</dt><dd>15 minutes (priority dispatch)</dd></li>
+                <li><dt>Remote Help Desk</dt><dd>24/7 Priority queue & vCIO</dd></li>
+                <li><dt>Cybersecurity Stack</dt><dd>EDR/MDR + SOC threat hunting</dd></li>
+                <li><dt>Cloud Support</dt><dd>Multi-cloud architecture & cost</dd></li>
+                <li><dt>vCIO Strategic Reviews</dt><dd>Monthly strategic advisory</dd></li>
+                <li><dt>Account Management</dt><dd>Dedicated Account Director</dd></li>
+              </dl>
+            </div>
           </div>
         </div>
-        <div class="card" style="margin-top: var(--s-6); padding: var(--s-5) var(--s-6); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--s-4); background: var(--surface);">
+
+        <div class="card" style="margin-top: var(--s-5); padding: var(--s-5) var(--s-6); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--s-4); background: var(--surface);">
           <div>
             <h4 style="font-size: var(--t-body); font-weight: 600; margin: 0 0 4px; color: var(--ink);">30-Day Onboarding Guarantee</h4>
             <p style="font-size: var(--t-small); color: var(--muted); margin: 0;">Zero downtime transition with guaranteed 15-minute response SLA. Month-to-month, no lock-in.</p>
@@ -944,6 +1164,17 @@ footer#contact {
   </div>
 </footer>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+document.querySelectorAll('.seg-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.seg-btn').forEach(b => b.classList.remove('is-active'));
+    document.querySelectorAll('.seg-panel').forEach(p => p.classList.remove('is-active'));
+    btn.classList.add('is-active');
+    const target = document.getElementById(btn.dataset.target);
+    if (target) target.classList.add('is-active');
+  });
+});
+</script>
 <script type="module" src="assets/system.js"></script>
 <script type="module" src="assets/motion/motion.js"></script>
 <script type="module" src="assets/layout/layout.js"></script>
