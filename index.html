@@ -698,6 +698,145 @@ footer#contact {
   padding-top: var(--padt);
   padding-bottom: var(--padb);
 }
+.closing__audit {
+  background: var(--p-bg);
+  color: var(--p-ink);
+  border-radius: var(--r-lg);
+  padding: var(--s-7);
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  column-gap: var(--s-8);
+  row-gap: var(--s-6);
+  align-items: start;
+  box-sizing: border-box;
+  margin-bottom: var(--s-8);
+}
+.audit-info h2 {
+  font-size: var(--t-h2);
+  margin: 0 0 var(--s-3);
+  line-height: 1.15;
+  color: var(--p-ink);
+}
+.audit-info p {
+  font-size: var(--t-lead);
+  line-height: 1.55;
+  color: var(--p-muted);
+  margin: 0 0 var(--s-5);
+}
+.audit-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--s-6);
+  display: grid;
+  gap: var(--s-3);
+}
+.audit-points li {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  font-size: var(--t-small);
+  font-weight: 500;
+  color: var(--p-ink);
+}
+.audit-points svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--p-accent);
+  flex-shrink: 0;
+}
+.audit-photo {
+  border-radius: var(--r-md);
+  overflow: hidden;
+  height: 180px;
+}
+.audit-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.audit-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: var(--s-4);
+  row-gap: var(--s-4);
+}
+.audit-form .span-full {
+  grid-column: 1 / -1;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.form-field label {
+  font-size: var(--t-label);
+  font-weight: 600;
+  color: var(--p-ink);
+}
+.form-field input,
+.form-field select,
+.form-field textarea {
+  font-family: inherit;
+  font-size: var(--t-small);
+  padding: 11px 14px;
+  border-radius: var(--r-sm);
+  border: 1px solid color-mix(in oklab, var(--p-ink) 20%, transparent);
+  background: #ffffff;
+  color: #111111;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: var(--p-accent);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--p-accent) 20%, transparent);
+}
+.audit-form .btn-submit {
+  grid-column: 1 / -1;
+  background: var(--p-action);
+  color: var(--p-action-ink);
+  border: none;
+  padding: 14px 24px;
+  font-size: var(--t-body);
+  font-weight: 600;
+  border-radius: var(--r-btn);
+  cursor: pointer;
+  margin-top: var(--s-2);
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-2);
+  transition: background 0.15s ease;
+}
+.audit-form .btn-submit:hover {
+  background: color-mix(in oklab, var(--p-action) 90%, black);
+}
+.form-fineprint {
+  grid-column: 1 / -1;
+  font-size: var(--t-label);
+  color: var(--p-muted);
+  margin: 4px 0 0;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .closing__audit {
+    grid-template-columns: 1fr;
+    padding: var(--s-5) var(--s-4);
+    gap: var(--s-5);
+  }
+  .audit-photo {
+    display: none;
+  }
+  .audit-form {
+    grid-template-columns: 1fr;
+  }
+}
 .closing__links .grid {
   grid-template-columns: repeat(12, minmax(0, 1fr));
   column-gap: var(--gutter);
@@ -837,7 +976,7 @@ footer#contact {
               <li>Daily cloud backup verification</li>
               <li>15-minute response SLA</li>
             </ul>
-            <a href="#contact" class="btn btn--secondary" style="margin-top: auto; width: 100%; justify-content: center;">Select Essentials</a>
+            <a href="#contact" data-plan="Essentials" class="btn btn--secondary" style="margin-top: auto; width: 100%; justify-content: center;">Select Essentials</a>
           </li>
           <li class="card card--plan is-featured">
             <span class="badge" data-ui="true">Most Popular</span>
@@ -851,7 +990,7 @@ footer#contact {
               <li>Cloud governance (AWS/Azure/GCP)</li>
               <li>Quarterly vCIO strategy reviews</li>
             </ul>
-            <a href="#contact" class="btn btn--primary" style="margin-top: auto; width: 100%; justify-content: center;">Select Professional</a>
+            <a href="#contact" data-plan="Professional" class="btn btn--primary" style="margin-top: auto; width: 100%; justify-content: center;">Select Professional</a>
           </li>
           <li class="card">
             <h3>Enterprise</h3>
@@ -864,7 +1003,7 @@ footer#contact {
               <li>Annual compliance auditing</li>
               <li>Disaster recovery testing</li>
             </ul>
-            <a href="#contact" class="btn btn--secondary" style="margin-top: auto; width: 100%; justify-content: center;">Select Enterprise</a>
+            <a href="#contact" data-plan="Enterprise" class="btn btn--secondary" style="margin-top: auto; width: 100%; justify-content: center;">Select Enterprise</a>
           </li>
         </ul>
       </div>
@@ -1136,15 +1275,57 @@ footer#contact {
 <!-- FOOTER: close-photo + footer-dark -->
 <footer class="footer closing footer--dark" id="contact" aria-labelledby="close-h">
   <div class="wrap">
-    <div class="closing__cta close--photo">
-      <div class="section-head--split">
-        <div>
-          <h2 id="close-h">Book your free IT audit</h2>
-          <p class="t-lead">We review your infrastructure, find the gaps, and send a written plan. No obligation.</p>
+    <div class="closing__audit" data-ui="true">
+      <div class="audit-info">
+        <h2 id="close-h">Book your free IT audit</h2>
+        <p>We review your cloud infrastructure, endpoint security, and response workflows. Then we deliver a written roadmap with zero obligation.</p>
+        <ul class="audit-points">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>15-minute response SLA benchmark</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Full cybersecurity vulnerability check</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Transparent flat-rate pricing per user</li>
+        </ul>
+        <div class="audit-photo">
+          <img src="assets/photos/dallas.jpg" alt="Remote IT operations center" width="600" height="360" loading="lazy">
         </div>
-        <a class="btn btn--primary" href="#contact">Book free IT audit<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
       </div>
-      <div class="close__media"><img src="assets/photos/dallas.jpg" alt="Modern remote workspace setup" loading="lazy" data-source="library" data-subject="remote-workspace"></div>
+      <form class="audit-form" action="https://formspree.io/f/mgaabaaq" method="POST">
+        <div class="form-field span-full">
+          <label for="audit-plan">Selected plan</label>
+          <select id="audit-plan" name="selected_plan" required>
+            <option value="Professional ($199/user/mo)" selected>Professional ($199/user/mo) — Most Popular</option>
+            <option value="Essentials ($129/user/mo)">Essentials ($129/user/mo)</option>
+            <option value="Enterprise ($299/user/mo)">Enterprise ($299/user/mo)</option>
+            <option value="General IT Audit (Undecided)">General IT Audit (Not sure yet)</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="audit-name">Full name</label>
+          <input type="text" id="audit-name" name="name" required placeholder="Alex Morgan" autocomplete="name">
+        </div>
+        <div class="form-field">
+          <label for="audit-email">Work email</label>
+          <input type="email" id="audit-email" name="email" required placeholder="alex@company.com" autocomplete="email">
+        </div>
+        <div class="form-field">
+          <label for="audit-company">Company</label>
+          <input type="text" id="audit-company" name="company" required placeholder="Acme Logistics" autocomplete="organization">
+        </div>
+        <div class="form-field">
+          <label for="audit-users">Number of users</label>
+          <select id="audit-users" name="users">
+            <option value="10-25">10–25 users</option>
+            <option value="26-50" selected>26–50 users</option>
+            <option value="51-100">51–100 users</option>
+            <option value="100+">100+ users</option>
+          </select>
+        </div>
+        <div class="form-field span-full">
+          <label for="audit-notes">Current IT priorities or questions (optional)</label>
+          <textarea id="audit-notes" name="notes" rows="2" placeholder="e.g. Remote help desk, compliance audit, Microsoft 365..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Request Free IT Audit</button>
+        <span class="form-fineprint">100% confidential. No spam. A senior engineer will follow up within 1 business day.</span>
+      </form>
     </div>
     <div class="closing__links">
       <div class="grid">
@@ -1174,6 +1355,57 @@ document.querySelectorAll('.seg-btn').forEach(btn => {
     if (target) target.classList.add('is-active');
   });
 });
+
+document.querySelectorAll('a[href="#contact"]').forEach(link => {
+  link.addEventListener('click', () => {
+    const plan = link.getAttribute('data-plan');
+    const select = document.getElementById('audit-plan');
+    if (plan && select) {
+      for (const opt of select.options) {
+        if (opt.value.toLowerCase().includes(plan.toLowerCase())) {
+          select.value = opt.value;
+          break;
+        }
+      }
+    }
+  });
+});
+
+const auditForm = document.querySelector('.audit-form');
+if (auditForm) {
+  auditForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = auditForm.querySelector('.btn-submit');
+    const originalText = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Submitting request...';
+
+    try {
+      const formData = new FormData(auditForm);
+      const res = await fetch(auditForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        const planName = formData.get('selected_plan') || 'audit';
+        auditForm.innerHTML = `
+          <div class="form-success span-full" style="padding: var(--s-6); background: #ffffff; border-radius: var(--r-md); text-align: center; display: grid; gap: var(--s-3);">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: #e8f5e9; color: #2e7d32; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <h3 style="font-size: var(--t-h3); margin: 0; color: #111111;">Audit Request Received</h3>
+            <p style="font-size: var(--t-small); color: #555555; margin: 0; line-height: 1.5;">Thank you! We received your request with the <strong>${planName}</strong> plan selected. A senior systems engineer will review your environment and contact you within 1 business day.</p>
+          </div>
+        `;
+      } else {
+        auditForm.submit();
+      }
+    } catch (err) {
+      auditForm.submit();
+    }
+  });
+}
 </script>
 <script type="module" src="assets/system.js"></script>
 <script type="module" src="assets/motion/motion.js"></script>

@@ -1,13 +1,13 @@
 {
  "url": "index.html",
- "at": "2026-11-08T22:42:29.660Z",
+ "at": "2026-11-08T23:08:31.598Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 11,
+   "screens": 12,
    "filled": [
     0.84,
     0.57,
@@ -19,7 +19,8 @@
     0.43,
     0.46,
     0.83,
-    0.32
+    0.36,
+    0.28
    ],
    "motion": {
     "elements": 21,
@@ -35,21 +36,21 @@
      "h": 900
     },
     "page": {
-     "height": 9735,
-     "screens": 10.8,
-     "words": 700,
+     "height": 10059,
+     "screens": 11.2,
+     "words": 771,
      "img": 8,
      "video": 0,
      "canvas": 0,
-     "svg": 10,
+     "svg": 12,
      "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
-     "uiFragments": 4,
+     "uiFragments": 5,
      "uiAbuse": false,
-     "realPictures": 8,
+     "realPictures": 7,
      "videoCount": 0,
-     "uiPictures": 1,
+     "uiPictures": 2,
      "pictureSamples": [
       "meeting-room.jpg",
       "datacenter.jpg",
@@ -57,8 +58,7 @@
       "network-switch.jpg",
       "cloud-servers.jpg",
       "team-laptop.jpg",
-      "austin.jpg",
-      "dallas.jpg"
+      "austin.jpg"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -462,14 +462,14 @@
       "font": "Albert Sans",
       "weight": 400,
       "tracking": -0.025,
-      "leading": 1.1,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.42,
-      "top": 9031,
+      "widthRatio": 0.35,
+      "top": 9079,
       "tag": "h2",
       "kind": "heading"
      }
@@ -529,7 +529,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.01,
+     "centerShare": 0.03,
      "smallText": 0
     },
     "eyebrows": [],
@@ -569,20 +569,29 @@
         "s": 0.82,
         "l": 0.27
        }
+      },
+      {
+       "color": "#e2e2e2",
+       "top": 9031,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.89
+       }
       }
      ],
      "textColors": [
       {
        "color": "#7d0c14",
-       "share": 0.53
+       "share": 0.52
       },
       {
        "color": "#e2e2e2",
-       "share": 0.35
+       "share": 0.33
       },
       {
        "color": "#7a4a4e",
-       "share": 0.12
+       "share": 0.15
       }
      ],
      "button": {
@@ -661,7 +670,7 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 9735,
+    "pageH": 10059,
     "margins": {
      "left": 80,
      "right": 80
@@ -809,19 +818,19 @@
       "sel": "footer#contact.footer.closing",
       "tag": "footer",
       "top": 8911,
-      "height": 824,
-      "words": 75,
+      "height": 1148,
+      "words": 124,
       "media": 1,
-      "middle": 0,
+      "middle": 64,
       "heading": {
        "text": "Book your free IT audit",
        "size": 48,
        "tag": "h2"
       },
       "left": 80,
-      "right": 80,
+      "right": 128,
       "textLeft": 80,
-      "textRight": 122,
+      "textRight": 197,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -885,8 +894,8 @@
     0.61,
     0.49,
     0.9,
-    0.42,
-    0.18
+    0.49,
+    0.23
    ],
    "motion": {
     "elements": 20,
@@ -902,29 +911,28 @@
      "h": 1024
     },
     "page": {
-     "height": 11685,
-     "screens": 11.4,
-     "words": 696,
+     "height": 12326,
+     "screens": 12,
+     "words": 767,
      "img": 8,
      "video": 0,
      "canvas": 0,
-     "svg": 10,
+     "svg": 12,
      "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
-     "uiFragments": 4,
+     "uiFragments": 5,
      "uiAbuse": false,
-     "realPictures": 7,
+     "realPictures": 6,
      "videoCount": 0,
-     "uiPictures": 1,
+     "uiPictures": 2,
      "pictureSamples": [
       "datacenter.jpg",
       "meeting-room.jpg",
       "network-switch.jpg",
       "cloud-servers.jpg",
       "team-laptop.jpg",
-      "austin.jpg",
-      "dallas.jpg"
+      "austin.jpg"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -1097,14 +1105,14 @@
       "font": "Albert Sans",
       "weight": 400,
       "tracking": -0.025,
-      "leading": 1.1,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "left",
-      "widthRatio": 0.6,
-      "top": 10642,
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 10666,
       "tag": "h2",
       "kind": "heading"
      }
@@ -1162,7 +1170,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.01,
+     "centerShare": 0.03,
      "smallText": 0
     },
     "eyebrows": [],
@@ -1207,15 +1215,15 @@
      "textColors": [
       {
        "color": "#7d0c14",
-       "share": 0.53
+       "share": 0.52
       },
       {
        "color": "#e2e2e2",
-       "share": 0.35
+       "share": 0.33
       },
       {
        "color": "#7a4a4e",
-       "share": 0.12
+       "share": 0.15
       }
      ],
      "button": {
@@ -1260,7 +1268,7 @@
      "roundedBoxes": 8,
      "boxRadius": 20,
      "squareMedia": 1,
-     "roundedMedia": 6,
+     "roundedMedia": 5,
      "mediaRadius": 20,
      "textShadow": 0,
      "cardRows": []
@@ -1287,7 +1295,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 11685,
+    "pageH": 12326,
     "margins": {
      "left": 48,
      "right": 48
@@ -1431,9 +1439,9 @@
       "sel": "footer#contact.footer.closing",
       "tag": "footer",
       "top": 10522,
-      "height": 1163,
-      "words": 75,
-      "media": 1,
+      "height": 1804,
+      "words": 124,
+      "media": 0,
       "middle": 0,
       "heading": {
        "text": "Book your free IT audit",
@@ -1441,9 +1449,9 @@
        "tag": "h2"
       },
       "left": 48,
-      "right": 48,
+      "right": 64,
       "textLeft": 48,
-      "textRight": 154,
+      "textRight": 136,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -1520,29 +1528,28 @@
      "h": 844
     },
     "page": {
-     "height": 12422,
-     "screens": 14.7,
-     "words": 654,
+     "height": 12528,
+     "screens": 14.8,
+     "words": 725,
      "img": 8,
      "video": 0,
      "canvas": 0,
-     "svg": 10,
+     "svg": 12,
      "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
-     "uiFragments": 4,
+     "uiFragments": 5,
      "uiAbuse": false,
-     "realPictures": 7,
+     "realPictures": 6,
      "videoCount": 0,
-     "uiPictures": 1,
+     "uiPictures": 2,
      "pictureSamples": [
       "datacenter.jpg",
       "meeting-room.jpg",
       "network-switch.jpg",
       "cloud-servers.jpg",
       "team-laptop.jpg",
-      "austin.jpg",
-      "dallas.jpg"
+      "austin.jpg"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -1946,14 +1953,14 @@
       "font": "Albert Sans",
       "weight": 400,
       "tracking": -0.025,
-      "leading": 1.1,
+      "leading": 1.15,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.88,
-      "top": 10473,
+      "widthRatio": 0.79,
+      "top": 10497,
       "tag": "h2",
       "kind": "heading"
      }
@@ -2009,7 +2016,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.02,
+     "centerShare": 0.04,
      "smallText": 0
     },
     "eyebrows": [],
@@ -2054,15 +2061,15 @@
      "textColors": [
       {
        "color": "#7d0c14",
-       "share": 0.53
+       "share": 0.52
       },
       {
        "color": "#e2e2e2",
-       "share": 0.38
+       "share": 0.35
       },
       {
        "color": "#7a4a4e",
-       "share": 0.09
+       "share": 0.13
       }
      ],
      "button": {
@@ -2107,7 +2114,7 @@
      "roundedBoxes": 8,
      "boxRadius": 20,
      "squareMedia": 1,
-     "roundedMedia": 6,
+     "roundedMedia": 5,
      "mediaRadius": 20,
      "textShadow": 0,
      "cardRows": [
@@ -2141,7 +2148,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 12422,
+    "pageH": 12528,
     "margins": {
      "left": 24,
      "right": 24
@@ -2289,9 +2296,9 @@
       "sel": "footer#contact.footer.closing",
       "tag": "footer",
       "top": 10377,
-      "height": 2045,
-      "words": 61,
-      "media": 1,
+      "height": 2150,
+      "words": 110,
+      "media": 0,
       "middle": 0,
       "heading": {
        "text": "Book your free IT audit",
@@ -2299,9 +2306,9 @@
        "tag": "h2"
       },
       "left": 24,
-      "right": 24,
+      "right": 40,
       "textLeft": 24,
-      "textRight": 59,
+      "textRight": 46,
       "fullBleed": false,
       "footer": true,
       "hero": false,
