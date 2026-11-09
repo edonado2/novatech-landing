@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "dataforseo": {
+      "command": "npx",
+      "args": ["-y", "dataforseo-mcp-server"],
+      "env": {
+        "DATAFORSEO_LOGIN": "2ow0o1gm5aibjuctun",
+        "DATAFORSEO_PASSWORD": "e979d20a8fa7246f"
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+# Novatech
+> Remote-first managed IT services for small businesses nationwide. Flat-rate pricing, 24/7 monitoring, unlimited help desk, cybersecurity, cloud management, and vCIO strategy.
+
+## Main Pages
+- [Home](https://novatechsoft.info/): Remote-first managed IT for small businesses
+- [Privacy Policy](https://novatechsoft.info/privacy.html): How we collect, use, and protect your personal information
+
+## Key Facts
+- Flat-rate pricing: $129-$299/user/month across Essentials, Professional, and Enterprise tiers
+- Month-to-month contracts, no lock-in, cancel anytime with 30 days notice
+- 15-minute critical response SLA, 24/7/365 monitoring
+- Nationwide remote with local field technicians in major metros
+- vCIO quarterly strategic reviews included in Professional and Enterprise tiers
+- Founded 2025, based in Austin, TX serving nationwide
+
+## Services
+- 24/7 Infrastructure Monitoring
+- Automated Patch Management
+- Remote Help Desk (business hours or 24/7)
+- EDR/MDR Cybersecurity
+- Cloud Management (AWS, Azure, GCP)
+- vCIO Strategic Reviews
+- Backup Verification & Disaster Recovery
+
+## Contact
+- Email: hello@novatechsoft.info
+- Phone: +1-512-555-0199
+- Location: Austin, TX (serving nationwide)
+
+## Author
+- Ernesto Donado, Founder & Engineer
+- 5+ years managed IT, cloud architecture, cybersecurity
+- Microsoft Certified: Azure Administrator, CompTIA Security+
+- LinkedIn: https://www.linkedin.com/in/ernestodonado

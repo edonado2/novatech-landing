@@ -1,6 +1,6 @@
 {
  "url": "index.html",
- "at": "2026-11-08T23:08:31.598Z",
+ "at": "2026-11-09T03:33:25.981Z",
  "allow": [],
  "viewports": [
   {
@@ -9,17 +9,17 @@
    "load": "load",
    "screens": 12,
    "filled": [
-    0.84,
+    0.77,
     0.57,
     0.76,
     0.95,
-    0.44,
-    0.44,
-    0.44,
-    0.43,
-    0.46,
-    0.83,
     0.36,
+    0.36,
+    0.36,
+    0.37,
+    0.48,
+    0.89,
+    0.31,
     0.28
    ],
    "motion": {
@@ -36,14 +36,14 @@
      "h": 900
     },
     "page": {
-     "height": 10059,
-     "screens": 11.2,
-     "words": 771,
+     "height": 10699,
+     "screens": 11.9,
+     "words": 954,
      "img": 8,
      "video": 0,
      "canvas": 0,
      "svg": 12,
-     "sections": 6,
+     "sections": 7,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 5,
@@ -83,7 +83,7 @@
      "align": "left",
      "position": "left",
      "widthRatio": 0.43,
-     "top": 317,
+     "top": 290,
      "tag": "h1",
      "kind": "heading"
     },
@@ -112,7 +112,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.43,
-      "top": 317,
+      "top": 290,
       "tag": "h1",
       "kind": "heading"
      },
@@ -406,7 +406,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.44,
-      "top": 7320,
+      "top": 7368,
       "tag": "h2",
       "kind": "heading"
      },
@@ -427,9 +427,30 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.44,
-      "top": 7389,
+      "top": 7437,
       "tag": "p",
       "kind": "statement"
+     },
+     {
+      "text": "Metro areas we serve",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 7856,
+      "tag": "h3",
+      "kind": "heading"
      },
      {
       "text": "Common questions",
@@ -448,8 +469,50 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.53,
-      "top": 8220,
+      "top": 8491,
       "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Led by practitioners, not salespeople",
+      "words": 5,
+      "chars": 37,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.42,
+      "top": 9247,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "ED",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.04,
+      "top": 9289,
+      "tag": "div",
       "kind": "heading"
      },
      {
@@ -469,17 +532,17 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.35,
-      "top": 9079,
+      "top": 9718,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 18,
+     "count": 21,
      "maxLines": 3,
      "over2Lines": 0,
      "statements": 1,
-     "centered": 0,
+     "centered": 3,
      "medianWords": 2,
      "mixedFontHeadings": 0
     },
@@ -529,7 +592,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.03,
+     "centerShare": 0.09,
      "smallText": 0
     },
     "eyebrows": [],
@@ -572,7 +635,7 @@
       },
       {
        "color": "#e2e2e2",
-       "top": 9031,
+       "top": 9670,
        "hsl": {
         "h": 0,
         "s": 0,
@@ -583,15 +646,19 @@
      "textColors": [
       {
        "color": "#7d0c14",
-       "share": 0.52
+       "share": 0.49
       },
       {
        "color": "#e2e2e2",
-       "share": 0.33
+       "share": 0.28
       },
       {
        "color": "#7a4a4e",
-       "share": 0.15
+       "share": 0.23
+      },
+      {
+       "color": "#d0b3af",
+       "share": 0
       }
      ],
      "button": {
@@ -633,8 +700,8 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 9,
-     "boxRadius": 20,
+     "roundedBoxes": 19,
+     "boxRadius": 12,
      "squareMedia": 1,
      "roundedMedia": 6,
      "mediaRadius": 20,
@@ -645,6 +712,12 @@
        "iconTopped": false,
        "rounded": true,
        "top": 1211
+      },
+      {
+       "count": 10,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 8011
       }
      ]
     },
@@ -670,10 +743,10 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 10059,
+    "pageH": 10699,
     "margins": {
      "left": 80,
-     "right": 80
+     "right": 95
     },
     "sections": [
      {
@@ -681,7 +754,7 @@
       "tag": "section",
       "top": 0,
       "height": 900,
-      "words": 34,
+      "words": 41,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -727,7 +800,7 @@
       "tag": "section",
       "top": 2700,
       "height": 900,
-      "words": 105,
+      "words": 111,
       "media": 0,
       "middle": 45,
       "heading": {
@@ -750,7 +823,7 @@
       "tag": "section",
       "top": 3600,
       "height": 3600,
-      "words": 28,
+      "words": 35,
       "media": 4,
       "middle": 0,
       "heading": {
@@ -772,10 +845,10 @@
       "sel": "section#locations.section.word-hl-section",
       "tag": "section",
       "top": 7200,
-      "height": 900,
-      "words": 55,
+      "height": 1171,
+      "words": 156,
       "media": 1,
-      "middle": 38,
+      "middle": 0,
       "heading": {
        "text": "Nationwide reach",
        "size": 48,
@@ -784,7 +857,7 @@
       "left": 80,
       "right": 80,
       "textLeft": 80,
-      "textRight": 746,
+      "textRight": 140,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -794,7 +867,7 @@
      {
       "sel": "section#faq.section.ground-inverse",
       "tag": "section",
-      "top": 8100,
+      "top": 8371,
       "height": 811,
       "words": 160,
       "media": 0,
@@ -815,9 +888,32 @@
       "pinned": false
      },
      {
+      "sel": "section.section",
+      "tag": "section",
+      "top": 9183,
+      "height": 368,
+      "words": 49,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Led by practitioners, not salespeople",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 419,
+      "right": 419,
+      "textLeft": 419,
+      "textRight": 419,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "footer#contact.footer.closing",
       "tag": "footer",
-      "top": 8911,
+      "top": 9550,
       "height": 1148,
       "words": 124,
       "media": 1,
@@ -848,7 +944,7 @@
      {
       "text": "Remote-First Managed IT",
       "size": 72,
-      "top": 317,
+      "top": 290,
       "firstScreen": true
      }
     ],
@@ -887,15 +983,15 @@
     0.46,
     0.61,
     0.79,
-    0.82,
-    0.68,
-    0.61,
-    0.61,
-    0.61,
-    0.49,
-    0.9,
-    0.49,
-    0.23
+    0.76,
+    0.73,
+    0.57,
+    0.57,
+    0.57,
+    0.46,
+    0.74,
+    0.96,
+    0.29
    ],
    "motion": {
     "elements": 20,
@@ -911,14 +1007,14 @@
      "h": 1024
     },
     "page": {
-     "height": 12326,
-     "screens": 12,
-     "words": 767,
+     "height": 13649,
+     "screens": 13.3,
+     "words": 950,
      "img": 8,
      "video": 0,
      "canvas": 0,
      "svg": 12,
-     "sections": 6,
+     "sections": 7,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 5,
@@ -1028,7 +1124,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 3568,
+      "top": 3608,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1049,7 +1145,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.6,
-      "top": 4576,
+      "top": 4616,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1070,8 +1166,29 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 8688,
+      "top": 8728,
       "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Metro areas we serve",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 36.5,
+      "vw": 4.8,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 9457,
+      "tag": "h3",
       "kind": "heading"
      },
      {
@@ -1091,7 +1208,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 9474,
+      "top": 10433,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1112,17 +1229,17 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.83,
-      "top": 10666,
+      "top": 11989,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 7,
+     "count": 8,
      "maxLines": 1,
      "over2Lines": 0,
      "statements": 0,
-     "centered": 0,
+     "centered": 1,
      "medianWords": 2,
      "mixedFontHeadings": 0
     },
@@ -1170,7 +1287,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.03,
+     "centerShare": 0.09,
      "smallText": 0
     },
     "eyebrows": [],
@@ -1204,7 +1321,7 @@
       },
       {
        "color": "#7d0c14",
-       "top": 3448,
+       "top": 3488,
        "hsl": {
         "h": 356,
         "s": 0.82,
@@ -1215,15 +1332,19 @@
      "textColors": [
       {
        "color": "#7d0c14",
-       "share": 0.52
+       "share": 0.49
       },
       {
        "color": "#e2e2e2",
-       "share": 0.33
+       "share": 0.28
       },
       {
        "color": "#7a4a4e",
-       "share": 0.15
+       "share": 0.23
+      },
+      {
+       "color": "#d0b3af",
+       "share": 0
       }
      ],
      "button": {
@@ -1265,13 +1386,20 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 8,
-     "boxRadius": 20,
+     "roundedBoxes": 18,
+     "boxRadius": 12,
      "squareMedia": 1,
      "roundedMedia": 5,
      "mediaRadius": 20,
      "textShadow": 0,
-     "cardRows": []
+     "cardRows": [
+      {
+       "count": 10,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 9593
+      }
+     ]
     },
     "heroMedia": [
      {
@@ -1295,10 +1423,10 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 12326,
+    "pageH": 13649,
     "margins": {
      "left": 48,
-     "right": 48
+     "right": 51
     },
     "sections": [
      {
@@ -1306,7 +1434,7 @@
       "tag": "section",
       "top": 0,
       "height": 1024,
-      "words": 34,
+      "words": 41,
       "media": 1,
       "middle": 0,
       "heading": null,
@@ -1324,8 +1452,8 @@
       "sel": "section#plans.section.g2",
       "tag": "section",
       "top": 1024,
-      "height": 2424,
-      "words": 247,
+      "height": 2464,
+      "words": 254,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1346,9 +1474,9 @@
      {
       "sel": "section#included.section.ground-inverse",
       "tag": "section",
-      "top": 3448,
+      "top": 3488,
       "height": 1024,
-      "words": 105,
+      "words": 111,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1369,9 +1497,9 @@
      {
       "sel": "section#onboarding.section.photo-ch-section",
       "tag": "section",
-      "top": 4472,
+      "top": 4512,
       "height": 4096,
-      "words": 28,
+      "words": 35,
       "media": 4,
       "middle": 0,
       "heading": {
@@ -1390,11 +1518,11 @@
       "pinned": true
      },
      {
-      "sel": "section#locations.section.word-hl-section",
-      "tag": "section",
-      "top": 8568,
-      "height": 786,
-      "words": 55,
+      "sel": "div.wrap.grid",
+      "tag": "div",
+      "top": 8728,
+      "height": 633,
+      "words": 63,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -1413,9 +1541,32 @@
       "pinned": false
      },
      {
+      "sel": "div.wrap.locations-grid-wrap",
+      "tag": "div",
+      "top": 9457,
+      "height": 784,
+      "words": 93,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Metro areas we serve",
+       "size": 37,
+       "tag": "h3"
+      },
+      "left": 64,
+      "right": 104,
+      "textLeft": 64,
+      "textRight": 104,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "section#faq.section.ground-inverse",
       "tag": "section",
-      "top": 9354,
+      "top": 10313,
       "height": 1168,
       "words": 160,
       "media": 0,
@@ -1436,9 +1587,32 @@
       "pinned": false
      },
      {
+      "sel": "section.section",
+      "tag": "section",
+      "top": 11481,
+      "height": 364,
+      "words": 49,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Led by practitioners, not salespeople",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 83,
+      "right": 83,
+      "textLeft": 83,
+      "textRight": 83,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "footer#contact.footer.closing",
       "tag": "footer",
-      "top": 10522,
+      "top": 11845,
       "height": 1804,
       "words": 124,
       "media": 0,
@@ -1502,22 +1676,22 @@
    "screens": 12,
    "filled": [
     0.48,
-    0.64,
+    0.56,
     0.9,
-    0.83,
-    0.98,
-    0.85,
-    0.62,
-    0.62,
-    0.62,
-    0.49,
-    0.8,
-    0.99
+    0.84,
+    0.79,
+    0.97,
+    0.58,
+    0.58,
+    0.58,
+    0.53,
+    0.73,
+    0.76
    ],
    "motion": {
-    "elements": 20,
+    "elements": 21,
     "css": 0,
-    "transitions": 20,
+    "transitions": 21,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -1528,14 +1702,14 @@
      "h": 844
     },
     "page": {
-     "height": 12528,
-     "screens": 14.8,
-     "words": 725,
+     "height": 14903,
+     "screens": 17.7,
+     "words": 908,
      "img": 8,
      "video": 0,
      "canvas": 0,
      "svg": 12,
-     "sections": 6,
+     "sections": 7,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 5,
@@ -1624,7 +1798,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 940,
+      "top": 1049,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1645,7 +1819,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.71,
-      "top": 1151,
+      "top": 1260,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1666,7 +1840,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.71,
-      "top": 1657,
+      "top": 1766,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1687,7 +1861,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.71,
-      "top": 2176,
+      "top": 2284,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1708,7 +1882,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.79,
-      "top": 2654,
+      "top": 2763,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1729,7 +1903,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 3497,
+      "top": 3710,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1750,7 +1924,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.51,
-      "top": 3712,
+      "top": 3925,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1771,7 +1945,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.49,
-      "top": 3896,
+      "top": 4108,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1792,7 +1966,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.52,
-      "top": 4054,
+      "top": 4266,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1813,7 +1987,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.38,
-      "top": 4237,
+      "top": 4450,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1834,7 +2008,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.53,
-      "top": 4396,
+      "top": 4608,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1855,7 +2029,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.38,
-      "top": 4554,
+      "top": 4766,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1876,7 +2050,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 4868,
+      "top": 5141,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1897,7 +2071,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 8252,
+      "top": 8525,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1918,9 +2092,30 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 8301,
+      "top": 8574,
       "tag": "p",
       "kind": "statement"
+     },
+     {
+      "text": "Metro areas we serve",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 9360,
+      "tag": "h3",
+      "kind": "heading"
      },
      {
       "text": "Common questions",
@@ -1939,8 +2134,50 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.88,
-      "top": 9076,
+      "top": 10995,
       "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Led by practitioners, not salespeople",
+      "words": 5,
+      "chars": 37,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Albert Sans",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 12360,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "ED",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Albert Sans",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.16,
+      "top": 12425,
+      "tag": "div",
       "kind": "heading"
      },
      {
@@ -1960,17 +2197,17 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.79,
-      "top": 10497,
+      "top": 12873,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 18,
+     "count": 21,
      "maxLines": 4,
      "over2Lines": 0,
      "statements": 1,
-     "centered": 0,
+     "centered": 3,
      "medianWords": 2,
      "mixedFontHeadings": 0
     },
@@ -2016,7 +2253,7 @@
      "microLabelShare": 0,
      "microSamples": [],
      "upperShare": 0,
-     "centerShare": 0.04,
+     "centerShare": 0.1,
      "smallText": 0
     },
     "eyebrows": [],
@@ -2041,7 +2278,7 @@
       },
       {
        "color": "#d6d6d6",
-       "top": 1119,
+       "top": 1228,
        "hsl": {
         "h": 0,
         "s": 0,
@@ -2050,7 +2287,7 @@
       },
       {
        "color": "#7d0c14",
-       "top": 3401,
+       "top": 3614,
        "hsl": {
         "h": 356,
         "s": 0.82,
@@ -2061,15 +2298,19 @@
      "textColors": [
       {
        "color": "#7d0c14",
-       "share": 0.52
+       "share": 0.49
       },
       {
        "color": "#e2e2e2",
-       "share": 0.35
+       "share": 0.3
       },
       {
        "color": "#7a4a4e",
-       "share": 0.13
+       "share": 0.21
+      },
+      {
+       "color": "#d0b3af",
+       "share": 0
       }
      ],
      "button": {
@@ -2111,8 +2352,8 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 8,
-     "boxRadius": 20,
+     "roundedBoxes": 18,
+     "boxRadius": 12,
      "squareMedia": 1,
      "roundedMedia": 5,
      "mediaRadius": 20,
@@ -2122,7 +2363,13 @@
        "count": 3,
        "iconTopped": false,
        "rounded": true,
-       "top": 1119
+       "top": 1228
+      },
+      {
+       "count": 10,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 9543
       }
      ]
     },
@@ -2148,7 +2395,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 12528,
+    "pageH": 14903,
     "margins": {
      "left": 24,
      "right": 24
@@ -2158,8 +2405,8 @@
       "sel": "section.hero.hero--photo",
       "tag": "section",
       "top": 0,
-      "height": 844,
-      "words": 34,
+      "height": 953,
+      "words": 41,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -2180,9 +2427,9 @@
      {
       "sel": "section#plans.section.g2",
       "tag": "section",
-      "top": 844,
-      "height": 2557,
-      "words": 205,
+      "top": 953,
+      "height": 2661,
+      "words": 212,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -2203,9 +2450,9 @@
      {
       "sel": "section#included.section.ground-inverse",
       "tag": "section",
-      "top": 3401,
-      "height": 1379,
-      "words": 105,
+      "top": 3614,
+      "height": 1439,
+      "words": 111,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -2226,9 +2473,9 @@
      {
       "sel": "section#onboarding.section.photo-ch-section",
       "tag": "section",
-      "top": 4780,
+      "top": 5053,
       "height": 3376,
-      "words": 28,
+      "words": 35,
       "media": 4,
       "middle": 0,
       "heading": {
@@ -2239,7 +2486,7 @@
       "left": 24,
       "right": 24,
       "textLeft": 24,
-      "textRight": 69,
+      "textRight": 45,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -2247,11 +2494,11 @@
       "pinned": true
      },
      {
-      "sel": "section#locations.section.word-hl-section",
-      "tag": "section",
-      "top": 8156,
-      "height": 823,
-      "words": 55,
+      "sel": "div.wrap.grid",
+      "tag": "div",
+      "top": 8525,
+      "height": 739,
+      "words": 63,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -2270,9 +2517,32 @@
       "pinned": false
      },
      {
+      "sel": "div.wrap.locations-grid-wrap",
+      "tag": "div",
+      "top": 9360,
+      "height": 1491,
+      "words": 93,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Metro areas we serve",
+       "size": 30,
+       "tag": "h3"
+      },
+      "left": 40,
+      "right": 45,
+      "textLeft": 40,
+      "textRight": 45,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "section#faq.section.ground-inverse",
       "tag": "section",
-      "top": 8980,
+      "top": 10899,
       "height": 1398,
       "words": 160,
       "media": 0,
@@ -2293,9 +2563,32 @@
       "pinned": false
      },
      {
+      "sel": "section.section",
+      "tag": "section",
+      "top": 12296,
+      "height": 457,
+      "words": 49,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Led by practitioners, not salespeople",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 31,
+      "textLeft": 31,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
       "sel": "footer#contact.footer.closing",
       "tag": "footer",
-      "top": 10377,
+      "top": 12753,
       "height": 2150,
       "words": 110,
       "media": 0,
@@ -2349,6 +2642,16 @@
   }
  ],
  "findings": [
+  {
+   "level": "WARN",
+   "id": "card-rows",
+   "width": 1440,
+   "message": "2 rows of identical boxed cards.",
+   "fix": "Vary the composition; not every section is a card grid.",
+   "alsoAt": [
+    390
+   ]
+  },
   {
    "level": "WARN",
    "id": "size-count",

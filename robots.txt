@@ -1,7 +1,47 @@
 # Robots.txt — Novatech Solutions
 
+# Search crawlers (AI search citability)
+User-agent: OAI-SearchBot
+Allow: /
+Content-Signal: search=yes,ai-train=no,use=reference
+
+User-agent: Claude-SearchBot
+Allow: /
+Content-Signal: search=yes,ai-train=no,use=reference
+
+User-agent: PerplexityBot
+Allow: /
+Content-Signal: search=yes,ai-train=no,use=reference
+
+User-agent: Googlebot
+Allow: /
+Content-Signal: search=yes,ai-train=no,use=reference
+
+# Training crawlers (blocked per preference)
+User-agent: GPTBot
+Disallow: /
+Content-Signal: search=yes,ai-train=no,use=reference
+
+User-agent: ClaudeBot
+Disallow: /
+Content-Signal: search=yes,ai-train=no,use=reference
+
+User-agent: Google-Extended
+Disallow: /
+Content-Signal: search=yes,ai-train=no,use=reference
+
+User-agent: Applebot-Extended
+Disallow: /
+Content-Signal: search=yes,ai-train=no,use=reference
+
+User-agent: CCBot
+Disallow: /
+Content-Signal: search=yes,ai-train=no,use=reference
+
+# Default for all other crawlers
 User-agent: *
 Allow: /
+Content-Signal: search=yes,ai-train=no,use=reference
 
 # Private areas
 Disallow: /admin/

@@ -1,0 +1,274 @@
+{
+  "summary": {
+    "health_score": 42,
+    "business_type": "Managed IT Services (Service-area business, nationwide with Texas focus)",
+    "top_findings": [
+      "Sitemap references 4 non-existent pages + 5 invalid fragment URLs",
+      "Homepage has zero schema markup",
+      "managed-it.html Service schema uses placeholder data (novatech.example)",
+      "No canonical tags on any page",
+      "Linked pages return 404 (privacy.html, web-design.html, about.html, cybersecurity.html, cloud.html)",
+      "Domain has zero rankings, zero keywords, spam score 58",
+      "managed-it.html is thin content (427 vs 800 minimum)",
+      "Content-Signal missing from named robots.txt groups",
+      "No llms.txt, no Markdown delivery, no WebMCP tools"
+    ],
+    "quick_wins": [
+      "Fix sitemap.xml (remove 404s, fragments, deprecated tags)",
+      "Add Organization + Service schema to homepage",
+      "Fix managed-it.html schema with real data",
+      "Add canonical tags to all pages",
+      "Add Content-Signal to named robots.txt groups",
+      "Fix empty alt text on managed-it.html",
+      "Create privacy.html page"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 65,
+      "what_works": [
+        "Server-rendered static site (959 words without JS)",
+        "HTTPS enforced via Cloudflare",
+        "HTTP/3 enabled",
+        "Robots.txt with 33 AI crawler groups",
+        "Real 404 handling (no soft-404s)",
+        "Excellent accessibility tree (100/100 Agent-UX)",
+        "Responsive design, no horizontal scroll"
+      ],
+      "findings": [
+        {
+          "title": "Sitemap has 404 URLs and fragment URLs",
+          "severity": "Critical",
+          "description": "Sitemap references web-design.html, cybersecurity.html, cloud.html, privacy.html (all 404) and 5 fragment URLs (#services, #process, #why, #faq, #contact) which are invalid in sitemaps.",
+          "recommendation": "Remove non-existent pages and fragment URLs. Keep only homepage, managed-it.html, and privacy.html (to be created). Remove deprecated changefreq/priority tags."
+        },
+        {
+          "title": "Missing canonical tags",
+          "severity": "Critical",
+          "description": "No self-referencing canonical tags on index.html or managed-it.html. Risk of duplicate content from fragments or parameters.",
+          "recommendation": "Add <link rel=\"canonical\" href=\"https://novatechsoft.info/\"> to index.html and <link rel=\"canonical\" href=\"https://novatechsoft.info/managed-it.html\"> to managed-it.html"
+        },
+        {
+          "title": "Security headers missing",
+          "severity": "High",
+          "description": "No CSP, HSTS, X-Frame-Options, X-Content-Type-Options, or Referrer-Policy headers.",
+          "recommendation": "Add security headers via Cloudflare Workers or _headers file for GitHub Pages."
+        },
+        {
+          "title": "Content-Signal only in wildcard robots.txt group",
+          "severity": "High",
+          "description": "Content-Signal: search=yes,ai-train=no,use=reference only in * group. Named AI groups (GPTBot, ClaudeBot, etc.) don't inherit it per RFC 9309.",
+          "recommendation": "Repeat Content-Signal line inside each named user-agent group in robots.txt."
+        },
+        {
+          "title": "Linked pages return 404",
+          "severity": "High",
+          "description": "privacy.html, web-design.html, about.html linked from managed-it.html and footer but return 404.",
+          "recommendation": "Create privacy.html page. Remove or create web-design.html and about.html, or update links."
+        }
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 35,
+      "what_works": [
+        "Homepage meets word count (815 vs 500 minimum)",
+        "Good heading hierarchy (H1→6×H2→14×H3)",
+        "Clear pricing and SLAs",
+        "FAQ section with semantic <details>/<summary>",
+        "Comparison table + mobile segmented tabs"
+      ],
+      "findings": [
+        {
+          "title": "managed-it.html is thin content (427 words)",
+          "severity": "Critical",
+          "description": "Service page has only 427 words vs 800 minimum. 53% below threshold. Lacks Texas-specific depth, case studies, original data.",
+          "recommendation": "Expand to 800+ words with Texas-specific content, local case studies, compliance details, and unique value propositions."
+        },
+        {
+          "title": "No author bylines or E-E-A-T signals",
+          "severity": "Critical",
+          "description": "Zero author attribution on any page. Managed IT is YMYL-adjacent; author credentials required for trust.",
+          "recommendation": "Add author bio with Person schema. Include credentials, certifications, LinkedIn. Add publication/last-updated dates."
+        },
+        {
+          "title": "Empty alt text on images",
+          "severity": "High",
+          "description": "3 Microsoft SVG icons on managed-it.html have empty alt attributes.",
+          "recommendation": "Add descriptive alt text: 'Microsoft partner badge', 'Microsoft 365 management', 'Azure cloud services'."
+        },
+        {
+          "title": "Low AI citability",
+          "severity": "High",
+          "description": "No self-contained answer blocks, no statistics with sources, no definitions in first 60 words, no author/entity attribution.",
+          "recommendation": "Add 'What is managed IT?' definition in first 60 words. Create ~130-170 word self-contained answer blocks per section. Add specific statistics with citations."
+        },
+        {
+          "title": "No internal linking strategy",
+          "severity": "Medium",
+          "description": "Only navigation links exist. No contextual links between homepage and service page, or to future content.",
+          "recommendation": "Add 3-5 contextual internal links per 1000 words. Link from homepage to managed-it.html with descriptive anchor text."
+        }
+      ]
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 15,
+      "what_works": [
+        "managed-it.html has Service schema structure (but invalid data)"
+      ],
+      "findings": [
+        {
+          "title": "Homepage has zero schema markup",
+          "severity": "Critical",
+          "description": "No Organization, Service, WebSite, or BreadcrumbList schema on homepage.",
+          "recommendation": "Add Organization, Service, WebSite, and BreadcrumbList JSON-LD to homepage <head>."
+        },
+        {
+          "title": "managed-it.html schema uses placeholder data",
+          "severity": "Critical",
+          "description": "Service schema contains novatech.example URLs, placeholder phone/email. areaServed only 4 Texas cities (business is nationwide).",
+          "recommendation": "Replace all placeholder data with real values. Expand areaServed to US nationwide. Add AggregateRating, Offer array for 3 tiers, QAPage for FAQ."
+        },
+        {
+          "title": "Missing QAPage schema on FAQ sections",
+          "severity": "High",
+          "description": "Both pages have FAQ content but no QAPage schema (FAQPage retired but QAPage valid).",
+          "recommendation": "Add QAPage schema with Question/Answer pairs for each FAQ item."
+        }
+      ]
+    },
+    {
+      "name": "Performance (CWV)",
+      "score": 70,
+      "what_works": [
+        "Static site on GitHub Pages + Cloudflare CDN",
+        "Hero image with fetchpriority=high",
+        "Images use loading=lazy",
+        "Module preloads for moments",
+        "HTTP/3 enabled"
+      ],
+      "findings": [
+        {
+          "title": "No CrUX field data",
+          "severity": "Medium",
+          "description": "Site below traffic threshold for CrUX. CWV scores estimated from lab only.",
+          "recommendation": "Run PageSpeed Insights when traffic increases. Enable Brotli on Cloudflare. Combine CSS files."
+        }
+      ]
+    },
+    {
+      "name": "AI Search Readiness (GEO)",
+      "score": 55,
+      "what_works": [
+        "Server-rendered (accessible to all AI crawlers)",
+        "Search crawlers allowed (OAI-SearchBot, Claude-SearchBot, PerplexityBot, Googlebot)",
+        "Training crawlers blocked (GPTBot, ClaudeBot, Google-Extended, Applebot-Extended, CCBot)",
+        "Good heading hierarchy for extraction"
+      ],
+      "findings": [
+        {
+          "title": "Zero brand mention presence",
+          "severity": "Critical",
+          "description": "No Wikipedia, Reddit, YouTube, LinkedIn, or industry directory presence. Brand mentions correlate 3x more with AI visibility than backlinks.",
+          "recommendation": "Create Wikipedia/Wikidata entry. Build YouTube channel. Earn Reddit mentions. Submit to Clutch, G2, Capterra."
+        },
+        {
+          "title": "Content-Signal missing from named AI groups",
+          "severity": "High",
+          "description": "Training vs search preferences not communicated to named crawler groups.",
+          "recommendation": "Add Content-Signal to each named user-agent group in robots.txt."
+        },
+        {
+          "title": "No llms.txt or Markdown delivery",
+          "severity": "Medium",
+          "description": "Optional for Google (explicitly ignored), may help other AI crawlers.",
+          "recommendation": "Create /llms.txt with site map and key facts. Add Accept: text/markdown negotiation."
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "score": 60,
+      "what_works": [
+        "All homepage images have descriptive alt text",
+        "Hero image prioritized with fetchpriority=high",
+        "Lazy loading implemented",
+        "Stand-in photos credited in footer"
+      ],
+      "findings": [
+        {
+          "title": "3 images with empty alt text on managed-it.html",
+          "severity": "High",
+          "description": "Microsoft SVG icons (×3) have empty alt attributes.",
+          "recommendation": "Add descriptive alt text for each icon."
+        },
+        {
+          "title": "No WebP/AVIF formats",
+          "severity": "Medium",
+          "description": "Images served as JPG/SVG only. No modern format optimization.",
+          "recommendation": "Convert photos to WebP/AVIF with JPEG fallback. Use Cloudflare Polish or build-time conversion."
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {
+        "name": "Phase 1: Critical Fixes",
+        "timeframe": "Week 1",
+        "items": [
+          "Fix sitemap.xml - remove 404 URLs, fragment URLs, deprecated tags",
+          "Add canonical tags to index.html and managed-it.html",
+          "Add Organization + Service + WebSite + BreadcrumbList schema to homepage",
+          "Fix managed-it.html Service schema with real data (replace placeholders)",
+          "Add Content-Signal to named robots.txt groups",
+          "Fix empty alt text on managed-it.html Microsoft icons",
+          "Create privacy.html page"
+        ]
+      },
+      {
+        "name": "Phase 2: High-Impact Improvements",
+        "timeframe": "Weeks 2-3",
+        "items": [
+          "Expand managed-it.html to 800+ words with Texas-specific content",
+          "Add author bio + Person schema to service pages",
+          "Add publication/last-updated dates to all pages",
+          "Create llms.txt for non-Google AI crawlers",
+          "Add QAPage schema to FAQ sections on both pages",
+          "Add BreadcrumbList schema to managed-it.html",
+          "Add contextual internal links between pages",
+          "Optimize images: WebP/AVIF, add dimensions"
+        ]
+      },
+      {
+        "name": "Phase 3: Content & Authority",
+        "timeframe": "Month 2",
+        "items": [
+          "Publish 3 case studies with original data and metrics",
+          "Create location pages for top 10 metro areas",
+          "Build YouTube channel with onboarding/security content",
+          "Earn 10+ quality backlinks (partnerships, industry directories)",
+          "Submit to Clutch, G2, Capterra, SoftwareAdvice",
+          "Create Wikipedia/Wikidata entry for Novatech"
+        ]
+      },
+      {
+        "name": "Phase 4: Monitoring & Iteration",
+        "timeframe": "Ongoing",
+        "items": [
+          "Track keyword rankings (managed IT services, managed IT Texas, vCIO services)",
+          "Monitor AI citations (ChatGPT, Perplexity, AI Overviews, AI Mode)",
+          "Check backlink profile for new toxic links monthly",
+          "Quarterly content freshness updates",
+          "Run technical audit after each deployment"
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "screenshots_dir": "screenshots/"
+  }
+}
